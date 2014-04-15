@@ -1,5 +1,7 @@
 1. Afleveret genaflevering
 
 2. Secure password, link: http://www.wikihow.com/Create-a-Secure-Login-Script-in-PHP-and-MySQL
+(Vi er kommet til part 5 ud af 8 ca.).
+
 
 3. velkomst siden for brugere - administratorer bliver implementeret senere. 
