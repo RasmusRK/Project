@@ -1,6 +1,4 @@
 body {
-    background: #222 url(test.png) repeat top left;
-    padding: 1px;
 }
 
 #login {
@@ -157,6 +155,9 @@ label {
     padding: 16px 0 0 0;
 }
 
+
+/* MENU */
+
 .pure-menu ul {
     position: absolute;
     visibility: hidden;
@@ -278,16 +279,16 @@ label {
 
 /* Adjusting separator for vertical menus */
 .pure-menu-horizontal li.pure-menu-separator {
-	height: 50%;
-	width: 1px;
-	margin: 0 7px;
+    height: 50%;
+    width: 1px;
+    margin: 0 7px;
 }
 
 /* Submenus should be horizontal separator again */
 .pure-menu-horizontal li li.pure-menu-separator {
-	height: 1px;
-	width: auto;
-	margin: 7px 2px;
+    height: 1px;
+    width: auto;
+    margin: 7px 2px;
 }
 
 
