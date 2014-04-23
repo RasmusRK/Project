@@ -2,7 +2,7 @@ body {
 }
 
 #login {
-    width: 440px;
+    width: 350px;
     position: relative;
     margin: 50px auto;
 }
@@ -16,7 +16,7 @@ h2 {
 }
 
 .boxCont {
-    width: 400px;
+    width: 100%;
     padding: 15px;
     border: 5px solid #ccc;
     
