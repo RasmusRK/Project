@@ -3,7 +3,7 @@
  * These are the database login details
  */  
 define("HOST", "localhost");     // The host you want to connect to.
-define("USER", "sec_user1");    // The database username. 
+define("USER", "root");    // The database username. 
 define("PASSWORD", "m7muyepeh");    // The database password. 
 define("DATABASE", "projekt");    // The database name.
  
