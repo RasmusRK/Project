@@ -49,12 +49,20 @@ sec_session_start();
         <div class="header">
             <h1>Alle projekter</h1>
             <h2>Liste over projekter</h2>
+
+
         </div>
 
         <div class="content">
             <h2 class="content-subhead">Titel</h2>
             <p>
                 Tekst
+                            <?php if (login_check($mysqli) == true) {
+                echo "Du er admin";
+            }
+            else {
+                echo "Du er ikke admin";
+            } ?>
             </p>
         </div>
     </div>
@@ -67,5 +75,7 @@ sec_session_start();
                 <span class="error">You are not authorized to access this page.</span> Please <a href="index.php">login</a>.
             </p>
         <?php endif; ?>
+
     </body>
+
 </html>

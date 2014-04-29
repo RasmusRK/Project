@@ -133,9 +133,9 @@ function login_check($mysqli) {
     }
 }
 
-function check_admin($mysql) {
+function check_admin($mysqli) {
 
-    if(login_check($mysql) == true) {
+    if(login_check($mysqli) == true) {
         $user_id = $_SESSION['user_id'];
         if ($stmt = $mysqli->prepare("SELECT admin 
                                       FROM users 
