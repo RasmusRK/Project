@@ -35,7 +35,7 @@
                 <li><a href="contact.php">Kontakt</a></li>
                 <br><br>
                 <li>Logget ind som 123</li>
-                <li><a href="#">Log ud</a></li>
+                <li><a href="includes/logout.php">Log ud</a></li>
             </ul>
         </div>
     </div>
