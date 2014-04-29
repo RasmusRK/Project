@@ -26,13 +26,13 @@
 
     <div id="menu">
         <div class="pure-menu pure-menu-open">
-            <a class="pure-menu-heading" href="#">Test</a>
+            <a class="pure-menu-heading" href="main.php">Test</a>
 
             <ul>
                 <li><a href="mine_projekter.html">Mine projekter</a></li>
                 <li><a href="alle_projekter.html">Alle projekter</a></li>
                 <a href="historik.html">Min historik</a>
-                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="contact.php">Kontakt</a></li>
                 <br><br>
                 <li>Logget ind som 123</li>
                 <li><a href="#">Log ud</a></li>
