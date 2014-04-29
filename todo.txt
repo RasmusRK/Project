@@ -1,7 +1,11 @@
-1. Afleveret genaflevering
+1. Afleveret genaflevering - DONE
 
 2. Secure password, link: http://www.wikihow.com/Create-a-Secure-Login-Script-in-PHP-and-MySQL
-(Vi er kommet til part 5 ud af 8 ca.).
+(Vi er kommet til part 5 ud af 8 ca.). - DONE
 
 
-3. velkomst siden for brugere - administratorer bliver implementeret senere. 
+3. velkomst siden for brugere - DONE
+
+4. Implementer adminstrator funktion
+
+5. tilføj css til register
