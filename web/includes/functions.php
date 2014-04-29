@@ -133,6 +133,31 @@ function login_check($mysqli) {
     }
 }
 
+function check_admin($mysql) {
+
+    if(login_check($mysql) == true) {
+        $user_id = $_SESSION['user_id'];
+        if ($stmt = $mysqli->prepare("SELECT admin 
+                                      FROM users 
+                                      WHERE id = $user_id LIMIT 1")) {
+            // Bind "$user_id" to parameter. 
+            $stmt->execute();
+            $stmt->store_result();
+            $stmt->bind_result($admin);
+            $stmt->fetch();
+            if($admin == 1) {
+                return true;
+            }
+            else {
+                return false; }
+        }
+        else {
+            return false; }
+    }
+    else {
+        return false; }
+}
+
 
 function esc_url($url) {
  
