@@ -52,7 +52,7 @@ include_once 'includes/functions.php';
         </div>
 
         <div>
-            <label for="confirmpwd">Confirm<br>password</label>
+            <label for="confirmpwd">Gentag<br>password</label>
             <input id ="confirmpwd" type="password" name="confirmpwd" />
         </div>
 
@@ -65,9 +65,9 @@ include_once 'includes/functions.php';
                                   this.form.password,
                                   this.form.confirmpwd);" /> 
         </div>
+        <br><br>
         </form>
-        <p>Gå tilbage til <a href="index.php">forsiden</a>.</p>
-
+         <p>Gå tilbage til <a href="index.php">forsiden</a>.</p>
         </div>
     </body>
 </html>
