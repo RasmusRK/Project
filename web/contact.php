@@ -16,8 +16,8 @@
   </head>
 
 <body>
-
-<div id="layout">
+    <?php if (login_check($mysqli) == true) : ?>
+            <div id="layout">
     <!-- Menu toggle -->
     <a href="#menu" id="menuLink" class="menu-link">
         <!-- Hamburger icon -->
@@ -26,13 +26,13 @@
 
     <div id="menu">
         <div class="pure-menu pure-menu-open">
-            <a class="pure-menu-heading" href="#">Test</a>
+            <a class="pure-menu-heading" href="main.php">Test</a>
 
             <ul>
                 <li><a href="mine_projekter.html">Mine projekter</a></li>
                 <li><a href="alle_projekter.html">Alle projekter</a></li>
                 <a href="historik.html">Min historik</a>
-                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="contact.php">Kontakt</a></li>
                 <br><br>
                 <li>Logget ind som 123</li>
                 <li><a href="#">Log ud</a></li>
@@ -42,8 +42,8 @@
 
     <div id="main">
         <div class="header">
-            <h1>Alle projekter</h1>
-            <h2>Liste over projekter</h2>
+            <h1>Kontakt</h1>
+            <h2>Her kan adminstrator af siden kontaktes</h2>
         </div>
 
         <div class="content">
@@ -56,5 +56,12 @@
 </div>
 
 <script src="js/ui.js"></script>
+        <?php else : ?>
+            <p>
+                <span class="error">You are not authorized to access this page.</span> Please <a href="index.php">login</a>.
+            </p>
+        <?php endif; ?>
+
+
 </body>
 </html>
