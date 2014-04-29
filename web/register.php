@@ -9,51 +9,65 @@ include_once 'includes/functions.php';
         <title>Secure Login: Registration Form</title>
         <script type="text/JavaScript" src="js/sha512.js"></script> 
         <script type="text/JavaScript" src="js/forms.js"></script>
-        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="stylesheet" href="css/pure.css" />
     </head>
-    <body>
+    <body background = "css/test.png">
+    <div id = "login">
         <!-- Registration form to be output if the POST variables are not
         set or if the registration script caused an error. -->
-        <h1>Register with us</h1>
+        <h1>Opret bruger</h1>
         <?php
         if (!empty($error_msg)) {
             echo $error_msg;
         }
         ?>
-        <ul>
-            <li>Usernames may contain only digits, upper and lower case letters and underscores</li>
-            <li>Emails must have a valid email format</li>
-            <li>Passwords must be at least 6 characters long</li>
-            <li>Passwords must contain
+
+        <form class="boxCont" action="<?php echo esc_url($_SERVER['PHP_SELF']); ?>" method="post" name="registration_form">
+        
                 <ul>
-                    <li>At least one upper case letter (A..Z)</li>
-                    <li>At least one lower case letter (a..z)</li>
-                    <li>At least one number (0..9)</li>
+            <li>Emails skal have et gyldig email format</li>
+            <li>Passwords skal være mindst 6 tegn langt</li>
+            <li>Passwords må indeholde følgende
+                <ul>
+                    <li>Mindst et stort bogstav (A..Z)</li>
+                    <li>Mindst et lille bogstav (a..z)</li>
+                    <li>Mindst et nummer (0..9)</li>
                 </ul>
             </li>
-            <li>Your password and confirmation must match exactly</li>
+            <li>Dit password og konfirmationen skal være ens</li>
         </ul>
-        <form action="<?php echo esc_url($_SERVER['PHP_SELF']); ?>" 
-                method="post" 
-                name="registration_form">
-            Username: <input type='text' 
-                name='username' 
-                id='username' /><br>
-            Email: <input type="text" name="email" id="email" /><br>
-            Password: <input type="password"
-                             name="password" 
-                             id="password"/><br>
-            Confirm password: <input type="password" 
-                                     name="confirmpwd" 
-                                     id="confirmpwd" /><br>
-            <input type="button" 
-                   value="Register" 
-                   onclick="return regformhash(this.form,
-                                   this.form.username,
-                                   this.form.email,
-                                   this.form.password,
-                                   this.form.confirmpwd);" /> 
+        <div>
+            <label for="userName">Brugernavn</label>
+            <input id ="userName" type="text" name="userName" />
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input id ="email" type="text" name="email" />
+        </div>
+
+        <div>
+            <label for="password">Password</label>
+            <input id ="password" type="text" name="password" />
+        </div>
+
+        <div>
+            <label for="confirmpwd">Confirm<br>password</label>
+            <input id ="confirmpwd" type="password" name="confirmpwd" />
+        </div>
+
+        <div>
+        <br>
+        <input class="btn left" type="button" value="Register" 
+                  onclick="return regformhash(this.form,
+                                  this.form.username,
+                                  this.form.email,
+                                  this.form.password,
+                                  this.form.confirmpwd);" /> 
+        </div>
         </form>
-        <p>Return to the <a href="index.php">login page</a>.</p>
+        <p>Gå tilbage til <a href="index.php">forsiden</a>.</p>
+
+        </div>
     </body>
 </html>
