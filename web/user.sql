@@ -12,7 +12,7 @@ VALUES (
 );
 
 
-CREATE TABLE  `projekt`.`members` (
+CREATE TABLE  `projekt`.`users` (
  `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
  `username` VARCHAR( 30 ) NOT NULL ,
  `email` VARCHAR( 50 ) NOT NULL ,
