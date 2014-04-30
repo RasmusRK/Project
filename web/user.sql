@@ -20,7 +20,7 @@ CREATE TABLE `projekt`.`work_on` (
 `hours` INTEGER NOT NULL ,
 `date` INTEGER NOT NULL ,
 `info` char( 255 )
-) ENGONE = INNODB
+) ENGINE = INNODB
 
 CREATE TABLE `projekt`.`projekt` (
 `projekt_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
