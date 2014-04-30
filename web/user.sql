@@ -10,7 +10,7 @@ CREATE TABLE  `projekt`.`users` (
 
 CREATE TABLE  `projekt`.`login_attempts` (
  `user_id` INT( 11 ) NOT NULL ,
- `time` VARCHAR( 30 ) NOT NULL
+ `time` INT(11) NOT NULL
 ) ENGINE = INNODB
 
 CREATE TABLE `projekt`.`projekt` (

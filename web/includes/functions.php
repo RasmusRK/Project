@@ -29,7 +29,7 @@ function login($email, $password, $mysqli) {
     // Using prepared statements means that SQL injection is not possible. 
     if ($stmt = $mysqli->prepare("SELECT id, username, password, salt 
         FROM users
-       WHERE email = ?
+        WHERE email = ?
         LIMIT 1")) {
         $stmt->bind_param('s', $email);  // Bind "$email" to parameter.
         $stmt->execute();    // Execute the prepared query.
@@ -199,7 +199,7 @@ function checkbrute($user_id, $mysqli) {
     if ($stmt = $mysqli->prepare("SELECT time 
                              FROM login_attempts <code><pre>
                              WHERE user_id = ? 
-                             AND time > '$valid_attempts'")) {
+                             AND time > $valid_attempts")) {
         $stmt->bind_param('i', $user_id);
  
         // Execute the prepared query. 
@@ -207,7 +207,7 @@ function checkbrute($user_id, $mysqli) {
         $stmt->store_result();
  
         // If there have been more than 5 failed logins 
-        if ($stmt->num_rows < 5) {
+        if ($stmt->num_rows > 5) {
             return true;
             echo "true";
         } else {
