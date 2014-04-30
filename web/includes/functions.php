@@ -145,17 +145,17 @@ function check_admin($mysqli) {
             $stmt->store_result();
             $stmt->bind_result($admin);
             $stmt->fetch();
-            if($admin == 1) {
+            if($admin == "1") {
                 return true;
             }
             else {
-                return false; }
+                return false;}
         }
         else {
-            return false; }
+            return false;}
     }
     else {
-        return false; }
+        return false;}
 }
 
 

@@ -57,12 +57,11 @@ sec_session_start();
             <h2 class="content-subhead">Titel</h2>
             <p>
                 Tekst
-                            <?php if (login_check($mysqli) == true) {
-                echo "Du er admin";
-            }
-            else {
-                echo "Du er ikke admin";
-            } ?>
+                <?php if (check_admin($mysqli) == true) : ?>
+                    <br> You are admin! <br>
+                <?php else : ?>
+                    <br> You are not admin! <br>
+                <?php endif; ?>
             </p>
         </div>
     </div>
