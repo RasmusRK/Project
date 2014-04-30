@@ -34,13 +34,17 @@ sec_session_start();
             <a class="pure-menu-heading" href="main.php">Test</a>
 
             <ul>
-                <li><a href="mine_projekter.html">Mine projekter</a></li>
-                <li><a href="alle_projekter.html">Alle projekter</a></li>
-                <a href="historik.html">Min historik</a>
+                <li><a href="my_projects.php">Mine projekter</a></li>
+                <li><a href="">Alle projekter</a></li>
+                <a href="history.php">Min historik</a>
                 <li><a href="contact.php">Kontakt</a></li>
+                <?php if (check_admin($mysqli) == true) : ?>
+                    <li> <a href="new_project.php">Nyt projekt</a></li>
+                <?php endif; ?>
                 <br><br>
                 <li>Logget ind som: <?php echo $_SESSION['username'];?></li>
                 <li>Du har bruger id: <?php echo $_SESSION['user_id'];?></li>
+
                 <li><a href="includes/logout.php">Log ud</a></li>
             </ul>
         </div>
