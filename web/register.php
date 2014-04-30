@@ -65,7 +65,6 @@ include_once 'includes/functions.php';
                                   this.form.password,
                                   this.form.confirmpwd);" /> 
         </div>
-        <br><br>
         </form>
          <p>Gå tilbage til <a href="index.php">forsiden</a>.</p>
         </div>
