@@ -37,8 +37,8 @@ include_once 'includes/functions.php';
             <li>Dit password og konfirmationen skal være ens</li>
         </ul>
         <div>
-            <label for="userName">Brugernavn</label>
-            <input id ="userName" type="text" name="userName" />
+            <label for="username">Brugernavn</label>
+            <input id ="username" type="text" name="username" />
         </div>
 
         <div>
@@ -48,7 +48,7 @@ include_once 'includes/functions.php';
 
         <div>
             <label for="password">Password</label>
-            <input id ="password" type="text" name="password" />
+            <input id ="password" type="password" name="password" />
         </div>
 
         <div>
@@ -65,7 +65,6 @@ include_once 'includes/functions.php';
                                   this.form.password,
                                   this.form.confirmpwd);" /> 
         </div>
-        <br><br>
         </form>
          <p>Gå tilbage til <a href="index.php">forsiden</a>.</p>
         </div>
