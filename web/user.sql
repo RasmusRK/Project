@@ -16,8 +16,8 @@ CREATE TABLE  `projekt`.`login_attempts` (
 CREATE TABLE `projekt`.`projekt` (
 `projekt_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
 `projekt_name` VARCHAR( 30 ) NOT NULL ,
-`start_date` INTEGER NOT NULL ,
-`end_date` INTEGER ,
+`start_date` DATE NOT NULL ,
+`end_date` DATE ,
 `info` CHAR( 255 ) 
 ) ENGINE = INNODB
 
@@ -33,10 +33,10 @@ FOREIGN KEY(user_id) REFERENCES users(id)
 ) ENGINE = INNODB
 
 INSERT INTO projekt (projekt_name, start_date, info)
-VALUES ("fly1", 30042014, "fly1 skal males blablabla");
+VALUES ("fly1", 2014-30-04, "fly1 skal males blablabla");
 
 INSERT INTO projekt (projekt_name, start_date, end_date, info)
-VALUES ("opfyldning", 10032014, 15042014, "kantinen skal fyldes op med øl");
+VALUES ("opfyldning", 2014-10-03, 15042014, "kantinen skal fyldes op med øl");
 
 INSERT INTO projekt (projekt_name, start_date, info)
-VALUES ("oprydning", 01012014, "der skal ryddes op i flygaragen");
+VALUES ("oprydning", 2014-01-01, "der skal ryddes op i flygaragen");
