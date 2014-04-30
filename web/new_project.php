@@ -55,17 +55,17 @@ sec_session_start();
         <div class="content">
             <h2 class="content-subhead"></h2>
             
-            <form class="pure-form pure-form-stacked">
+            <form class="pure-form pure-form-stacked" action="<?php echo esc_url($_SERVER['PHP_SELF']); ?>" method="post">
             <fieldset>
                     <div>
                     <label for="projektname"><b>Projekt navn</b></label>
-                    <input id="projektname" type="text" placeholder="Indtast navn" />
+                    <input id="projektname" type="text" placeholder="Indtast navn" required/>
                     </div>
                     <br><br>
                     <div>
                     <label for="category"><b>Kategori</b></label>
                     <select><a href="#">Tilføj ny kategori</a>
-                        <option value="0">Vælg kategori</option>
+                        <option value="0" required>Vælg kategori</option>
                         <?php ?>
                     </select>
                     <br><br>
@@ -74,16 +74,16 @@ sec_session_start();
                     <br>
                     <div>
                     <label for="date"><b>Dato</b></label>
-                    <input id="date" type="date"/>
+                    <input id="date" type="date"/ required>
                     </div>
                     <br><br>
                     <label for="description"><b>Beskrivelse af projekt</b></label>
-                    <input id="description" type="text" placeholder="Indtast beskrivelse af projektet"/>
+                    <input id="description" type="text" placeholder="Indtast beskrivelse af projektet"/ required>
                     <br><br>
                     <label for="info"><b>Info</b></label>
                     <textarea type="text" rows="4" cols="50"></textarea>
                     <br><br><br><br>
-                    <input class="btn left" type="submit" value="Tilføj projekt" onclick="#"/> 
+                    <input class="btn left" type="submit" value="Tilføj projekt"> 
             </fieldset>
             </form>
 

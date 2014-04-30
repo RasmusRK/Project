@@ -49,29 +49,30 @@ sec_session_start();
         <div class="content">
             <h2 class="content-subhead"></h2>
             <p>
-                <form class="boxCont" action="<?php echo esc_url($_SERVER['PHP_SELF']); ?>" method="post" name="registration_form">
+                <form class="pure-form pure-form-stacked" action="<?php echo esc_url($_SERVER['PHP_SELF']); ?>" method="post" name="registration_form">
+                    <!--
 	                <ul>
 	                <li> Indtast antal timer og dato </li>
-			        </ul>
+			        </ul>-->
 
         			<div>
-            			<label for="timer">Timer</label>
+            			<label for="timer"><b>Timer</b></label>
             			<input id ="timer" type="text" name="timer" required />
 	        		</div>
-
+                    <br><br>
 	        		<div>
-    	        		<label for="dato">Dato</label>
+    	        		<label for="dato"><b>Dato</b></label>
         	    		<input id ="dato" type="text" name="dato" required />
         			</div>
-
+                    <br><br>
         			<div>
-        				<label for="info">Beskrivelse</label>
+        				<label for="info"><b>Beskrivelse</b></label>
         				<input id ="info" type="text" name="info" required/>
         			</div>
-
+                    <br><br>
         			<div>
-        			<br>
-        			<input class="submit" type="submit" value="submit"/> 
+        			
+        			<input class="btn left" type="submit" value="Submit"/> 
         			</div>
 
         			<?php
@@ -94,15 +95,7 @@ sec_session_start();
                        }
                      }
                      header('Location: ./all_projects.php');
-
-    				
                             }
-    					
-
-
-
-
-
 					?>
         		</form>
         </div>
