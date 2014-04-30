@@ -31,3 +31,14 @@ CREATE TABLE `projekt`.`projekt` (
 `end_date` INTEGER ,
 `info` CHAR( 255 ) 
 ) ENGINE = INNODB
+
+INSERT INTO projekt (projekt_name, start_date, end_date,info)
+VALUES (fly1, 30042014, null, fly1 skal males blablabla)
+
+
+INSERT INTO projekt (projekt_name, start_date, end_date,info)
+VALUES (opfyldning, 10032014, 15042014, kantinen skal fyldes op med øl)
+
+
+INSERT INTO projekt (projekt_name, start_date, end_date,info)
+VALUES (oprydning, 01012014, null, der skal ryddes op i flygaragen)
