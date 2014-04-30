@@ -19,7 +19,7 @@
 
 <div id="layout">
     <!-- Menu toggle -->
-    <a href="" id="menuLink" class="menu-link">
+    <a href="#menu" id="menuLink" class="menu-link">
         <!-- Hamburger icon -->
         <span></span>
     </a>
