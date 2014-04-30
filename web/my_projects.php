@@ -1,3 +1,10 @@
+<?php
+include_once 'includes/db_connect.php';
+include_once 'includes/functions.php';
+ 
+sec_session_start();
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -15,8 +22,14 @@
     <!--<![endif]-->
   </head>
 
+
+
+
 <body>
 
+
+ <?php if (login_check($mysqli) == true) : ?>
+            
 <div id="layout">
     <!-- Menu toggle -->
     <a href="" id="menuLink" class="menu-link">
@@ -57,5 +70,11 @@
 </div>
 
 <script src="js/ui.js"></script>
+        <?php else : ?>
+            <p>
+                <span class="error">You are not authorized to access this page.</span> Please <a href="index.php">login</a>.
+            </p>
+        <?php endif; ?>
+
 </body>
 </html>

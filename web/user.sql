@@ -16,6 +16,7 @@ CREATE TABLE  `projekt`.`login_attempts` (
 CREATE TABLE `projekt`.`projekt` (
 `projekt_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
 `projekt_name` VARCHAR( 30 ) NOT NULL ,
+'kategori' varchar(255) NOT NULL,
 `start_date` DATE NOT NULL ,
 `end_date` DATE ,
 `info` CHAR( 255 ) 
