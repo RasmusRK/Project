@@ -70,7 +70,7 @@ sec_session_start();
 
         			<div>
         			<br>
-        			<input class="btn left" type="button" value="Accepter"/> 
+        			<input class="submit" type="submit" value="submit"/> 
         			</div>
 
         			<?php

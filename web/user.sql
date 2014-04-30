@@ -16,11 +16,11 @@ CREATE TABLE  `projekt`.`login_attempts` (
 CREATE TABLE `projekt`.`projekt` (
 `projekt_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
 `projekt_name` VARCHAR( 30 ) NOT NULL ,
-'kategori' varchar(255) NOT NULL,
+`kategori` varchar(255) ,
 `start_date` DATE NOT NULL ,
 `end_date` DATE ,
-`info` CHAR( 255 ) 
-) ENGINE = INNODB
+`info` varCHAR( 2000 ) 
+) ENGINE = INNODB;
 
 CREATE TABLE `projekt`.`work_on` (
 `work_on_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
@@ -31,7 +31,7 @@ CREATE TABLE `projekt`.`work_on` (
 `info` varchar( 2000 ),
 FOREIGN KEY (projekt_id) REFERENCES projekt(projekt_id),
 FOREIGN KEY(user_id) REFERENCES users(id)
-) ENGINE = INNODB
+) ENGINE = INNODB;
 
 INSERT INTO projekt (projekt_name, start_date, info)
 VALUES ("fly1", '2014-03-30', "fly1 skal males blablabla");
@@ -41,4 +41,3 @@ VALUES ("opfyldning", '2014-10-03', '2014-04-15', "kantinen skal fyldes op med Ã
 
 INSERT INTO projekt (projekt_name, start_date, info)
 VALUES ("oprydning", '2014-01-01', "der skal ryddes op i flygaragen");
-
