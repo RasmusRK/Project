@@ -19,7 +19,7 @@ CREATE TABLE `projekt`.`work_on` (
 `projekt_id` INT NOT NULL FOREIGN KEY REFERENCES projekt(projekt_id) ,
 `hours` INTEGER NOT NULL ,
 `date` INTEGER NOT NULL ,
-`info` char( 255 )
+`info` varchar( 2000 )
 ) ENGINE = INNODB
 
 CREATE TABLE `projekt`.`projekt` (
