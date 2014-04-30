@@ -233,11 +233,11 @@ $result = mysqli_query($mysqli,"SELECT projekt_id, projekt_name, kategori, start
     echo"<table class='pure-table pure-table-striped'>
     <thead>
     <tr>
-    <th>projekt id</th>
-    <th>projekt navn</th>
-    <th>kategori</th>
-    <th>start dato</th>
-    <th>slut dato</th>
+    <th>Projekt id</th>
+    <th>Projekt navn</th>
+    <th>Kategori</th>
+    <th>Start-dato</th>
+    <th>Slut-dato</th>
     </tr>
     </thead>";
 
