@@ -216,3 +216,10 @@ function checkbrute($user_id, $mysqli) {
         }
     }
 }
+
+
+function euroDate($date){
+    $dateTime = new DateTime($date);
+    $formatted_date=date_format ( $dateTime, 'd-m-Y' );
+    return $formatted_date;
+}
