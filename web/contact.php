@@ -19,7 +19,7 @@
     <?php if (login_check($mysqli) == true) : ?>
             <div id="layout">
     <!-- Menu toggle -->
-    <a href="#menu" id="menuLink" class="menu-link">
+    <a href="main.php" id="menuLink" class="menu-link">
         <!-- Hamburger icon -->
         <span></span>
     </a>
@@ -29,12 +29,13 @@
             <a class="pure-menu-heading" href="main.php">Test</a>
 
             <ul>
-                <li><a href="mine_projekter.html">Mine projekter</a></li>
-                <li><a href="alle_projekter.html">Alle projekter</a></li>
-                <a href="historik.html">Min historik</a>
+                <li><a href="my_projects.php">Mine projekter</a></li>
+                <li><a href="all_projects.php">Alle projekter</a></li>
+                <li><a href="history.php">Min historik</a></li>
                 <li><a href="contact.php">Kontakt</a></li>
                 <br><br>
-                <li>Logget ind som 123</li>
+                <li>Logget ind som: <?php echo $_SESSION['username'];?></li>
+                <li>Du har bruger id: <?php echo $_SESSION['user_id'];?></li>
                 <li><a href="includes/logout.php">Log ud</a></li>
             </ul>
         </div>
