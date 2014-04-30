@@ -8,4 +8,10 @@
 
 4. Implementer adminstrator funktion - DONE
 
-5. tilføj css til register 
+5. tilføj css til register - DONE
+
+6.  Opret projekt table
+
+7.  opret historik table
+
+8. 
