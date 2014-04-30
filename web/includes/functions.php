@@ -192,27 +192,64 @@ function esc_url($url) {
 function checkbrute($user_id, $mysqli) {
     // Get timestamp of current time 
     $now = time();
- 
+    echo "1";
     // All login attempts are counted from the past 10 min. 
-    $valid_attempts = $now - (600);
+    $valid_attempts = $now - 600;
  
     if ($stmt = $mysqli->prepare("SELECT time 
-                             FROM login_attempts <code><pre>
-                             WHERE user_id = ? 
-                             AND time > $valid_attempts")) {
+                                  FROM login_attempts
+                                  WHERE user_id = $user_id 
+                                  AND time > $valid_attempts")) {
         $stmt->bind_param('i', $user_id);
- 
+        echo "2";
         // Execute the prepared query. 
         $stmt->execute();
         $stmt->store_result();
- 
+
         // If there have been more than 5 failed logins 
         if ($stmt->num_rows > 5) {
             return true;
-            echo "true";
+            echo $stmt;
         } else {
             return false;
-            echo "false";
+            echo $stmt;
         }
     }
+}
+
+
+function euroDate($date){
+    if($date != null){
+    $dateTime = new DateTime($date);
+    $formatted_date=date_format ( $dateTime, 'd-m-Y' );
+    return $formatted_date;
+    }
+}
+
+function show_projects($mysqli){
+
+$result = mysqli_query($mysqli,"SELECT projekt_id, projekt_name, kategori, start_date, end_date FROM projekt");
+
+    echo"<table class='pure-table pure-table-striped'>
+    <thead>
+    <tr>
+    <th>projekt id</th>
+    <th>projekt navn</th>
+    <th>kategori</th>
+    <th>start dato</th>
+    <th>slut dato</th>
+    </tr>
+    </thead>";
+
+while($row = mysqli_fetch_array($result)) {
+  echo "<tr>";
+  echo "<td><a href = 'add_time.php?pid=$row[0]'> $row[0]</a> </td>";
+  echo "<td>" . $row[1] . "</td>";
+  echo "<td>" . $row[2] . "</td>";
+  echo "<td>" . euroDate($row[3]) . "</td>";
+  echo "<td>" . euroDate($row[4]) . "</td>";
+  echo "</tr>";
+}
+
+echo "</table>";
 }
