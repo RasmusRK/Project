@@ -140,13 +140,12 @@ function check_admin($mysqli) {
         if ($stmt = $mysqli->prepare("SELECT admin 
                                       FROM users 
                                       WHERE id = $user_id LIMIT 1")) {
-            // Bind "$user_id" to parameter. 
             $stmt->execute();
             $stmt->store_result();
             $stmt->bind_result($admin);
             $stmt->fetch();
             if($admin == "1") {
-                return true;
+                return true;    
             }
             else {
                 return false;}
@@ -195,12 +194,12 @@ function checkbrute($user_id, $mysqli) {
     $now = time();
  
     // All login attempts are counted from the past 2 hours. 
-    $valid_attempts = $now - (2 * 60 * 60);
+    $valid_attempts = $now - (600);
  
     if ($stmt = $mysqli->prepare("SELECT time 
                              FROM login_attempts <code><pre>
                              WHERE user_id = ? 
-                            AND time > '$valid_attempts'")) {
+                             AND time > '$valid_attempts'")) {
         $stmt->bind_param('i', $user_id);
  
         // Execute the prepared query. 
