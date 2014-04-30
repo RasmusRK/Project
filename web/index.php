@@ -7,6 +7,7 @@ sec_session_start();
 if (login_check($mysqli) == true) {
     $logged = 'in';
     header('location:main.php');
+    die();
 } else {
     $logged = 'out';
 }
