@@ -40,3 +40,4 @@ VALUES ("opfyldning", '2014-10-03', '2014-04-15', "kantinen skal fyldes op med Ã
 
 INSERT INTO projekt (projekt_name, start_date, info)
 VALUES ("oprydning", '2014-01-01', "der skal ryddes op i flygaragen");
+
