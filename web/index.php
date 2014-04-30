@@ -6,10 +6,15 @@ sec_session_start();
 
 if (login_check($mysqli) == true) {
     $logged = 'in';
+    header('location:main.php');
 } else {
     $logged = 'out';
 }
+
+
 ?>
+
+
 
 <!DOCTYPE html>
 <html>
