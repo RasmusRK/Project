@@ -57,7 +57,7 @@ sec_session_start();
             <h2 class="content-subhead">Titel</h2>
             <p>
                 Tekst
-                
+                <?php test2($mysqli); ?>
             </p>
         </div>
     </div>

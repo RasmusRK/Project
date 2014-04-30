@@ -223,3 +223,64 @@ function euroDate($date){
     $formatted_date=date_format ( $dateTime, 'd-m-Y' );
     return $formatted_date;
 }
+
+function show_projects($mysqli){
+
+    echo"<table class='pure-table pure-table-striped'>
+    <thead>
+    <tr>
+    <th>projekt id</th>
+    <th>projekt navn</th>
+    <th>kategori</th>
+    <th>start dato</th>
+    <th>slut dato</th>
+    </tr>
+    </thead>";
+
+    foreach($mysqli->query("SELECT projekt_id, projekt_name, kategori, start_date, end_date FROM projekt") as $row) {
+        $projekt_id = $row[0];
+        $projekt_name = $row[1];
+        $kategori = $row[2];
+        $start_date = $row[3];
+        $end_date = $row[4];
+  echo "<tr>";
+  echo "<td>$projekt_id</td>";
+  echo "<td>$projekt_name</td>";
+  echo "<td>$kategori</td>";
+  echo "<td>$start_date</td>";
+  echo "<td>$end_date</td>";
+  echo "</tr>";
+    }
+
+}
+
+function test2($mysqli){
+    
+
+
+$result = mysqli_query($mysqli,"SELECT projekt_id, projekt_name, kategori, start_date, end_date FROM projekt");
+
+    echo"<table class='pure-table pure-table-striped'>
+    <thead>
+    <tr>
+    <th>projekt id</th>
+    <th>projekt navn</th>
+    <th>kategori</th>
+    <th>start dato</th>
+    <th>slut dato</th>
+    </tr>
+    </thead>";
+
+while($row = mysqli_fetch_array($result)) {
+  echo "<tr>";
+  echo "<td>" . $row[0] . "</td>";
+  echo "<td>" . $row[1] . "</td>";
+  echo "<td>" . $row[2] . "</td>";
+  echo "<td>" . $row[3] . "</td>";
+  echo "<td>" . $row[4] . "</td>";
+  echo "</tr>";
+}
+
+echo "</table>";
+
+}
