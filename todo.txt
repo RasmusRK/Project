@@ -10,10 +10,19 @@
 
 5. tilføj css til register - DONE
 
-6.  Opret projekt table
+6.  Opret projekt table - DONE
 
-7.  opret historik table
+7.  opret historik table - DONE
 
 8.  opret "opret projekt side"
 
 9. få brute force til, at virke!
+
+10. Skriv flere todo punkter
+
+
+function euroDate($date){
+    $dateTime = new DateTime($date);
+    $formatted_date=date_format ( $dateTime, 'd-m-Y' );
+    return $formatted_date;
+}
