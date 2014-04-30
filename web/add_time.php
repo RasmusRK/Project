@@ -74,29 +74,29 @@ sec_session_start();
         			</div>
 
         			<?php
-        			if(isset($_REQUEST['timer'], $_REQUEST['dato'], $_REQUEST['info'])) {
-                
-                		$timer = $_REQUEST['timer'];
-    					$dato = $_REQUEST['dato'];
-    					$info = $_REQUEST['info'];
-    					$userid = $_SESSION['user_id'];
-                        
-                        if(!empty($_REQUEST['pid'])){
-                            $pid = $_REQUEST['pid'];
-                        }
+            			if(isset($_REQUEST['timer'], $_REQUEST['dato'], $_REQUEST['info'])) {
+                    
+                    		$timer = $_REQUEST['timer'];
+        					$dato = $_REQUEST['dato'];
+        					$info = $_REQUEST['info'];
+        					$userid = $_SESSION['user_id'];
+                            
+                            if(!empty($_REQUEST['pid'])){
+                                $pid = $_REQUEST['pid'];
+                            }
 
-             if ($insert_stmt = $mysqli->prepare("INSERT INTO work_on (user_id, projekt_id, hours, date, info) VALUES ($userid, $pid, $timer, $dato,'$info')")) {
-            //$insert_stmt->bind_param($userid, $pid, $timer, $dato,$info);
-            // Execute the prepared query.
-            if (! $insert_stmt->execute()) {
-                header('Location: ../error.php?err=Registration failure: INSERT');
-            }
-        }
-        header('Location: ./all_projects.php');
+                 if ($insert_stmt = $mysqli->prepare("INSERT INTO work_on (user_id, projekt_id, hours, date, info) VALUES ($userid, $pid, $timer, $dato,'$info')")) {
+                $insert_stmt->bind_param($userid, $pid, $timer, $dato,$info);
+                // Execute the prepared query.
+                      if (! $insert_stmt->execute()) {
+                    header('Location: ../error.php?err=Registration failure: INSERT');
+                       }
+                     }
+                     header('Location: ./all_projects.php');
 
-				
-                        }
-					
+    				
+                            }
+    					
 
 
 
