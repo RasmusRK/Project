@@ -75,7 +75,6 @@ function login($email, $password, $mysqli) {
                     $mysqli->query("INSERT INTO login_attempts(user_id, time)
                                     VALUES ('$user_id', '$now')");
                     return false;
-                    echo "count up";
                 }
             }
         } else {
@@ -194,7 +193,7 @@ function checkbrute($user_id, $mysqli) {
     // Get timestamp of current time 
     $now = time();
  
-    // All login attempts are counted from the past 2 hours. 
+    // All login attempts are counted from the past 10 min. 
     $valid_attempts = $now - (600);
  
     if ($stmt = $mysqli->prepare("SELECT time 
@@ -208,10 +207,12 @@ function checkbrute($user_id, $mysqli) {
         $stmt->store_result();
  
         // If there have been more than 5 failed logins 
-        if ($stmt->num_rows > 5) {
+        if ($stmt->num_rows < 5) {
             return true;
+            echo "true";
         } else {
             return false;
+            echo "false";
         }
     }
 }

@@ -31,6 +31,7 @@ if (login_check($mysqli) == true) {
         <?php
         if (isset($_GET['error'])) {
             echo '<p class="error">Error Logging In!</p>';
+            checkbrute($user_id, $mysqli);
         }
         ?> 
         <form class = "boxCont" action="includes/process_login.php" method="post" name="login_form">                      

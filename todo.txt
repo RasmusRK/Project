@@ -15,3 +15,5 @@
 7.  opret historik table
 
 8.  opret "opret projekt side"
+
+9. få brute force til, at virke!
