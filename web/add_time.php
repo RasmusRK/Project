@@ -41,7 +41,7 @@ sec_session_start();
 
     <div id="main">
         <div class="header">
-            <h1>Tilføj tid til projekt: <?php echo $_REQUEST['name']; ?></h1>
+            <h1>Tilføj tid til projekt: </h1>
         </div>
 
         <div class="content">
