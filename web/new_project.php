@@ -12,7 +12,7 @@ sec_session_start();
 <meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
     <title>Projects</title>
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure.css">
-<link rel="stylesheet" href="css/pure.css" />
+<link rel="stylesheet" href="css/pure.css"/>
 <link rel="stylesheet" href="css/pure-form.css" />
 
     <!--[if lte IE 8]>
@@ -83,7 +83,7 @@ sec_session_start();
                     <label for="info"><b>Info</b></label>
                     <textarea type="text" rows="4" cols="50"></textarea>
                     <br><br><br><br>
-                    <input class="btn left" type="button" value="Tilføj projekt" onclick="#"/> 
+                    <input class="btn left" type="submit" value="Tilføj projekt" onclick="#"/> 
             </fieldset>
             </form>
 
