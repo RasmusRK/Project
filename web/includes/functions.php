@@ -192,27 +192,27 @@ function esc_url($url) {
 function checkbrute($user_id, $mysqli) {
     // Get timestamp of current time 
     $now = time();
- 
+    echo "1";
     // All login attempts are counted from the past 10 min. 
-    $valid_attempts = $now - (600);
+    $valid_attempts = $now - 600;
  
     if ($stmt = $mysqli->prepare("SELECT time 
-                             FROM login_attempts <code><pre>
-                             WHERE user_id = ? 
-                             AND time > $valid_attempts")) {
+                                  FROM login_attempts
+                                  WHERE user_id = $user_id 
+                                  AND time > $valid_attempts")) {
         $stmt->bind_param('i', $user_id);
- 
+        echo "2";
         // Execute the prepared query. 
         $stmt->execute();
         $stmt->store_result();
- 
+
         // If there have been more than 5 failed logins 
         if ($stmt->num_rows > 5) {
             return true;
-            echo "true";
+            echo $stmt;
         } else {
             return false;
-            echo "false";
+            echo $stmt;
         }
     }
 }
