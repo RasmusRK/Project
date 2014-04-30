@@ -15,11 +15,13 @@ CREATE TABLE  `projekt`.`login_attempts` (
 
 CREATE TABLE `projekt`.`work_on` (
 `work_on_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
-`user_id` INT NOT NULL FOREIGN KEY REFERENCES users(id) ,
-`projekt_id` INT NOT NULL FOREIGN KEY REFERENCES projekt(projekt_id) ,
+`user_id` INT NOT NULL  ,
+`projekt_id` INT NOT NULL ,
 `hours` INTEGER NOT NULL ,
 `date` INTEGER NOT NULL ,
-`info` char( 255 )
+`info` varchar( 2000 ),
+FOREIGN KEY (projekt_id) REFERENCES projekt(projekt_id),
+FOREIGN KEY(user_id) REFERENCES users(id)
 ) ENGINE = INNODB
 
 CREATE TABLE `projekt`.`projekt` (
