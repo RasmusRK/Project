@@ -219,9 +219,11 @@ function checkbrute($user_id, $mysqli) {
 
 
 function euroDate($date){
+    if($date != null){
     $dateTime = new DateTime($date);
     $formatted_date=date_format ( $dateTime, 'd-m-Y' );
     return $formatted_date;
+    }
 }
 
 function show_projects($mysqli){
@@ -244,8 +246,8 @@ while($row = mysqli_fetch_array($result)) {
   echo "<td>" . $row[0] . "</td>";
   echo "<td>" . $row[1] . "</td>";
   echo "<td>" . $row[2] . "</td>";
-  echo "<td>" . $row[3] . "</td>";
-  echo "<td>" . $row[4] . "</td>";
+  echo "<td>" . euroDate($row[3]) . "</td>";
+  echo "<td>" . euroDate($row[4]) . "</td>";
   echo "</tr>";
 }
 

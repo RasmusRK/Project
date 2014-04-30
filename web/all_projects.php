@@ -52,12 +52,13 @@ sec_session_start();
         <div class="header">
             <h1>Alle projekter</h1>
             <h2>Liste over alle projekter</h2>
+            
         </div>
 
         <div class="content">
             <h2 class="content-subhead">Titel</h2>
             <p>
-                Tekst
+                <?php show_projects($mysqli); ?>
             </p>
         </div>
     </div>
