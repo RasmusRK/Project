@@ -80,15 +80,28 @@ sec_session_start();
     					$dato = $_REQUEST['dato'];
     					$info = $_REQUEST['info'];
     					$userid = $_SESSION['user_id'];
-                        $pid = $_REQUEST['pid'];
-
-						$SQL = "INSERT INTO work_on (user_id, projekt_id, hours, date, info)
-							   	VALUES ($userid, $pid, $timer, $dato, $info)";
-                        $stmt = $mysqli->prepare($SQL);
-                        if($stmt) {
-                            $stmt->execute();
+                        
+                        if(!empty($_REQUEST['pid'])){
+                            $pid = $_REQUEST['pid'];
                         }
-					}
+
+             if ($insert_stmt = $mysqli->prepare("INSERT INTO work_on (user_id, projekt_id, hours, date, info) VALUES ($userid, $pid, $timer, $dato,'$info')")) {
+            //$insert_stmt->bind_param($userid, $pid, $timer, $dato,$info);
+            // Execute the prepared query.
+            if (! $insert_stmt->execute()) {
+                header('Location: ../error.php?err=Registration failure: INSERT');
+            }
+        }
+        header('Location: ./all_projects.php');
+
+				
+                        }
+					
+
+
+
+
+
 					?>
         		</form>
         </div>
