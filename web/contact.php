@@ -59,31 +59,36 @@ sec_session_start();
         <div class="content">
             <h2 class="content-subhead"></h2>
             
-            <form class="pure-form pure-form-stacked" method="post" action="contactengine.php">
+            <form class="pure-form pure-form-stacked" method="post" action="<?php echo esc_url($_SERVER['PHP_SELF']); ?>">
+
                 <div>
-                <label for="Name"><b>Navn</b></label>
-                <input type="text" name="Name" id="Name" />
+                <label for="firstname"><b>Fornavn</b></label>
+                <input type="text" name="first_name">
                 </div>
+
                 <br><br>
+
                 <div>
-                <label for="City"><b>By</b></label>
-                <input type="text" name="City" id="City" />
+                <label for="lastname"><b>Efternavn</b></label>
+                <input type="text" name="last_name">
                 </div>
+
                 <br><br>
+                
                 <div>
-                <label for="Email"><b>Email</b></label>
-                <input type="text" name="Email" id="Email" />
+                <label for="email"><b>Email</b></label>
+                <input type="text" name="email">
                 </div>
+                
                 <br><br>
-                <div>
-                <label for="Message"><b>Besked</b></label>
-                <textarea type="text" name="Message" rows="5" cols="50" id="Message"></textarea>
-                </div>
-                <br><br><br><br><br>
-                <input type="submit" name="submit" value="Submit" class="btn left" />
-            </form>
-            
-            <div style="clear: both;"></div>
+                
+                <label for="message"><b>Besked</b></label>
+                <textarea rows="5" name="message" cols="50"></textarea>
+                
+                <br><br><br><br>
+                
+                <input class="btn left" type="submit" name="submit" value="Submit">
+                </form>
         
     </div>
 </div>
