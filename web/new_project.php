@@ -12,6 +12,8 @@ sec_session_start();
 <meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
     <title>Projects</title>
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure.css">
+<link rel="stylesheet" href="css/pure.css" />
+<link rel="stylesheet" href="css/pure-form.css" />
 
     <!--[if lte IE 8]>
         <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
@@ -39,8 +41,6 @@ sec_session_start();
                 <li><a href="history.php">Min historik</a></li>
                 <li><a href="contact.php">Kontakt</a></li>
                 <br><br>
-                <li>Logget ind som: <?php echo $_SESSION['username'];?></li>
-                <li>Du har bruger id: <?php echo $_SESSION['user_id'];?></li>
                 <li><a href="includes/logout.php">Log ud</a></li>
             </ul>
         </div>
@@ -48,17 +48,45 @@ sec_session_start();
 
     <div id="main">
         <div class="header">
-            <h1>Admin side</h1>
-            <h2>Beskrivelse</h2>
-
-
+            <h1>Opret nyt projekt</h1>
+            <h2>Udfyld følgende for oprette et nyt projekt</h2>
         </div>
 
         <div class="content">
-            <h2 class="content-subhead">Titel</h2>
-            <p>
-                Tekst
-            </p>
+            <h2 class="content-subhead"></h2>
+            
+            <form class="pure-form pure-form-stacked">
+            <fieldset>
+                    <div>
+                    <label for="projektname"><b>Projekt navn</b></label>
+                    <input id="projektname" type="text" placeholder="Indtast navn" />
+                    </div>
+                    <br><br>
+                    <div>
+                    <label for="category"><b>Kategori</b></label>
+                    <select><a href="#">Tilføj ny kategori</a>
+                        <option value="0">Vælg kategori</option>
+                        <?php ?>
+                    </select>
+                    <br><br>
+                    <a href="#">Tilføj ny kategori</a>
+                    </div>
+                    <br>
+                    <div>
+                    <label for="date"><b>Dato</b></label>
+                    <input id="date" type="date"/>
+                    </div>
+                    <br><br>
+                    <label for="description"><b>Beskrivelse af projekt</b></label>
+                    <input id="description" type="text" placeholder="Indtast beskrivelse af projektet"/>
+                    <br><br>
+                    <label for="info"><b>Info</b></label>
+                    <textarea type="text" rows="4" cols="50"></textarea>
+                    <br><br><br><br>
+                    <input class="btn left" type="button" value="Tilføj projekt" onclick="#"/> 
+            </fieldset>
+            </form>
+
         </div>
     </div>
 </div>
