@@ -36,7 +36,7 @@ INSERT INTO projekt (projekt_name, start_date, info)
 VALUES ("fly1", 2014-30-04, "fly1 skal males blablabla");
 
 INSERT INTO projekt (projekt_name, start_date, end_date, info)
-VALUES ("opfyldning", 2014-10-03, 15042014, "kantinen skal fyldes op med øl");
+VALUES ("opfyldning", 2014-10-03, 2014-15-04, "kantinen skal fyldes op med øl");
 
 INSERT INTO projekt (projekt_name, start_date, info)
 VALUES ("oprydning", 2014-01-01, "der skal ryddes op i flygaragen");
