@@ -6,6 +6,6 @@
 
 3. velkomst siden for brugere - DONE
 
-4. Implementer adminstrator funktion
+4. Implementer adminstrator funktion - DONE
 
-5. tilføj css til register
+5. tilføj css til register 

@@ -39,7 +39,8 @@ sec_session_start();
                 <a href="historik.html">Min historik</a>
                 <li><a href="contact.php">Kontakt</a></li>
                 <br><br>
-                <li>Logget ind som 123</li>
+                <li>Logget ind som: <?php echo $_SESSION['username'];?></li>
+                <li>Du har bruger id: <?php echo $_SESSION['user_id'];?></li>
                 <li><a href="includes/logout.php">Log ud</a></li>
             </ul>
         </div>
@@ -49,12 +50,19 @@ sec_session_start();
         <div class="header">
             <h1>Alle projekter</h1>
             <h2>Liste over projekter</h2>
+
+
         </div>
 
         <div class="content">
             <h2 class="content-subhead">Titel</h2>
             <p>
                 Tekst
+                <?php if (check_admin($mysqli) == true) : ?>
+                    <br> You are admin! <br>
+                <?php else : ?>
+                    <br> You are not admin! <br>
+                <?php endif; ?>
             </p>
         </div>
     </div>
@@ -67,5 +75,7 @@ sec_session_start();
                 <span class="error">You are not authorized to access this page.</span> Please <a href="index.php">login</a>.
             </p>
         <?php endif; ?>
+
     </body>
+
 </html>

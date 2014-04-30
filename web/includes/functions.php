@@ -133,9 +133,9 @@ function login_check($mysqli) {
     }
 }
 
-function check_admin($mysql) {
+function check_admin($mysqli) {
 
-    if(login_check($mysql) == true) {
+    if(login_check($mysqli) == true) {
         $user_id = $_SESSION['user_id'];
         if ($stmt = $mysqli->prepare("SELECT admin 
                                       FROM users 
@@ -145,17 +145,17 @@ function check_admin($mysql) {
             $stmt->store_result();
             $stmt->bind_result($admin);
             $stmt->fetch();
-            if($admin == 1) {
+            if($admin == "1") {
                 return true;
             }
             else {
-                return false; }
+                return false;}
         }
         else {
-            return false; }
+            return false;}
     }
     else {
-        return false; }
+        return false;}
 }
 
 
