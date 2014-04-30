@@ -79,9 +79,10 @@ sec_session_start();
                 		$timer = $_REQUEST['timer'];
     					$dato = $_REQUEST['dato'];
     					$info = $_REQUEST['info'];
+    					$userid = $_SESSION['user_id'];
 
 						$SQL = "INSERT INTO work_on (user_id, projekt_id, hours, date, info)
-							   	VALUES (1, 1, $timer, $dato, $info)";	
+							   	VALUES ($userid, 1, $timer, $dato, $info)";	
 					}
 					?>
         		</form>
