@@ -12,6 +12,8 @@ sec_session_start();
 <meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
     <title>Projects</title>
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure.css">
+<link rel="stylesheet" href="css/pure.css" />
+<link rel="stylesheet" href="css/pure-form.css" />
 
     <!--[if lte IE 8]>
         <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
@@ -41,14 +43,13 @@ sec_session_start();
 
     <div id="main">
         <div class="header">
-            <h1>Tilføj tid til projekt: </h1>
+            <h1>Tilføj tid til projekt</h1>
         </div>
 
         <div class="content">
             <h2 class="content-subhead"></h2>
             <p>
                 <form class="boxCont" action="<?php echo esc_url($_SERVER['PHP_SELF']); ?>" method="post" name="registration_form">
-        
 	                <ul>
 	                <li> Indtast antal timer og dato </li>
 			        </ul>
