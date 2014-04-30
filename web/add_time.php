@@ -34,7 +34,7 @@ sec_session_start();
             <a class="pure-menu-heading" align="center" href="main.php"><img src="logo1.png"></a>
 
             <ul>
-                <li><a href="">Tilbage</a></li>
+                <li><a href="all_projects.php">Tilbage</a></li>
             </ul>
         </div>
     </div>
@@ -55,17 +55,17 @@ sec_session_start();
 
         			<div>
             			<label for="timer">Timer</label>
-            			<input id ="timer" type="text" name="timer" />
+            			<input id ="timer" type="text" name="timer" required />
 	        		</div>
 
 	        		<div>
     	        		<label for="dato">Dato</label>
-        	    		<input id ="dato" type="text" name="dato" />
+        	    		<input id ="dato" type="text" name="dato" required />
         			</div>
 
         			<div>
-        				<label for="info">Info</label>
-        				<input id ="info" type="text" name="dato" />
+        				<label for="info">Beskrivelse</label>
+        				<input id ="info" type="text" name="info" required/>
         			</div>
 
         			<div>
@@ -83,11 +83,14 @@ sec_session_start();
                         $pid = $_REQUEST['pid'];
 
 						$SQL = "INSERT INTO work_on (user_id, projekt_id, hours, date, info)
-							   	VALUES ($userid, $pid, $timer, $dato, $info)";	
+							   	VALUES ($userid, $pid, $timer, $dato, $info)";
+                        $stmt = $mysqli->prepare($SQL);
+                        if($stmt) {
+                            $stmt->execute();
+                        }
 					}
 					?>
         		</form>
-
         </div>
     </div>
 </div>

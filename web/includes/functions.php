@@ -244,10 +244,10 @@ $result = mysqli_query($mysqli,"SELECT projekt_id, projekt_name, kategori, start
 while($row = mysqli_fetch_array($result)) {
   echo "<tr>";
   echo "<td><a href = 'add_time.php?pid=$row[0]'> $row[0]</a> </td>";
-  echo "<td>" . $row[1] . "</td>";
+  echo "<td>" . $row[1] . "</td>";  
   echo "<td>" . $row[2] . "</td>";
-  echo "<td>" . euroDate($row[3]) . "</td>";
-  echo "<td>" . euroDate($row[4]) . "</td>";
+  echo "<td>" . ($row[3]) . "</td>";
+  echo "<td>" . ($row[4]) . "</td>";
   echo "</tr>";
 }
 
