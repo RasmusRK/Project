@@ -31,7 +31,7 @@ sec_session_start();
 
     <div id="menu">
         <div class="pure-menu pure-menu-open">
-            <a class="pure-menu-heading" href="main.php">Test</a>
+            <a class="pure-menu-heading" align="center" href="main.php"><img src="logo1.png"></a>
 
             <ul>
                 <li><a href="my_projects.php">Mine projekter</a></li>

@@ -24,14 +24,14 @@ sec_session_start();
         <?php if (login_check($mysqli) == true) : ?>
             <div id="layout">
     <!-- Menu toggle -->
-    <a href="main.php" id="menuLink" class="menu-link">
+    <a href="" id="menuLink" class="menu-link">
         <!-- Hamburger icon -->
         <span></span>
     </a>
 
     <div id="menu">
         <div class="pure-menu pure-menu-open">
-            <a class="pure-menu-heading" href="main.php">Test</a>
+            <a class="pure-menu-heading" align="center" href="main.php"><img src="logo1.png"></a>
 
             <ul>
                 <li><a href="my_projects.php">Mine projekter</a></li>
@@ -51,8 +51,8 @@ sec_session_start();
 
     <div id="main">
         <div class="header">
-            <h1>Alle projekter</h1>
-            <h2>Liste over projekter</h2>
+            <h1>Forside</h1>
+            <h2>Beskrivelse</h2>
 
 
         </div>

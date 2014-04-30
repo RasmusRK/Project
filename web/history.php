@@ -19,14 +19,14 @@
 
 <div id="layout">
     <!-- Menu toggle -->
-    <a href="main.php" id="menuLink" class="menu-link">
+    <a href="#menu" id="menuLink" class="menu-link">
         <!-- Hamburger icon -->
         <span></span>
     </a>
 
     <div id="menu">
         <div class="pure-menu pure-menu-open">
-            <a class="pure-menu-heading" href="#">Test</a>
+            <a class="pure-menu-heading" align="center" href="main.php"><img src="logo1.png"></a>
 
             <ul>
                 <li><a href="my_projects.php">Mine projekter</a></li>
