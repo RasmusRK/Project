@@ -16,6 +16,7 @@ CREATE TABLE  `projekt`.`login_attempts` (
 CREATE TABLE `projekt`.`projekt` (
 `projekt_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
 `projekt_name` VARCHAR( 30 ) NOT NULL ,
+'kategori' varchar(255) NOT NULL,
 `start_date` DATE NOT NULL ,
 `end_date` DATE ,
 `info` CHAR( 255 ) 
@@ -40,3 +41,4 @@ VALUES ("opfyldning", '2014-10-03', '2014-04-15', "kantinen skal fyldes op med Ã
 
 INSERT INTO projekt (projekt_name, start_date, info)
 VALUES ("oprydning", '2014-01-01', "der skal ryddes op i flygaragen");
+
