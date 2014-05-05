@@ -16,7 +16,7 @@ if (login_check($mysqli) == true) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Secure Login: Log In</title>
+    <title>Project</title>
     <link rel="stylesheet" href="css/pure.css" />
     <script type="text/JavaScript" src="js/sha512.js"></script> 
     <script type="text/JavaScript" src="js/forms.js"></script> 
