@@ -58,7 +58,7 @@ include_once 'includes/functions.php';
 
         <div>
         <br>
-        <input class="btn left" type="button" value="Register" 
+        <input class="btn left" type="button" value="Opret bruger" 
                   onclick="return regformhash(this.form,
                                   this.form.username,
                                   this.form.email,

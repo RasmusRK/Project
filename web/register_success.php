@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="styles/main.css" />
     </head>
     <body>
-        <h1>Registration successful!</h1>
-        <p>You can now go back to the <a href="index.php">login page</a> and log in</p>
+        <h1>Brugeren er nu oprettet!</h1>
+        <p>Du kan nu gå tilbage til <a href="index.php">login siden</a> og logge ind.</p>
     </body>
 </html>
