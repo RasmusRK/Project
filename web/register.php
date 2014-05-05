@@ -6,7 +6,7 @@ include_once 'includes/functions.php';
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Secure Login: Registration Form</title>
+        <title>Project</title>
         <script type="text/JavaScript" src="js/sha512.js"></script> 
         <script type="text/JavaScript" src="js/forms.js"></script>
         <link rel="stylesheet" href="css/pure.css" />
@@ -24,7 +24,7 @@ include_once 'includes/functions.php';
 
         <form class="boxCont" action="<?php echo esc_url($_SERVER['PHP_SELF']); ?>" method="post" name="registration_form">
         
-                <ul>
+        <ul>
             <li>Emails skal have et gyldig email format</li>
             <li>Passwords skal være mindst 6 tegn langt</li>
             <li>Passwords må indeholde følgende
@@ -34,7 +34,6 @@ include_once 'includes/functions.php';
                     <li>Mindst et nummer (0..9)</li>
                 </ul>
             </li>
-            <li>Dit password og konfirmationen skal være ens</li>
         </ul>
         <div>
             <label for="username">Brugernavn</label>
