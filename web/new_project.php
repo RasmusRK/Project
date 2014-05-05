@@ -1,9 +1,9 @@
 <?php
 include_once 'includes/db_connect.php';
 include_once 'includes/functions.php';
- 
 sec_session_start();
 ?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -90,7 +90,7 @@ sec_session_start();
                     if(isset($_REQUEST['projekt_name'], 
                              $_REQUEST['kategori'], 
                              $_REQUEST['date'], 
-                             $_REQUEST['description']
+                             $_REQUEST['description'],
                              $_REQUEST['info'])) {
                     
                     $project_name = $_REQUEST['projekt_name'];
@@ -106,7 +106,7 @@ sec_session_start();
                     if ($insert_stmt = $mysqli->prepare(
                         "INSERT INTO projekt (user_id, projekt_id, projekt_name, start_date, info) 
                          VALUES ($userid, $pid, $project_name, $category, $sdate, $description,'$info')")) {
-                                    $insert_stmt->bind_param($userid, $pid, $, $dato, $info, $project_name, $category, $sdate, $description,'$info');
+                                    $insert_stmt->bind_param($userid, $pid, $dato, $info, $project_name, $category, $sdate, $description,'$info');
                 // Execute the prepared query.
                     if (! $insert_stmt->execute()) {
                     header('Location: ../error.php?err=Registration failure: INSERT');

@@ -43,8 +43,6 @@ sec_session_start();
                 <li><a href="history.php">Min historik</a></li>
                 <li><a href="contact.php">Kontakt</a></li>
                 <br><br>
-                <li>Logget ind som: <?php echo $_SESSION['username'];?></li>
-                <li>Du har bruger id: <?php echo $_SESSION['user_id'];?></li>
                 <li><a href="includes/logout.php">Log ud</a></li>
             </ul>
         </div>
