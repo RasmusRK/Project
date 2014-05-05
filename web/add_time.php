@@ -72,7 +72,7 @@ sec_session_start();
                     <br><br>
         			<div>
         			
-        			<input class="btn left" type="submit" value="Submit"/> 
+        			<input class="btn right" type="submit" value="Submit"/> 
         			</div>
 
         			<?php
