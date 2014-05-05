@@ -72,7 +72,7 @@ sec_session_start();
 <script src="js/ui.js"></script>
         <?php else : ?>
             <p>
-                <span class="error">You are not authorized to access this page.</span> Please <a href="index.php">login</a>.
+                <span class="error">Du har ikke rettigheder til at komme ind på siden.</span> Gå venligst tilbage til <a href="index.php">login siden</a>.
             </p>
         <?php endif; ?>
 
