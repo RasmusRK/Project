@@ -33,7 +33,7 @@ sec_session_start();
 
     <div id="menu">
         <div class="pure-menu pure-menu-open">
-            <a class="pure-menu-heading" align="center" href="main.php"><img src="logo1.png"></a>
+            <a class="pure-menu-heading" align="center" href="main.php"><img src="img/logo1.png"></a>
 
             <ul>
                 <li><a href="all_projects.php">Tilbage</a></li>

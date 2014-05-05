@@ -33,7 +33,7 @@ sec_session_start();
 
     <div id="menu">
         <div class="pure-menu pure-menu-open">
-            <a class="pure-menu-heading" align="center" href="main.php"><img src="logo1.png"></a>
+            <a class="pure-menu-heading" align="center" href="main.php"><img src="img/logo1.png"></a>
 
             <ul>
                 <li><a href="my_projects.php">Mine projekter</a></li>
@@ -58,8 +58,8 @@ sec_session_start();
             <form class="pure-form pure-form-stacked" method="POST" action="<?php echo $_SERVER["PHP_SELF"];?>">
             <fieldset>
                     <div>
-                    <label for="projektname"><b>Projekt navn</b></label>
-                    <input id="projektname" type="text" placeholder="Indtast navn" required/>
+                    <label for="projectname"><b>Projekt navn</b></label>
+                    <input id="project_name" type="text" placeholder="Indtast navn" required/>
                     </div>
                     <br><br>
                     <div>
@@ -81,10 +81,40 @@ sec_session_start();
                     <input id="description" type="text" placeholder="Indtast beskrivelse af projektet"/ required>
                     <br><br>
                     <label for="info"><b>Info</b></label>
-                    <textarea type="text" rows="4" cols="50"></textarea>
+                    <textarea id="info" type="text" rows="4" cols="50"></textarea>
                     <br><br><br><br>
                     <input class="btn right" type="submit" value="Tilføj projekt"> 
             </fieldset>
+
+            <?php
+                    if(isset($_REQUEST['projekt_name'], 
+                             $_REQUEST['kategori'], 
+                             $_REQUEST['date'], 
+                             $_REQUEST['description']
+                             $_REQUEST['info'])) {
+                    
+                    $project_name = $_REQUEST['projekt_name'];
+                    $category     = $_REQUEST['kategori'];
+                    $date         = $_REQUEST['start_date'];
+                    $description  = $_SESSION['description'];                    
+                    $info         = $_SESSION['info'];
+                         
+                    if(!empty($_REQUEST['pid'])){
+                              $pid = $_REQUEST['pid'];
+                            }
+
+                    if ($insert_stmt = $mysqli->prepare(
+                        "INSERT INTO projekt (user_id, projekt_id, projekt_name, start_date, info) 
+                         VALUES ($userid, $pid, $project_name, $category, $sdate, $description,'$info')")) {
+                                    $insert_stmt->bind_param($userid, $pid, $, $dato, $info, $project_name, $category, $sdate, $description,'$info');
+                // Execute the prepared query.
+                    if (! $insert_stmt->execute()) {
+                    header('Location: ../error.php?err=Registration failure: INSERT');
+                       }
+                     }
+                     header('Location: ./all_projects.php');
+                            }
+                    ?>
             </form>
 
         </div>
