@@ -55,7 +55,7 @@ sec_session_start();
         <div class="content">
             <h2 class="content-subhead"></h2>
             
-            <form class="pure-form pure-form-stacked" action="<?php echo esc_url($_SERVER['PHP_SELF']); ?>" method="post">
+            <form class="pure-form pure-form-stacked" method="POST" action="<?php echo $_SERVER["PHP_SELF"];?>">
             <fieldset>
                     <div>
                     <label for="projektname"><b>Projekt navn</b></label>
@@ -83,7 +83,7 @@ sec_session_start();
                     <label for="info"><b>Info</b></label>
                     <textarea type="text" rows="4" cols="50"></textarea>
                     <br><br><br><br>
-                    <input class="btn left" type="submit" value="Tilføj projekt"> 
+                    <input class="btn right" type="submit" value="Tilføj projekt"> 
             </fieldset>
             </form>
 
