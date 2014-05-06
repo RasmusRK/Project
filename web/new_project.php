@@ -65,7 +65,7 @@ sec_session_start();
                     <div>
                     <label for="category"><b>Kategori</b></label>
                     <select><a href="#">Tilføj ny kategori</a>
-                        <option value="0" required>Vælg kategori</option>
+                        <option id="category" value="0" required>Vælg kategori</option>
                         <?php ?>
                     </select>
                     <br><br>
@@ -87,15 +87,15 @@ sec_session_start();
             </fieldset>
 
             <?php
-                    if(isset($_REQUEST['projekt_name'], 
-                             $_REQUEST['kategori'], 
+                    if(isset($_REQUEST['project_name'], 
+                             $_REQUEST['category'], 
                              $_REQUEST['date'], 
                              $_REQUEST['description'],
                              $_REQUEST['info'])) {
-                    
-                    $project_name = $_REQUEST['projekt_name'];
-                    $category     = $_REQUEST['kategori'];
-                    $date         = $_REQUEST['start_date'];
+
+                    $project_name = $_REQUEST['project_name'];
+                    $category     = $_REQUEST['category'];
+                    $date         = $_REQUEST['date'];
                     $description  = $_SESSION['description'];                    
                     $info         = $_SESSION['info'];
                          
@@ -104,9 +104,9 @@ sec_session_start();
                             }
 
                     if ($insert_stmt = $mysqli->prepare(
-                        "INSERT INTO projekt (user_id, projekt_id, projekt_name, start_date, info) 
+                        "INSERT INTO projekt (user_id, projekt_id, project_name, date, info) 
                          VALUES ($userid, $pid, $project_name, $category, $sdate, $description,'$info')")) {
-                                    $insert_stmt->bind_param($userid, $pid, $dato, $info, $project_name, $category, $sdate, $description,'$info');
+                                    $insert_stmt->bind_param($userid, $pid, $dato, $info, $project_name, $category, $date, $description,'$info');
                 // Execute the prepared query.
                     if (! $insert_stmt->execute()) {
                     header('Location: ../error.php?err=Registration failure: INSERT');
