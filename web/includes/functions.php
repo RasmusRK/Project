@@ -228,7 +228,7 @@ function euroDate($date){
 
 function show_projects($mysqli){
 
-$result = mysqli_query($mysqli,"SELECT projekt_id, projekt_name, kategori, start_date, end_date FROM projekt");
+$result = mysqli_query($mysqli,"SELECT project_id, project_name, category, start_date, end_date FROM projekt");
 
     echo"<table class='pure-table pure-table-striped'>
     <thead>

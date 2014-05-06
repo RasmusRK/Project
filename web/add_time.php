@@ -1,4 +1,5 @@
 <?php
+include_once 'includes/psl-config.php';
 include_once 'includes/db_connect.php';
 include_once 'includes/functions.php';
  
@@ -24,6 +25,7 @@ sec_session_start();
   </head>
 
         <?php if (login_check($mysqli) == true) : ?>
+        <?php if ($_REQUEST['pid'] > 0) : ?>
             <div id="layout">
     <!-- Menu toggle -->
     <a href="" id="menuLink" class="menu-link">
@@ -50,10 +52,10 @@ sec_session_start();
             <h2 class="content-subhead"></h2>
             <p>
                 <form class="pure-form pure-form-stacked" action="<?php echo esc_url($_SERVER['PHP_SELF']); ?>" method="post" name="registration_form">
-                    <!--
+                    
 	                <ul>
 	                <li> Indtast antal timer og dato </li>
-			        </ul>-->
+			        </ul>
 
         			<div>
             			<label for="timer"><b>Timer</b></label>
@@ -61,41 +63,38 @@ sec_session_start();
 	        		</div>
                     <br><br>
 	        		<div>
-    	        		<label for="dato"><b>Dato</b></label>
-        	    		<input id ="dato" type="text" name="dato" required />
+                        <label for="date"><b>Dato</b></label>
+                        <input id="date" type="text" name="date" required/>
         			</div>
                     <br><br>
         			<div>
-        				<label for="info"><b>Beskrivelse</b></label>
-        				<input id ="info" type="text" name="info" required/>
+                        <label for="info"><b>Beskrivelse</b></label>
+                        <textarea id="info" type="text" name="info" rows="4" cols="50"></textarea>
         			</div>
                     <br><br>
         			<div>
-        			
-        			<input class="btn right" type="submit" value="Submit"/> 
-        			</div>
+        			<br><br>
+        			<input class="btn right" type="submit" value="Tilføj timer"/> 
+                    </div>
 
         			<?php
-            			if(isset($_REQUEST['timer'], $_REQUEST['dato'], $_REQUEST['info'])) {
+                        if(!empty($_REQUEST['pid'])){
+                            $pid = $_REQUEST['pid'];
+                        }
+            			
+                        if(isset($_REQUEST['timer'], $_REQUEST['date'], $_REQUEST['info'])) {
                     
                     		$timer = $_REQUEST['timer'];
-        					$dato = $_REQUEST['dato'];
+        					$dato = $_REQUEST['date'];
         					$info = $_REQUEST['info'];
         					$userid = $_SESSION['user_id'];
                             
-                            if(!empty($_REQUEST['pid'])){
-                                $pid = $_REQUEST['pid'];
+                            $sql = "INSERT INTO work_on (user_id, project_id, hours, date, info) VALUES ($userid, $pid, $timer, $dato, '$info')";
+                            if (!mysqli_query($sql, $mysqli)) {
+                                header('Location: ../error.php?err=Registration failure: INSERT');
                             }
-
-                 if ($insert_stmt = $mysqli->prepare("INSERT INTO work_on (user_id, projekt_id, hours, date, info) VALUES ($userid, $pid, $timer, $dato,'$info')")) {
-                $insert_stmt->bind_param($userid, $pid, $timer, $dato,$info);
-                // Execute the prepared query.
-                      if (! $insert_stmt->execute()) {
-                    header('Location: ../error.php?err=Registration failure: INSERT');
-                       }
-                     }
-                     header('Location: ./all_projects.php');
-                            }
+                            //header('Location: ./all_projects.php');
+                        }
 					?>
         		</form>
         </div>
@@ -104,6 +103,9 @@ sec_session_start();
 
 <script src="js/ui.js"></script>
 </body>
+        <?php else : ?>
+            <meta http-equiv="refresh" content="0; url=all_projects.php" />
+        <?php endif; ?>
         <?php else : ?>
             <p>
                 <span class="error">Du har ikke rettigheder til at komme ind på siden.</span> Gå venligst tilbage til <a href="index.php">login siden</a>.
