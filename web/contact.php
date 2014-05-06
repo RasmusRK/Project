@@ -42,6 +42,9 @@ sec_session_start();
                 <li><a href="all_projects.php">Alle projekter</a></li>
                 <li><a href="history.php">Min historik</a></li>
                 <li><a href="contact.php">Kontakt</a></li>
+                <?php if (check_admin($mysqli) == true) : ?>
+                <li> <a href="new_project.php">Nyt projekt</a></li>
+                <?php endif; ?>
                 <br><br>
                 <li><a href="includes/logout.php">Log ud</a></li>
             </ul>
