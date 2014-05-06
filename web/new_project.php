@@ -36,12 +36,7 @@ sec_session_start();
             <a class="pure-menu-heading" align="center" href="main.php"><img src="img/logo1.png"></a>
 
             <ul>
-                <li><a href="my_projects.php">Mine projekter</a></li>
-                <li><a href="all_projects.php">Alle projekter</a></li>
-                <li><a href="history.php">Min historik</a></li>
-                <li><a href="contact.php">Kontakt</a></li>
-                <br><br>
-                <li><a href="includes/logout.php">Log ud</a></li>
+                <li><a href="all_projects.php">Tilbage</a></li>
             </ul>
         </div>
     </div>
