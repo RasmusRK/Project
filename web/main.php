@@ -7,28 +7,18 @@ sec_session_start();
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
-<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure.css">
+    <link rel="stylesheet" href="css/layouts/side-menu.css">
+</head>
 
-    <!--[if lte IE 8]>
-        <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
-    <![endif]-->
-    <!--[if gt IE 8]><!-->
-        <link rel="stylesheet" href="css/layouts/side-menu.css">
-    <!--<![endif]-->
-  </head>
-
-        <?php if (login_check($mysqli) == true) : ?>
-            <div id="layout">
-    <!-- Menu toggle -->
+<?php if (login_check($mysqli) == true) : ?>
+<div id="layout">
     <a href="" id="menuLink" class="menu-link">
-        <!-- Hamburger icon -->
         <span></span>
     </a>
-
     <div id="menu">
         <div class="pure-menu pure-menu-open">
             <a class="pure-menu-heading" align="center" href="main.php"><img src="img/logo1.png"></a>
@@ -39,7 +29,7 @@ sec_session_start();
                 <a href="history.php">Min historik</a>
                 <li><a href="contact.php">Kontakt</a></li>
                 <?php if (check_admin($mysqli) == true) : ?>
-                <li> <a href="new_project.php">Nyt projekt</a></li>
+                    <li> <a href="new_project.php">Nyt projekt</a></li>
                 <?php endif; ?>
                 <br><br>
                 <li>Logget ind som: <?php echo $_SESSION['username'];?></li>
@@ -53,8 +43,6 @@ sec_session_start();
         <div class="header">
             <h1>Forside</h1>
             <h2>Beskrivelse</h2>
-
-
         </div>
 
         <div class="content">
@@ -73,12 +61,11 @@ sec_session_start();
 
 <script src="js/ui.js"></script>
 </body>
-        <?php else : ?>
-            <p>
-                <span class="error">Du har ikke rettigheder til at komme ind på siden.</span> Gå venligst tilbage til <a href="index.php">login siden</a>.
-            </p>
-        <?php endif; ?>
-
-    </body>
+    <?php else : ?>
+        <p>
+            <span class="error">Du har ikke rettigheder til at komme ind på siden.</span> Gå venligst tilbage til <a href="index.php">login siden</a>.
+        </p>
+    <?php endif; ?>
+</body>
 
 </html>
