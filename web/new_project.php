@@ -77,9 +77,6 @@ sec_session_start();
                     <input id="date" type="date"/ required>
                     </div>
                     <br><br>
-                    <label for="description"><b>Beskrivelse af projekt</b></label>
-                    <input id="description" type="text" placeholder="Indtast beskrivelse af projektet"/ required>
-                    <br><br>
                     <label for="info"><b>Info</b></label>
                     <textarea id="info" type="text" rows="4" cols="50"></textarea>
                     <br><br><br><br>
@@ -90,31 +87,25 @@ sec_session_start();
                     if(isset($_REQUEST['project_name'], 
                              $_REQUEST['category'], 
                              $_REQUEST['date'], 
-                             $_REQUEST['description'],
                              $_REQUEST['info'])) {
 
                     $project_name = $_REQUEST['project_name'];
                     $category     = $_REQUEST['category'];
                     $date         = $_REQUEST['date'];
-                    $description  = $_SESSION['description'];                    
                     $info         = $_SESSION['info'];
-                         
-                    if(!empty($_REQUEST['pid'])){
-                              $pid = $_REQUEST['pid'];
-                            }
 
                     if ($insert_stmt = $mysqli->prepare(
-                        "INSERT INTO projekt (user_id, projekt_id, project_name, date, info) 
-                         VALUES ($userid, $pid, $project_name, $category, $sdate, $description,'$info')")) {
-                                    $insert_stmt->bind_param($userid, $pid, $dato, $info, $project_name, $category, $date, $description,'$info');
-                // Execute the prepared query.
+                        "INSERT INTO projekt (user_id, project_name, category, date, info) 
+                         VALUES ($userid, $project_name, $category, $date, $info)")) {
+                        $insert_stmt->bind_param($_SESSION['user_id'], $project_name, '$category', $date, '$info');
+                    // Execute the prepared query.
                     if (! $insert_stmt->execute()) {
                     header('Location: ../error.php?err=Registration failure: INSERT');
                        }
                      }
                      header('Location: ./all_projects.php');
                             }
-                    ?>
+            ?>
             </form>
 
         </div>
