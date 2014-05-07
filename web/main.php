@@ -1,9 +1,9 @@
 <?php
 include_once 'includes/db_connect.php';
 include_once 'includes/functions.php';
- 
 sec_session_start();
 ?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -26,7 +26,7 @@ sec_session_start();
             <ul>
                 <li><a href="my_projects.php">Mine projekter</a></li>
                 <li><a href="all_projects.php">Alle projekter</a></li>
-                <a href="history.php">Min historik</a>
+                <li><a href="history.php">Min historik</a></li>
                 <li><a href="contact.php">Kontakt</a></li>
                 <?php if (check_admin($mysqli) == true) : ?>
                     <li> <a href="new_project.php">Nyt projekt</a></li>
