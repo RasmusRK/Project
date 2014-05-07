@@ -90,8 +90,7 @@ sec_session_start();
                     $info         = $_SESSION['info'];
 
                     if ($insert_stmt = $mysqli->prepare(
-                        "INSERT INTO projekt (user_id, project_name, category, date, info) 
-                         VALUES ($userid, $project_name, $category, $date, $info)")) {
+                        "INSERT INTO projekt (user_id, project_name, category, date, info) VALUES (?, ?, ?, ?, ?)")) {
                         $insert_stmt->bind_param($_SESSION['user_id'], $project_name, '$category', $date, '$info');
                     // Execute the prepared query.
                     if (! $insert_stmt->execute()) {
