@@ -1,212 +1,35 @@
-[33mcommit 26d036de468eeb0df6c819e6e0b66c994e821b13[m
-Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
-Date:   Wed Apr 23 15:01:22 2014 +0200
+[33mcommit 9a57a9ffa1897ccf77da7e503f281a020af97374[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Tue May 6 11:03:07 2014 +0200
 
-    deleted hello
+    changes were made
 
-[33mcommit 544ff3288b813cc9d2d1f78689a980b0aa230c2f[m
-Author: TheNiceOne <henrik-thomsen@live.dk>
-Date:   Wed Apr 23 14:54:24 2014 +0200
+[33mcommit 9f47a851b4e300dd4f8fc719a24923242741e441[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Mon May 5 21:22:20 2014 +0200
 
-    sekvens-diagrammer added
+    ...
 
-[33mcommit f533da86a3602e257e98254fbe2d8a2eff174b03[m
-Merge: 5dabfce 00ab5f9
-Author: martinsoender <wxk220@kku.dk>
-Date:   Wed Apr 23 14:11:57 2014 +0200
+[33mcommit 7e9dff5a8aa66009dff7f6075fc5492a08eb2a2f[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Mon May 5 20:52:16 2014 +0200
 
-    Merge branch 'master' of https://github.com/RasmusRK/Project
+    changed text from english to danish
 
-[33mcommit 5dabfcec9458e808b8258d7e7ad47720f5cb7ea7[m
-Author: martinsoender <wxk220@kku.dk>
-Date:   Wed Apr 23 14:07:46 2014 +0200
+[33mcommit 1b9e795e76e6ef2014d575bd3bc991b0948f90f3[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Mon May 5 20:46:44 2014 +0200
 
-    ændringer i css og oprettelser af main side
+    worked on new_project
 
-[33mcommit 00ab5f95e49f0e906868f0d41dba2f947f1a2d58[m
-Author: TheNiceOne <henrik-thomsen@live.dk>
-Date:   Wed Apr 23 13:53:49 2014 +0200
+[33mcommit 4bf19df31a1c9f161da3ad8ef1abfed5c3748151[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Mon May 5 20:15:16 2014 +0200
 
-    trololo
+    made img folder
 
-[33mcommit a8fdddc6571e5b6742fc11660b45b465950f1010[m
-Author: TheNiceOne <henrik-thomsen@live.dk>
-Date:   Wed Apr 23 13:52:27 2014 +0200
+[33mcommit 01308f3f4ce55959a5aa7dbbbba219da7fb2a1d8[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Mon May 5 20:01:19 2014 +0200
 
-    tralala
-
-[33mcommit d034e97df51eff0046ae1f9d492678b9f42e7561[m
-Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
-Date:   Wed Apr 23 13:47:55 2014 +0200
-
-    removed test
-
-[33mcommit 58cda42eba035fd7b7621e8cf25713a721310fa3[m
-Author: TheNiceOne <henrik-thomsen@live.dk>
-Date:   Wed Apr 23 13:43:36 2014 +0200
-
-    hentik lavede ænrding!
-
-[33mcommit b7e2934e2556458a5f9163da8488d577aa709199[m
-Author: Martin Søndergaard <Soender@live.dk>
-Date:   Wed Apr 23 13:33:56 2014 +0200
-
-    Update pure.css
-
-[33mcommit f0bf1a2097ad735a37a78e08c02582ed34c52676[m
-Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
-Date:   Tue Apr 15 18:14:28 2014 +0200
-
-    changes css
-
-[33mcommit 2c52db6d6455a4f1074ad9b9d45819350f389ec0[m
-Merge: daa0d5a bc68e06
-Author: TheNiceOne <henrik-thomsen@live.dk>
-Date:   Tue Apr 15 16:46:47 2014 +0200
-
-    Merge branch 'master' of github.com:RasmusRK/Project
-
-[33mcommit bc68e066829747d6a1058ebca7ca87dad51f69f4[m
-Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
-Date:   Tue Apr 15 16:45:51 2014 +0200
-
-    added login process
-
-[33mcommit daa0d5a9e7d6f9b49d71148c10970d2e1ebf7aa8[m
-Author: TheNiceOne <henrik-thomsen@live.dk>
-Date:   Tue Apr 15 16:44:37 2014 +0200
-
-    opdatering af todo
-
-[33mcommit 895d4a6a1786aba7753c5bd34b13ce85dac9889f[m
-Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
-Date:   Tue Apr 15 16:43:34 2014 +0200
-
-    added more functions to functions.php
-
-[33mcommit c8134bc09bf9a9aa7082f9d38c040d6b7c5d719a[m
-Author: TheNiceOne <henrik-thomsen@live.dk>
-Date:   Tue Apr 15 16:36:33 2014 +0200
-
-    todo list added
-
-[33mcommit ccb039dbc4c2f65a270a4fb889a3e1a2b310af09[m
-Author: TheNiceOne <henrik-thomsen@live.dk>
-Date:   Tue Apr 15 16:35:34 2014 +0200
-
-    test
-
-[33mcommit 38ff63899a0d013da2de6bf96a4ffffd081b6180[m
-Merge: 103a31e 85ab575
-Author: TheNiceOne <henrik-thomsen@live.dk>
-Date:   Tue Apr 15 16:34:52 2014 +0200
-
-    Test
-    Merge branch 'master' of github.com:RasmusRK/Project
-
-[33mcommit 85ab5750ce2676b7a9d8300b268427656c1026a3[m
-Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
-Date:   Tue Apr 15 16:28:44 2014 +0200
-
-    added stuff to functions
-
-[33mcommit 103a31e7520c551445504a7e943f98e6a4f1c6e4[m
-Author: TheNiceOne <henrik-thomsen@live.dk>
-Date:   Tue Apr 15 16:26:27 2014 +0200
-
-    todo list
-
-[33mcommit 13734622ca1e512ffc7434d7f4729aa4f09acc5e[m
-Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
-Date:   Tue Apr 15 16:21:48 2014 +0200
-
-    added more security to login and created myslsql database
-
-[33mcommit 585293b911b89d91e56d8fd8b52469f7b8aa42a3[m
-Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
-Date:   Tue Apr 15 15:10:17 2014 +0200
-
-    Deleted stuff
-
-[33mcommit d56d371b43f43b9a95bd84a19a5ddeda3df63a63[m
-Merge: b371798 9edea49
-Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
-Date:   Tue Apr 15 15:02:38 2014 +0200
-
-    dunnno
-
-[33mcommit b371798c6f5102f1b83b852bd4b340c1bf78310e[m
-Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
-Date:   Tue Apr 15 14:59:24 2014 +0200
-
-    Added css
-    
-    added styling and login screen
-
-[33mcommit 9edea490c842eda0fb694787ae20effd54b9c3c7[m
-Author: TheNiceOne <henrik-thomsen@live.dk>
-Date:   Tue Apr 15 13:08:51 2014 +0200
-
-    Henrik lavede en ændring
-
-[33mcommit 35f597b11e5ef278c56de3c06aa6d31c93b29ce7[m
-Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
-Date:   Tue Apr 15 12:56:15 2014 +0200
-
-    Deleted stuff
-
-[33mcommit 0848d90ad90b1fecfc267d40a7a6b012a55e6fce[m
-Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
-Date:   Tue Apr 15 12:53:31 2014 +0200
-
-    index
-    
-    Created an index file
-
-[33mcommit edb503d7cd2eae696f9014e133f393342300afed[m
-Author: TheNiceOne <whm897@ku.dk>
-Date:   Thu Feb 20 17:49:13 2014 +0100
-
-    Henrik tester igen!
-
-[33mcommit 27cc8e3a308d6ab62a134053f2e3e0a018b3906d[m
-Author: TheNiceOne <whm897@ku.dk>
-Date:   Thu Feb 20 17:42:31 2014 +0100
-
-    Henrik tester
-
-[33mcommit 781e970e4050991a4d117f22bffdb4e4025e1786[m
-Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
-Date:   Thu Feb 20 14:45:58 2014 +0100
-
-    Changed Folders
-
-[33mcommit 1370260b2e61beb67d416a11827ef53783eddab0[m
-Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
-Date:   Thu Feb 20 14:19:09 2014 +0100
-
-    This time there is more wub
-    
-    hue
-
-[33mcommit fc0b5377e8680597c24fec2a82febaa1bbadbb59[m
-Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
-Date:   Thu Feb 20 14:12:02 2014 +0100
-
-    added more wub
-    
-    yes
-
-[33mcommit 2607fc532594a0d640a062ea3a4ffbb60b3af588[m
-Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
-Date:   Thu Feb 20 13:58:16 2014 +0100
-
-    new change
-
-[33mcommit 34e3b96beca18a8dedcb92524cc34c9bddb0be6e[m
-Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
-Date:   Thu Feb 20 13:47:01 2014 +0100
-
-    Wub
-    
-    huehue
+    move buttons to the right
