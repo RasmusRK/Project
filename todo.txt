@@ -14,15 +14,14 @@
 
 7.  opret historik table - DONE
 
-8.  opret "opret projekt side"
+8.  Lav en logbog over møder med john / hvornår vi er mødtes og arbejdet.
 
-9. få brute force til, at virke!
+9.  opret "opret projekt side"
 
-10. Skriv flere todo punkter
+10. Lave indsæt timer funktionen.
+
+11. få brute force til, at virke!
+
+12. Skriv flere todo punkter
 
 
-function euroDate($date){
-    $dateTime = new DateTime($date);
-    $formatted_date=date_format ( $dateTime, 'd-m-Y' );
-    return $formatted_date;
-}
