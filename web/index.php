@@ -32,12 +32,12 @@ if (login_check($mysqli) == true) {
         ?> 
         <form class = "boxCont" action="includes/process_login.php" method="post" name="login_form">                      
             <div>
-                <label for="userName"> Email </label>
-                <input id ="userName" type="text" name="email" />
+                <label for="userName">Email</label>
+                <input id ="userName" type="text" name="email" placeholder="Indtast e-mail"/>
             </div>
             <div>
-               <label for="password"> Kodeord </label>
-               <input type="password" name="password" id="password"/>
+               <label for="password">Kodeord</label>
+               <input type="password" name="password" id="password" placeholder="Indtast kodeord"/>
            </div>
 
            <input class="btn left" type="submit" value="Login" onclick="formhash(this.form, this.form.password);" /> 
