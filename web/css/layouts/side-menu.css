@@ -7,6 +7,12 @@ body {
     height: auto;
 }
 
+.logout {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
 /*
 Add transition to containers so they can push in and out.
 */
@@ -132,7 +138,7 @@ appears on the left side of the page.
     */
     #menu .pure-menu-selected,
     #menu .pure-menu-heading {
-        background: #1f8dd6;
+        background: #191818;
     }
         /*
         This styles a link within a selected menu item `<li>`.

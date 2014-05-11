@@ -149,14 +149,11 @@
     border: none;
 }
 
-
 /* LINK STYLES */
-
 .pure-menu a {
     border: 1px solid transparent;
     border-left: none;
     border-right: none;
-
 }
 
 .pure-menu a,
@@ -172,7 +169,6 @@
 .pure-menu .pure-menu-open {
     background: #dedede;
 }
-
 
 .pure-menu li a:hover,
 .pure-menu li a:focus {

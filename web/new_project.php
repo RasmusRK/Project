@@ -33,12 +33,9 @@ sec_session_start();
                     <li><a href="history.php">Min historik</a></li>
                     <li><a href="contact.php">Kontakt</a></li>
                     <?php if (check_admin($mysqli) == true) : ?>
-                        <li> <a href="new_project.php">Nyt projekt</a></li>
+                    <li> <a href="new_project.php">Nyt projekt</a></li>
                     <?php endif; ?>
-                    <br><br>
-                    <li>Logget ind som: <?php echo $_SESSION['username'];?></li>
-                    <li>Du har bruger id: <?php echo $_SESSION['user_id'];?></li>
-                    <li><a href="includes/logout.php">Log ud</a></li>
+                    <li><a class="logout" href="includes/logout.php">Log ud</a></li>
                 </ul>
             </div>
         </div>
@@ -70,7 +67,7 @@ sec_session_start();
                     <br>
                     <div>
                         <label for="date"><b>Dato</b></label>
-                        <input id="date" type="text" value="<?php echo date("d.m.y") ?>" required>
+                        <input readonly id="date" type="text" value="<?php echo date("d.m.y") ?>" required>
                     </div>
                     <br><br>
                     <label for="info"><b>Info</b></label>

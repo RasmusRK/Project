@@ -22,13 +22,8 @@ sec_session_start();
     <!--<![endif]-->
   </head>
 
-
-
-
 <body>
-
-
- <?php if (login_check($mysqli) == true) : ?>
+<?php if (login_check($mysqli) == true) : ?>
             
 <div id="layout">
     <!-- Menu toggle -->
@@ -49,10 +44,7 @@ sec_session_start();
                 <?php if (check_admin($mysqli) == true) : ?>
                 <li> <a href="new_project.php">Nyt projekt</a></li>
                 <?php endif; ?>
-                <br><br>
-                <li>Logget ind som: <?php echo $_SESSION['username'];?></li>
-                <li>Du har bruger id: <?php echo $_SESSION['user_id'];?></li>
-                <li><a href="includes/logout.php">Log ud</a></li>
+                <li><a class="logout" href="includes/logout.php">Log ud</a></li>
             </ul>
         </div>
     </div>

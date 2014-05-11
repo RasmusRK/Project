@@ -9,11 +9,11 @@ if (! $error) {
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Secure Login: Error</title>
+        <title>Projekt</title>
         <link rel="stylesheet" href="styles/main.css" />
     </head>
     <body>
-        <h1>There was a problem</h1>
+        <h1>Der er sket et problem</h1>
         <p class="error"><?php echo $error; ?></p>  
     </body>
 </html>
