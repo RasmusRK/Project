@@ -41,6 +41,7 @@ sec_session_start();
     <div id="main">
         <div class="header">
             <h1>Tilføj tid til projekt</h1>
+            <h2>Udfyld formen for at indskrive timer på projektet.</h2>
         </div>
 
         <div class="content">
@@ -50,7 +51,6 @@ sec_session_start();
                       <?php
                     echo '<input type="hidden" name="pid" value="' .$pid .'">';
                     ?>
-                <ul><li> Indtast antal timer og dato </li></ul>
                 <div>
                     <label for="timer"><b>Timer</b></label>
                     <input id ="timer" type="text" name="timer" required />

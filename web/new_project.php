@@ -61,7 +61,7 @@ sec_session_start();
                     <br>
                     <div>
                         <label for="date"><b>Dato</b></label>
-                        <input id="date" type="date"/ required>
+                        <input id="date" type="text" value="<?php echo date("d.m.y") ?>" required>
                     </div>
                     <br><br>
                     <label for="info"><b>Info</b></label>
@@ -71,26 +71,22 @@ sec_session_start();
                 </fieldset>
 
             <?php
-                if(isset($_REQUEST['projectname'], 
-                         $_REQUEST['category'], 
-                         $_REQUEST['date'], 
-                         $_REQUEST['info'])) {
+                if(isset($_REQUEST['projectname'], $_REQUEST['category'], $_REQUEST['date'], $_REQUEST['info'])) {
 
-                    $project_name = $_REQUEST['project_name'];
+                    $projectname = $_REQUEST['projectname'];
                     $category     = $_REQUEST['category'];
                     $date         = $_REQUEST['date'];
                     $info         = $_SESSION['info'];
 
-                    if ($insert_stmt = $mysqli->prepare(
-                        "INSERT INTO projekt (user_id, project_name, category, date, info) VALUES (?, ?, ?, ?, ?)")) {
-                        $insert_stmt->bind_param($_SESSION['user_id'], $project_name, $category, $date, $info);
-
-                        if (! $insert_stmt->execute()) {
-                            header('Location: ../error.php?err=Registration failure: INSERT');
+                    if ($insert_stmt = $mysqli->prepare("INSERT INTO projekt (user_id, project_name, category, date, info) 
+                                                         VALUES ($projectname, $category, $date, $info)")) {
+                                
+                                if (!$insert->execute()) {
+                                    header('Location: ../error.php?err=Registration failure: INSERT'); 
+                            }
+                        header('Location: ./all_projects.php');
                         }
                     }
-                    header('Location: ./all_projects.php');
-                }
             ?>
             </form>
         </div>
