@@ -48,7 +48,7 @@ sec_session_start();
             </div>
 
             <div class="content">
-                <h2 class="content-subhead">Titel</h2>
+                <h2 class="content-subhead"></h2>
                 <p> <?php show_projects($mysqli); ?> </p>
             </div>
         </div>
