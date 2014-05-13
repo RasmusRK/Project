@@ -3,3 +3,32 @@ Vores møder med John.
 Hvornår vi har lavet noget på projektet sammen.
 Meget kort hvad vi har lavet / hvad vi har snakket med john om.
 DATOER PÅ ALT!
+
+20/2 testet git
+Oprettet repository og testet comandoer
+
+15/4 Oprettet projektet i repositoriet
+Lavet index fil og begyndt på secure login system
+
+23/4 Lavet main side og layout til siden.
+Fået login til, at virke
+
+24/4 Oprettet administrator og færdigjort register
+
+30/4 begyndt på opret projekt og add time funktionerne
+
+5/5 Oprettet kontakter og ændret i mysql databasen
+
+6/5 Prøvet at fixe anti brute force funktion - små ændringer
+
+8/5 Mailet med kunde, havde en del spørgsmål om ændringer til hjemmesiden.
+Stablet nyt måde på plads, skal ligge mellem d. 6 og 8 juni.
+
+11/5 små ændringer i layoutet
+
+
+
+
+
+
+
