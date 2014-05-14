@@ -76,7 +76,7 @@ sec_session_start();
                     echo "burde virke";
                     $projectname = $_REQUEST['projectname'];
                     $category    = $_REQUEST['category'];
-                    $date        = date("y-m-d");
+                    $date        = date("Y-m-d");
                     $info        = $_REQUEST['info'];
                     $userid      = $_SESSION['user_id'];
 

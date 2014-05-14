@@ -352,7 +352,7 @@ function history($mysqli){
     <th><a href = 'history.php?order=work_on.date&direction=$direction_link'> Dato</a></th>
     <th><a href = 'history.php?order=project_name&direction=$direction_link'>Projekt navn</a></th>
     <th><a href = 'history.php?order=category&direction=$direction_link'>Kategori</a></th>
-    <th><a href = 'history.php?order=hours&direction=$direction_link'>Timer</a>    </th>
+    <th><a href = 'history.php?order=hours&direction=$direction_link'>Timer</a></th>
     </tr>
     </thead>";
 
