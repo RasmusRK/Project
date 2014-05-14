@@ -56,6 +56,7 @@ include_once 'includes/functions.php';
 
         <div>
         <br>
+        <a href="index.php"><input class="btn left" type="button" value="Tilbage"/></a>
         <input class="btn right" type="button" value="Opret bruger" 
                   onclick="return regformhash(this.form,
                                   this.form.username,
@@ -64,7 +65,6 @@ include_once 'includes/functions.php';
                                   this.form.confirmpwd);" /> 
         </div>
         </form>
-         <p>Gå tilbage til <a href="index.php">forsiden</a>.</p>
         </div>
     </body>
 </html>
