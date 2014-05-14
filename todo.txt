@@ -14,7 +14,7 @@
 
 7.  opret historik table - DONE
 
-8.  Lav en logbog over møder med john / hvornår vi er mødtes og arbejdet.
+8.  Lav en logbog over møder med john / hvornår vi er mødtes og arbejdet. - DONE
 
 9.  opret "opret projekt side" - DONE
 
@@ -24,8 +24,14 @@
 
 12. Skriv flere todo punkter - DONE
 
-13. ændre e-mail til brugerid
+13. ændre e-mail til brugerid - DONE
 
 14. lav opret projekt - DONE
 
 15. Lav flere todo punkter igen - 
+
+16. Lav projekt side - 
+
+17. Lav afslut projekt funktion -
+
+
