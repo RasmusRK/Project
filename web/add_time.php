@@ -49,7 +49,7 @@ sec_session_start();
                 </div>
                     <br><br>
                 <div>
-                    <label for="date"><b>Dato(yyyy-mm-d)</b></label>
+                    <label for="date"><b>Dato (yyyy-mm-d)</b></label>
                     <input id="date" type="text" name="date" required/>
                 </div>
                 <br><br>
