@@ -52,8 +52,7 @@ sec_session_start();
                         <label for="info"><b>Beskrivelse</b></label>
                         <textarea id="info" type="text" name="info" rows="4" cols="50"></textarea>
                     </div>
-                    <br><br>
-                    <br><br>
+                    <br><br><br><br><br>
                     <input class="btn right" type="submit" value="Tilføj projekt"> 
                 </fieldset>
 

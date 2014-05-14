@@ -59,9 +59,8 @@ sec_session_start();
                 </div>
                 <br><br>
                 <div>
-                    <br><br>
-                    <input class="btn right" type="submit" value="Tilføj timer"/> 
-
+                    <br><br><br>
+                <input class="btn right" type="submit" value="Tilføj timer"/> 
                 </div>
 
                 <?php
