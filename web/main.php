@@ -11,7 +11,7 @@ sec_session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure.css">
-    <link rel="stylesheet" href="css/layouts/side-menu.css">
+    <link rel="stylesheet" href="css/side-menu.css">
 </head>
 
 <?php if (login_check($mysqli) == true) : ?>

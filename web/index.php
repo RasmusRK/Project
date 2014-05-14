@@ -22,7 +22,7 @@ if (login_check($mysqli) == true) {
     <script type="text/JavaScript" src="js/forms.js"></script> 
 </head>
 
-<body background = "css/test.png">
+<body background="img/bg.jpg">
     <div id = "login">
         <?php
         if (isset($_GET['error'])) {

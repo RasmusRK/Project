@@ -14,15 +14,9 @@ sec_session_start();
     <title>Projects</title>
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure.css">
 <link rel="stylesheet" href="css/pure.css"/>
-<link rel="stylesheet" href="css/pure-form.css" />
-
-    <!--[if lte IE 8]>
-        <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
-    <![endif]-->
-    <!--[if gt IE 8]><!-->
-        <link rel="stylesheet" href="css/layouts/side-menu.css">
-    <!--<![endif]-->
-  </head>
+<link rel="stylesheet" href="css/pure-form.css"/>
+<link rel="stylesheet" href="css/side-menu.css">
+</head>
 
 <body>
  <?php if (login_check($mysqli) == true) : ?>

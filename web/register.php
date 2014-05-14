@@ -11,7 +11,7 @@ include_once 'includes/functions.php';
         <script type="text/JavaScript" src="js/forms.js"></script>
         <link rel="stylesheet" href="css/pure.css" />
     </head>
-    <body background = "css/test.png">
+    <body background="img/bg.jpg">
     <div id = "login">
         <!-- Registration form to be output if the POST variables are not
         set or if the registration script caused an error. -->
