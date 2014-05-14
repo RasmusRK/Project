@@ -220,18 +220,38 @@ function euroDate($date){
 }
 
 function show_projects($mysqli){
+     if (empty($_REQUEST['order'])) {
+        $order = 'null';
+    }
+    else{
+        $order = $_REQUEST["order"];    
+    }
+    $direction = @$_GET['direction'];
+     if (empty($_REQUEST['direction'])){
+        $direction = 'ASC';
+    } 
+    if ($direction !== "DESC"){ 
+        $direction = "ASC"; 
+    }
+    if ($direction == "ASC"){ 
+        $direction_link = "DESC"; 
+    }
+    if (empty($direction_link)){
+        $direction_link = 'ASC';
+    } 
     $result = mysqli_query($mysqli,"SELECT project_id, project_name, category_name, start_date, end_date, username 
                                     FROM projekt, users, categories 
-                                    WHERE users.id = projekt.creator_id AND projekt.category = categories.category_name");
+                                    WHERE users.id = projekt.creator_id AND projekt.category = categories.category_name
+                                    ORDER BY $order $direction");
 
     echo"<table class='pure-table pure-table-striped'>
     <thead>
     <tr>
-    <th>Projekt navn</th>
-    <th>Kategori</th>
-    <th>Start-dato</th>
-    <th>Slut-dato</th>
-    <th>Opretter</th>
+    <th><a href = 'all_projects.php?order=project_name&direction=$direction_link'>Projekt navn</a></th>
+    <th><a href = 'all_projects.php?order=category_name&direction=$direction_link'>Kategori</a></th>
+    <th><a href = 'all_projects.php?order=start_date&direction=$direction_link'>Start-dato</a></th>
+    <th><a href = 'all_projects.php?order=end_date&direction=$direction_link'>Slut-dato</a></th>
+    <th><a href = 'all_projects.php?order=username&direction=$direction_link'>Opretter</a></th>
     </tr>
     </thead>";
 
