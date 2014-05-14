@@ -1,16 +1,22 @@
-Hvornår vi har mailet med john.
-Vores møder med John.
-Hvornår vi har lavet noget på projektet sammen.
-Meget kort hvad vi har lavet / hvad vi har snakket med john om.
-DATOER PÅ ALT!
+Logbog over foreløbigs projekt arbejde:
+
+
+4/2 Projekt kursus starter
+Første mail kontakt med kunden
 
 20/2 testet git
 Oprettet repository og testet comandoer
 
+11/3 Kontakt med kunden og fastlagt os på en aftale
+vagt aftalt en problem definition.
+
 15/4 Oprettet projektet i repositoriet
 Lavet index fil og begyndt på secure login system
 
-23/4 Lavet main side og layout til siden.
+20/4 Aftalt mødetid med kunden
+
+23/4 Møde med kunden og fundet frem til en krav specifikation.
+Lavet main side og layout til siden.
 Fået login til, at virke
 
 24/4 Oprettet administrator og færdigjort register
@@ -25,6 +31,9 @@ Fået login til, at virke
 Stablet nyt måde på plads, skal ligge mellem d. 6 og 8 juni.
 
 11/5 små ændringer i layoutet
+
+14/5 Tilføjet kategori til database
+optimering af alle SQL statements - funktionen tilføj projekt lavet
 
 
 
