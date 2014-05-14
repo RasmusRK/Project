@@ -40,6 +40,8 @@ sec_session_start();
                 man kan lukke projektet <br>
                 man kan se alle der har arbejdet på projektet <br>
                 man kan se det samlede antal timer? <br>
+                <?php echo "<a href='main.php'>luk projekt</a>" ?>
+                
             </p>
         </div>
     </div>

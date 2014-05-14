@@ -1,4 +1,4 @@
-    <?php
+<?php
 include_once 'psl-config.php';
  
 function sec_session_start() {
