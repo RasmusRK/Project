@@ -64,7 +64,7 @@ sec_session_start();
                 </div>
                     <br><br>
                 <div>
-                    <label for="date"><b>Dato</b></label>
+                    <label for="date"><b>Dato(yyyy-mm-d)</b></label>
                     <input id="date" type="text" name="date" required/>
                 </div>
                 <br><br>
@@ -82,12 +82,12 @@ sec_session_start();
                 <?php
                     if(isset($_REQUEST['timer'], $_REQUEST['date'], $_REQUEST['info'])) {
                         $timer = $_REQUEST['timer'];
-                        $dato = $_REQUEST['date'];
+                        $date = ($_REQUEST['date']);
                         $info = $_REQUEST['info'];
                         $userid = $_SESSION['user_id'];
                        
                             
-                        if ($insert = $mysqli->prepare("INSERT INTO work_on (user_id, project_id, hours, date, info) VALUES ($userid,$pid,$timer,$dato,'$info')")){
+                        if ($insert = $mysqli->prepare("INSERT INTO work_on (user_id, project_id, hours, date, info) VALUES ($userid,$pid,$timer,'$date','$info')")){
                                 if (!$insert->execute()) {
                                     header('Location: ../error.php?err=Registration failure: INSERT'); 
                             }
