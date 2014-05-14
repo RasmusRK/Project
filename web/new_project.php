@@ -81,14 +81,14 @@ sec_session_start();
                     $userid      = $_SESSION['user_id'];
 
                     if ($insert = $mysqli->prepare("INSERT INTO projekt (creator_id, project_name, category, start_date, info) 
-                                                         VALUES ($userid, '$projectname', '$category', $date, '$info')")) {
+                                                         VALUES ($userid, '$projectname', '$category', '$date', '$info')")) {
                                 echo "<br>burde stadigt virke";
                                 if (!$insert->execute()) {
                                     header('Location: ../error.php?err=Registration failure: INSERT'); 
                             }
                         header('Location: ./all_projects.php');
                         }
-                    }
+                    } 
             ?>
             </form>
         </div>
