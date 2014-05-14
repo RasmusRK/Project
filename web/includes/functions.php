@@ -1,4 +1,4 @@
-<?php
+    <?php
 include_once 'psl-config.php';
  
 function sec_session_start() {
@@ -252,6 +252,7 @@ function show_projects($mysqli){
     <th><a href = 'all_projects.php?order=start_date&direction=$direction_link'>Start-dato</a></th>
     <th><a href = 'all_projects.php?order=end_date&direction=$direction_link'>Slut-dato</a></th>
     <th><a href = 'all_projects.php?order=username&direction=$direction_link'>Opretter</a></th>
+    <th>Tilføj timer</th>
     </tr>
     </thead>";
 
@@ -262,13 +263,14 @@ function show_projects($mysqli){
         echo "<td>" . ($row[3]) . "</td>";
         echo "<td>" . ($row[4]) . "</td>";
         echo "<td>" . $row[5] . "</td>";
+        echo "<td><a href = 'add_time.php?pid=$row[0]'>Tilføj</a> </td>";
         echo "</tr>";
     }
     echo "</table>";
 }
 
 function show_my_projects($mysqli){
-     if (empty($_REQUEST['order'])) {
+     if (empty($_REQUEST['order'])) {   
         $order = 'null';
     }
     else{
@@ -304,6 +306,7 @@ function show_my_projects($mysqli){
     <th><a href = 'my_projects.php?order=start_date&direction=$direction_link'>Start-dato</a></th>
     <th><a href = 'my_projects.php?order=end_date&direction=$direction_link'>Slut-dato</a></th>
     <th><a href = 'my_projects.php?order=username&direction=$direction_link'>Opretter</a></th>
+    <th>Tilføj timer</th>
     </tr>
     </thead>";
 
@@ -314,6 +317,7 @@ function show_my_projects($mysqli){
         echo "<td>" . ($row[3]) . "</td>";
         echo "<td>" . ($row[4]) . "</td>";
         echo "<td>" . $row[5] . "</td>";
+        echo "<td><a href = 'add_time.php?pid=$row[0]'>Tilføj</a> </td>";
         echo "</tr>";
     }
     echo "</table>";
@@ -341,7 +345,7 @@ function history($mysqli){
     } 
 
     $userid = $_SESSION['user_id'];
-    $result = mysqli_query($mysqli,"SELECT work_on.date, project_name, category, hours, work_on_id
+    $result = mysqli_query($mysqli,"SELECT work_on.date, project_name, category, hours, work_on_id, projekt.project_id
                                     FROM work_on, projekt 
                                     WHERE work_on.project_id = projekt.project_id AND work_on.user_id = $userid
                                     ORDER BY $order $direction");
@@ -353,15 +357,17 @@ function history($mysqli){
     <th><a href = 'history.php?order=project_name&direction=$direction_link'>Projekt navn</a></th>
     <th><a href = 'history.php?order=category&direction=$direction_link'>Kategori</a></th>
     <th><a href = 'history.php?order=hours&direction=$direction_link'>Timer</a></th>
+    <th>Rediger tid</th>
     </tr>
     </thead>";
 
     while($row = mysqli_fetch_array($result)) {
         echo "<tr>";
         echo "<td>" . $row[0] . "</td>";
-        echo "<td><a href = 'change_history.php?wid=$row[4]'> $row[1]</a> </td>";
+        echo "<td><a href = 'add_time.php?wid=$row[5]'> $row[1]</a> </td>";
         echo "<td>" . ($row[2]) . "</td>";
         echo "<td>" . ($row[3]) . "</td>";
+        echo "<td><a href = 'change_history.php?wid=$row[4]'>Rediger</a> </td>";
         echo "</tr>";
     }
     echo "</table>";
