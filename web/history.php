@@ -3,6 +3,7 @@ include_once 'includes/db_connect.php';
 include_once 'includes/functions.php';
  
 sec_session_start();
+
 ?>
 
 <!doctype html>
@@ -46,6 +47,7 @@ sec_session_start();
 
             <div class="content">
                 <h2 class="content-subhead"></h2>
+
                 <p> <?php history($mysqli); ?> </p>
             </div>
         </div>

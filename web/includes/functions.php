@@ -280,18 +280,39 @@ function show_my_projects($mysqli){
 }
 
 function history($mysqli){
+    if (empty($_REQUEST['order'])) {
+        $order = 'null';
+    }
+    else{
+        $order = $_REQUEST["order"];    
+    }
+    $direction = @$_GET['direction'];
+     if (empty($_REQUEST['direction'])){
+        $direction = 'ASC';
+    } 
+    if ($direction !== "DESC"){ 
+        $direction = "ASC"; 
+    }
+    if ($direction == "ASC"){ 
+        $direction_link = "DESC"; 
+    }
+    if (empty($direction_link)){
+        $direction_link = 'ASC';
+    } 
+
     $userid = $_SESSION['user_id'];
     $result = mysqli_query($mysqli,"SELECT work_on.date, project_name, category, hours, work_on_id
                                     FROM work_on, projekt 
-                                    WHERE work_on.project_id = projekt.project_id AND work_on.user_id = $userid");
+                                    WHERE work_on.project_id = projekt.project_id AND work_on.user_id = $userid
+                                    ORDER BY $order $direction");
 
     echo"<table class='pure-table pure-table-striped'>
     <thead>
     <tr>
-    <th>Dato</th>
-    <th>Projekt navn</th>
-    <th>Kategori</th>
-    <th>Timer</th>
+    <th><a href = 'history.php?order=work_on.date&direction=$direction_link'> Dato</a></th>
+    <th><a href = 'history.php?order=project_name&direction=$direction_link'>Projekt navn</a></th>
+    <th><a href = 'history.php?order=category&direction=$direction_link'>Kategori</a></th>
+    <th><a href = 'history.php?order=hours&direction=$direction_link'>Timer</a>    </th>
     </tr>
     </thead>";
 
