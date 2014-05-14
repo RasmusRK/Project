@@ -4,6 +4,7 @@ include_once 'includes/functions.php';
 sec_session_start();
 ?>
 
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -59,11 +60,12 @@ sec_session_start();
                     <div>
                         <label for="category"><b>Kategori</b></label>
                         <select name="category">
-                            <option value="0" required>Vælg kategori</option>
+                            <option value="0" required >Vælg kategori</option>
                             <?php 
                             foreach($mysqli->query("SELECT category_name FROM categories") as $row) {
-                                print "<option value = ". $row[0] . ">" . $row[0] . "</option>";
-                                } ?>
+                                echo "<option value=" . $row[0] . ">" . $row[0] . "</option>";
+                                } 
+                            ?>
                         </select>
                         <br><br>
                         <a href="new_category.php">Tilføj ny kategori</a>

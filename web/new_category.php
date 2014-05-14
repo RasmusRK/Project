@@ -38,7 +38,7 @@ sec_session_start();
     <div id="main">
         <div class="header">
             <h1>Opret ny kategori</h1>
-            <h2>Indtast den nye kategoris navn</h2>
+            <h2>Indtast navn på den nye kategori</h2>
         </div>
 
         <div class="content">
@@ -49,10 +49,8 @@ sec_session_start();
                     <label for="navn"><b>Navn</b></label>
                     <input id ="navn" type="text" name="navn" required />
                 </div>
-                <div>
                 <br><br>
-                    <input class="btn right" type="submit" value="Opret kategori"/> 
-                </div>
+                <input class="btn right" type="submit" value="Opret kategori"/> 
 
                 <?php
                     if(isset($_REQUEST['navn'])) {
