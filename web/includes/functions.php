@@ -420,7 +420,7 @@ function menu() {
 
     echo"<div id='menu'>
             <div class='pure-menu pure-menu-open'>
-                <a class='pure-menu-heading' align='center' href='main.php'><img src='img/logo1.png'></a>
+                <a class='pure-menu-heading' align='center' href='main.php'><img src='img/logo.png'></a>
                     <ul>
                     <li><a href='my_projects.php'>Mine projekter</a></li>
                     <li><a href='all_projects.php'>Alle projekter</a></li>
