@@ -373,7 +373,7 @@ function history($mysqli){
     echo "</table>";
 }
 
-function history_for_wid($mysqli, $wid){
+function change_history($mysqli, $wid){
     $userid = $_SESSION['user_id'];
     $result = mysqli_query($mysqli,"SELECT work_on.date, project_name, category, hours, work_on.info
                                     FROM work_on, projekt 

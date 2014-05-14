@@ -50,7 +50,7 @@ sec_session_start();
                       <?php
                     echo '<input type="hidden" name="wid" value="' .$wid .'">';
                     ?>
-                <?php history_for_wid($mysqli,$wid); ?>
+                <?php upate_history($mysqli,$wid); ?>
                 <ul><li> Indtast ændringer </li></ul>
                 <div>
                     <label for="timer"><b>Timer</b></label>
