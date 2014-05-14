@@ -16,14 +16,16 @@
 
 8.  Lav en logbog over møder med john / hvornår vi er mødtes og arbejdet.
 
-9.  opret "opret projekt side"
+9.  opret "opret projekt side" - DONE
 
-10. Lave indsæt timer funktionen.
-
+10. Lave indsæt timer funktionen. - DONE
+ 
 11. få brute force til, at virke!
 
-12. Skriv flere todo punkter
+12. Skriv flere todo punkter - DONE
 
 13. ændre e-mail til brugerid
 
-14. lav opret projekt
+14. lav opret projekt - DONE
+
+15. Lav flere todo punkter igen - 
