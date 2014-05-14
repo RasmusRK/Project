@@ -47,7 +47,7 @@ sec_session_start();
 
     <div id="main">
         <div class="header">
-            <h1>Tilføj tid til projekt</h1>
+            <h1>Tilføj tid til projekt </h1>
             <h2>Udfyld formen for at indskrive timer på projektet.</h2>
         </div>
 
