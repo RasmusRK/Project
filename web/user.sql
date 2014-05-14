@@ -31,11 +31,11 @@ FOREIGN KEY (creator_id) REFERENCES users(id)
 ) ENGINE = INNODB;
 
 CREATE TABLE `projekt`.`work_on` (
-`work_on_id` DATE NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`work_on_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
 `user_id` INT NOT NULL  ,
 `project_id` INT NOT NULL ,
 `hours` INTEGER NOT NULL ,
-`date` INTEGER NOT NULL ,
+`date` DATE NOT NULL ,
 `info` VARCHAR(2000),
 FOREIGN KEY (project_id) REFERENCES projekt(project_id),
 FOREIGN KEY(user_id) REFERENCES users(id)
@@ -44,7 +44,6 @@ FOREIGN KEY(user_id) REFERENCES users(id)
 
 INSERT INTO categories (category_name, create_date, creator)
 VALUES ("projekt", '2014-05-15', 1);
-
 
 INSERT INTO projekt (project_name, start_date, info, category, creator_id)
 VALUES ("fly1", '2014-03-30', "fly1 skal males blablabla", "projekt", 1);
