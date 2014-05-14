@@ -12,8 +12,9 @@ sec_session_start();
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure.css">
+    <link rel="stylesheet" href="css/pure-web.css">
     <link rel="stylesheet" href="css/side-menu.css">
+    <link rel="stylesheet" href="css/pure.css">
 </head>
 
 <body>

@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <title>Secure Login: Registration Success</title>
-        <link rel="stylesheet" href="styles/main.css" />
     </head>
     <body>
         <h1>Brugeren er nu oprettet!</h1>

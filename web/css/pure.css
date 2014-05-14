@@ -16,6 +16,12 @@ body a {
   transition: all 0.3s ease;
 }
 
+a* {
+  text-decoration: none;
+  color: #0280d4;
+  cursor: pointer;
+}
+
 h2 {
     color: #ededed;
     font: 28px/18px "Segoe UI";
