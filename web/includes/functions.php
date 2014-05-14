@@ -220,26 +220,117 @@ function euroDate($date){
 }
 
 function show_projects($mysqli){
-    $result = mysqli_query($mysqli,"SELECT project_id, project_name, category, start_date, end_date FROM projekt");
+    $result = mysqli_query($mysqli,"SELECT project_id, project_name, category_name, start_date, end_date, username 
+                                    FROM projekt, users, categories 
+                                    WHERE users.id = projekt.creator_id AND projekt.category = categories.category_name");
 
     echo"<table class='pure-table pure-table-striped'>
     <thead>
     <tr>
-    <th>Projekt id</th>
     <th>Projekt navn</th>
     <th>Kategori</th>
     <th>Start-dato</th>
     <th>Slut-dato</th>
+    <th>Opretter</th>
     </tr>
     </thead>";
 
     while($row = mysqli_fetch_array($result)) {
         echo "<tr>";
-        echo "<td><a href = 'add_time.php?pid=$row[0]'> $row[0]</a> </td>";
-        echo "<td>" . $row[1] . "</td>";  
+        echo "<td><a href = 'add_time.php?pid=$row[0]'> $row[1]</a> </td>";
         echo "<td>" . $row[2] . "</td>";
         echo "<td>" . ($row[3]) . "</td>";
         echo "<td>" . ($row[4]) . "</td>";
+        echo "<td>" . $row[5] . "</td>";
+        echo "</tr>";
+    }
+    echo "</table>";
+}
+
+function show_my_projects($mysqli){
+    $userid = $_SESSION['user_id'];
+    $SQL = "SELECT projekt.project_id, project_name, category_name, start_date, end_date, username 
+            FROM projekt, users, categories, work_on 
+            WHERE users.id = projekt.creator_id AND projekt.category = categories.category_name
+            AND work_on.user_id = $userid AND work_on.project_id = projekt.project_id";
+
+    $result = mysqli_query($mysqli, $SQL);
+
+    echo"<table class='pure-table pure-table-striped'>
+    <thead>
+    <tr>
+    <th>Projekt navn</th>
+    <th>Kategori</th>
+    <th>Start-dato</th>
+    <th>Slut-dato</th>
+    <th>Opretter</th>
+    </tr>
+    </thead>";
+
+    while($row = mysqli_fetch_array($result)) {
+        echo "<tr>";
+        echo "<td><a href = 'add_time.php?pid=$row[0]'> $row[1]</a> </td>";
+        echo "<td>" . $row[2] . "</td>";
+        echo "<td>" . ($row[3]) . "</td>";
+        echo "<td>" . ($row[4]) . "</td>";
+        echo "<td>" . $row[5] . "</td>";
+        echo "</tr>";
+    }
+    echo "</table>";
+}
+
+function history($mysqli){
+    $userid = $_SESSION['user_id'];
+    $result = mysqli_query($mysqli,"SELECT work_on.date, project_name, category, hours, work_on_id
+                                    FROM work_on, projekt 
+                                    WHERE work_on.project_id = projekt.project_id AND work_on.user_id = $userid");
+
+    echo"<table class='pure-table pure-table-striped'>
+    <thead>
+    <tr>
+    <th>Dato</th>
+    <th>Projekt navn</th>
+    <th>Kategori</th>
+    <th>Timer</th>
+    </tr>
+    </thead>";
+
+    while($row = mysqli_fetch_array($result)) {
+        echo "<tr>";
+        echo "<td>" . $row[0] . "</td>";
+        echo "<td><a href = 'change_history.php?wid=$row[4]'> $row[1]</a> </td>";
+        echo "<td>" . ($row[2]) . "</td>";
+        echo "<td>" . ($row[3]) . "</td>";
+        echo "</tr>";
+    }
+    echo "</table>";
+}
+
+function history_for_wid($mysqli, $wid){
+    $userid = $_SESSION['user_id'];
+    $result = mysqli_query($mysqli,"SELECT work_on.date, project_name, category, hours, work_on.info
+                                    FROM work_on, projekt 
+                                    WHERE work_on.project_id = projekt.project_id AND work_on.user_id = $userid
+                                    AND work_on_id = $wid");
+
+    echo"<table class='pure-table pure-table-striped'>
+    <thead>
+    <tr>
+    <th>Dato</th>
+    <th>Projekt navn</th>
+    <th>Kategori</th>
+    <th>Timer</th>
+    <th>Info</th>
+    </tr>
+    </thead>";
+
+    while($row = mysqli_fetch_array($result)) {
+        echo "<tr>";
+        echo "<td>" . $row[0] . "</td>";
+        echo "<td>" . $row[1] . "</td>";
+        echo "<td>" . ($row[2]) . "</td>";
+        echo "<td>" . ($row[3]) . "</td>";
+        echo "<td>" . $row[4] . "</td>";
         echo "</tr>";
     }
     echo "</table>";

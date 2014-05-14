@@ -51,41 +51,43 @@ sec_session_start();
             
                 <form class="pure-form pure-form-stacked" method="POST" action="<?php echo $_SERVER["PHP_SELF"];?>">
                 <fieldset>
-                    <div>
-                        <label for="projectname"><b>Projekt navn</b></label>
-                        <input id="projectname" type="text" placeholder="Indtast navn" required/>
-                    </div>
+                <div>
+                    <label for="projectname"><b>Projekt navn</b></label>
+                    <input id ="projectname" type="text" name="projectname" required />
+                </div>
                     <br><br>
                     <div>
                         <label for="category"><b>Kategori</b></label>
-                        <select><a href="#">Tilføj ny kategori</a>
-                            <option id="category" value="0" required>Vælg kategori</option>
+                        <select name="category">
+                            <option value = 0 required>Vælg kategori</option>
+                            <?php 
+                            foreach($mysqli->query("SELECT category_name FROM categories") as $row) {
+                                print "<option value = ". $row[0] . ">" . $row[0] . "</option>";
+                                } ?>
                         </select>
                         <br><br>
-                        <a href="#">Tilføj ny kategori</a>
+                        <a href="new_category.php">Tilføj ny kategori</a>
                     </div>
-                    <br>
                     <div>
-                        <label for="date"><b>Dato</b></label>
-                        <input readonly id="date" type="text" value="<?php echo date("d.m.y") ?>" required>
+                        <label for="info"><b>Beskrivelse</b></label>
+                        <textarea id="info" type="text" name="info" rows="4" cols="50"></textarea>
                     </div>
                     <br><br>
-                    <label for="info"><b>Info</b></label>
-                    <textarea id="info" type="text" rows="4" cols="50"></textarea>
-                    <br><br><br><br>
+                    <br><br>
                     <input class="btn right" type="submit" value="Tilføj projekt"> 
                 </fieldset>
 
-            <?php
-                if(isset($_REQUEST['projectname'], $_REQUEST['category'], $_REQUEST['date'], $_REQUEST['info'])) {
+            <?php              
+                if(isset($_REQUEST['projectname'], $_REQUEST['category'], $_REQUEST['info'])) {
 
                     $projectname = $_REQUEST['projectname'];
-                    $category     = $_REQUEST['category'];
-                    $date         = $_REQUEST['date'];
-                    $info         = $_SESSION['info'];
+                    $category    = $_REQUEST['category'];
+                    $date        = date("20y-m-d");
+                    $info        = $_REQUEST['info'];
+                    $userid      = $_SESSION['user_id'];
 
-                    if ($insert_stmt = $mysqli->prepare("INSERT INTO projekt (user_id, project_name, category, date, info) 
-                                                         VALUES ($projectname, $category, $date, $info)")) {
+                    if ($insert = $mysqli->prepare("INSERT INTO projekt (user_id, project_name, category, date, info) 
+                                                         VALUES ($userid, '$projectname', '$category', $date, '$info')")) {
                                 
                                 if (!$insert->execute()) {
                                     header('Location: ../error.php?err=Registration failure: INSERT'); 
