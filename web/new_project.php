@@ -71,18 +71,18 @@ sec_session_start();
                     <input class="btn right" type="submit" value="Tilføj projekt"> 
                 </fieldset>
 
-            <?php              
-                if(isset($_REQUEST['projectname'], $_REQUEST['category'], $_REQUEST['info'])) {
-
+            <?php         
+                if(isset($_REQUEST['projectname'], $_REQUEST['info'])) {
+                    echo "burde virke";
                     $projectname = $_REQUEST['projectname'];
                     $category    = $_REQUEST['category'];
                     $date        = date("20y-m-d");
                     $info        = $_REQUEST['info'];
                     $userid      = $_SESSION['user_id'];
 
-                    if ($insert = $mysqli->prepare("INSERT INTO projekt (user_id, project_name, category, date, info) 
+                    if ($insert = $mysqli->prepare("INSERT INTO projekt (creator_id, project_name, category, start_date, info) 
                                                          VALUES ($userid, '$projectname', '$category', $date, '$info')")) {
-                                
+                                echo "<br>burde stadigt virke";
                                 if (!$insert->execute()) {
                                     header('Location: ../error.php?err=Registration failure: INSERT'); 
                             }
