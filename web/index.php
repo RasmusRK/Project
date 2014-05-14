@@ -44,11 +44,5 @@ if (login_check($mysqli) == true) {
            <a href="register.php"><input class="btn right" type="button" value="Opret bruger" /></a>
     </div>
 
-    <!-- skal muligvis implementeres senere
-        </form>
-        <p>If you don't have a login, please <a href="register.php">register</a></p>
-        <p>If you are done, please <a href="includes/logout.php">log out</a>.</p>
-        <p>You are currently logged <?php echo $logged ?>.</p>
-    -->
 </body>
 </html>
