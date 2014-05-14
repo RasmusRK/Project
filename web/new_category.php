@@ -38,21 +38,20 @@ sec_session_start();
     <div id="main">
         <div class="header">
             <h1>Opret ny kategori</h1>
+            <h2>Indtast den nye kategoris navn</h2>
         </div>
 
         <div class="content">
             <h2 class="content-subhead"></h2>
             
             <form class="pure-form pure-form-stacked" action="<?php echo esc_url($_SERVER['PHP_SELF']); ?>"   name="registration_form">
-                <ul><li> Indtast den nye kategoris navn </li></ul>
                 <div>
                     <label for="navn"><b>Navn</b></label>
                     <input id ="navn" type="text" name="navn" required />
                 </div>
-                    <br><br>
                 <div>
-                    <br><br>
-                    <input class="btn right" type="submit" value="Opret"/> 
+                <br><br>
+                    <input class="btn right" type="submit" value="Opret kategori"/> 
                 </div>
 
                 <?php

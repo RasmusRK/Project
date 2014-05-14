@@ -2,21 +2,18 @@ body {
     color: #777;
 }
 
-.pure-img-responsive {
-    max-width: 100%;
-    height: auto;
-}
-
 .logout {
-
     position: fixed;
     bottom: 0;
     left: 0;
 }
 
-/*
-Add transition to containers so they can push in and out.
-*/
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Add transition to containers so they can push in and out. */
 #layout,
 #menu,
 .menu-link {
@@ -27,9 +24,7 @@ Add transition to containers so they can push in and out.
     transition: all 0.2s ease-out;
 }
 
-/*
-This is the parent `<div>` that contains the menu and the content area.
-*/
+/* This is the parent `<div>` that contains the menu and the content area. */
 #layout {
     position: relative;
     padding-left: 0;
@@ -46,9 +41,8 @@ This is the parent `<div>` that contains the menu and the content area.
         #layout.active .menu-link {
             left: 150px;
         }
-/*
-The content `<div>` is where all your content goes.
-*/
+
+/* The content `<div>` is where all your content goes. */
 .content {
     margin: 0 auto;
     padding: 0 2em;
