@@ -1,7 +1,6 @@
 CREATE TABLE  `projekt`.`users` (
- `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+ `id` INT NOT NULL PRIMARY KEY ,
  `username` VARCHAR(30) NOT NULL ,
- `email` VARCHAR(50) NOT NULL ,
  `password` CHAR(128) NOT NULL ,
  `salt` CHAR(128) NOT NULL,
  `admin` TINYINT(1) NOT NULL
@@ -32,7 +31,7 @@ FOREIGN KEY (creator_id) REFERENCES users(id)
 ) ENGINE = INNODB;
 
 CREATE TABLE `projekt`.`work_on` (
-`work_on_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`work_on_id` DATE NOT NULL AUTO_INCREMENT PRIMARY KEY ,
 `user_id` INT NOT NULL  ,
 `project_id` INT NOT NULL ,
 `hours` INTEGER NOT NULL ,

@@ -32,8 +32,8 @@ if (login_check($mysqli) == true) {
         ?> 
         <form class = "boxCont" action="includes/process_login.php" method="post" name="login_form">                      
             <div>
-                <label for="userName">Email</label>
-                <input id ="userName" type="text" name="email" placeholder="Indtast e-mail"/>
+                <label for="userName">Flyklub id</label>
+                <input id ="userName" type="text" name="email" placeholder="Indtast flyklub id"/>
             </div>
             <div>
                <label for="password">Kodeord</label>
@@ -41,7 +41,7 @@ if (login_check($mysqli) == true) {
            </div>
 
            <input class="btn left" type="submit" value="Login" onclick="formhash(this.form, this.form.password);" /> 
-           <a href = "register.php"><input class="btn right" type="button" value="Opret bruger" /></a>
+           <a href="register.php"><input class="btn right" type="button" value="Opret bruger" /></a>
     </div>
 
     <!-- skal muligvis implementeres senere

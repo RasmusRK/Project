@@ -12,7 +12,7 @@ include_once 'includes/functions.php';
         <link rel="stylesheet" href="css/pure.css" />
     </head>
     <body background="img/bg.jpg">
-    <div id = "login">
+    <div id="login">
         <!-- Registration form to be output if the POST variables are not
         set or if the registration script caused an error. -->
         <h1>Opret bruger</h1>
@@ -25,7 +25,6 @@ include_once 'includes/functions.php';
         <form class="boxCont" action="<?php echo esc_url($_SERVER['PHP_SELF']); ?>" method="post" name="registration_form">
         
         <ul>
-            <li>Emails skal have et gyldig email format</li>
             <li>Passwords skal være mindst 6 tegn langt</li>
             <li>Passwords må indeholde følgende
                 <ul>
@@ -36,13 +35,13 @@ include_once 'includes/functions.php';
             </li>
         </ul>
         <div>
-            <label for="username">Brugernavn</label>
+            <label for="username">Navn</label>
             <input id ="username" type="text" name="username" />
         </div>
 
         <div>
-            <label for="email">Email</label>
-            <input id ="email" type="text" name="email" />
+            <label for="club_id">Flyklub id</label>
+            <input id ="club_id" type="text" name="club_id" />
         </div>
 
         <div>
@@ -60,7 +59,7 @@ include_once 'includes/functions.php';
         <input class="btn left" type="button" value="Opret bruger" 
                   onclick="return regformhash(this.form,
                                   this.form.username,
-                                  this.form.email,
+                                  this.form.club_id,
                                   this.form.password,
                                   this.form.confirmpwd);" /> 
         </div>
