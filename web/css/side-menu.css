@@ -6,6 +6,9 @@ body {
     position: fixed;
     bottom: 0;
     left: 0;
+    width: 140px;
+    z-index: 1000; /* so the menu or its navicon stays above all content */
+
 }
 
 .pure-img-responsive {
