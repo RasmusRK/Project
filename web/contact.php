@@ -77,7 +77,6 @@ sec_session_start();
         <textarea rows="10" cols="40" name="message" required></textarea>
         </div>
         <br><br><br><br><br><br><br><br><br>
-        
         <input class="btn right" type="submit" name="submit" value="Send mail">
         </form>
         
