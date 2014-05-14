@@ -46,7 +46,6 @@ sec_session_start();
                 <h1>Opret nyt projekt</h1>
                 <h2>Udfyld følgende for oprette et nyt projekt</h2>
             </div>
-
             <div class="content">
                 <h2 class="content-subhead"></h2>
             
@@ -59,14 +58,7 @@ sec_session_start();
                     <br><br>
                     <div>
                         <label for="category"><b>Kategori</b></label>
-                        <select name="category">
-                            <option value="0" required >Vælg kategori</option>
-                            <?php 
-                            foreach($mysqli->query("SELECT category_name FROM categories") as $row) {
-                                echo "<option value=" . $row[0] . ">" . $row[0] . "</option>";
-                                } 
-                            ?>
-                        </select>
+                            <?php chooseCategory($mysqli); ?>
                         <br><br>
                         <a href="new_category.php">Tilføj ny kategori</a>
                     </div>

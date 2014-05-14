@@ -396,3 +396,18 @@ function history_for_wid($mysqli, $wid){
     }
     echo "</table>";
 }
+
+
+function chooseCategory($mysqli){
+    $sql = "SELECT category_name FROM categories";
+    $result = mysqli_query($mysqli,$sql);
+    echo "<select name=\"category\">";
+    echo "<option value = \"0\" requiered>Vælg kategori </option>";
+
+    while($row = mysqli_fetch_array($result)) {
+        echo "<option value=\"" . $row[0] . "\">" . $row[0] . "</option>";
+    }
+    echo "</select>";
+}
+
+                     
