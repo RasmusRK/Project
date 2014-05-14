@@ -20,18 +20,28 @@
 
 10. Lave indsæt timer funktionen. - DONE
  
-11. få brute force til, at virke!
+11. lav opret projekt - DONE
 
 12. Skriv flere todo punkter - DONE
 
 13. ændre e-mail til brugerid - DONE
 
-14. lav opret projekt - DONE
+14. Få brute force funktionen til, at virke
 
-15. Lav flere todo punkter igen - 
+15. Lav rediger i timer siden
 
-16. Lav projekt side - 
+16. Lav vis projekt side 
 
-17. Lav afslut projekt funktion -
+17. Lav afslut projekt funktion 
+
+18. Få kontakt siden til, at virke
+
+19. Lav en "over administrator"
+
+20. Lav promote administrator funktionen
+
+21. Lav en liste over bruger / kodeord, kun for administratorer
+
+22. Lav fjern bruger funktionen 
 
 
