@@ -258,7 +258,7 @@ function show_projects($mysqli){
 
     while($row = mysqli_fetch_array($result)) {
         echo "<tr>";
-        echo "<td><a href = 'add_time.php?pid=$row[0]'> $row[1]</a> </td>";
+        echo "<td><a href = 'project_info.php?pid=$row[0]'> $row[1]</a> </td>";
         echo "<td>" . $row[2] . "</td>";
         echo "<td>" . ($row[3]) . "</td>";
         echo "<td>" . ($row[4]) . "</td>";
@@ -312,7 +312,7 @@ function show_my_projects($mysqli){
 
     while($row = mysqli_fetch_array($result)) {
         echo "<tr>";
-        echo "<td><a href = 'add_time.php?pid=$row[0]'> $row[1]</a> </td>";
+        echo "<td><a href = 'project_info.php?pid=$row[0]'> $row[1]</a> </td>";
         echo "<td>" . $row[2] . "</td>";
         echo "<td>" . ($row[3]) . "</td>";
         echo "<td>" . ($row[4]) . "</td>";
@@ -364,7 +364,7 @@ function history($mysqli){
     while($row = mysqli_fetch_array($result)) {
         echo "<tr>";
         echo "<td>" . $row[0] . "</td>";
-        echo "<td><a href = 'add_time.php?wid=$row[5]'> $row[1]</a> </td>";
+        echo "<td><a href = 'project_info.php?pid=$row[5]'> $row[1]</a> </td>";
         echo "<td>" . ($row[2]) . "</td>";
         echo "<td>" . ($row[3]) . "</td>";
         echo "<td><a href = 'change_history.php?wid=$row[4]'>Rediger</a> </td>";
@@ -400,7 +400,7 @@ function change_history($mysqli, $wid){
         echo "<td>" . $row[4] . "</td>";
         echo "</tr>";
     }
-    echo "</table>";
+    echo "</table>";    
 }
 
 
