@@ -25,21 +25,22 @@ sec_session_start();
     <div id="main">
         <div class="header">
             <h1>Projekt</h1>
-            <h2>Beskrivelse</h2>
+            <h2>Detaljer omkring projektet</h2>
         </div>
 
         <div class="content">
-            <h2 class="content-subhead">Titel</h2>
+            <h2 class="content-subhead"></h2>
             <p>
                 <?php 
                     $pid = $_REQUEST['pid']; 
                     echo "projekt med id: " . $pid . "<br>";
                 ?>
-                Tilføj info over et projekt. <br>
-                evt. tilføj nogle funktioner for administrator: <br>
-                man kan lukke projektet <br>
-                man kan se alle der har arbejdet på projektet <br>
-                man kan se det samlede antal timer? <br>
+
+                Tilføj info over et projekt.<br>
+                evt. tilføj nogle funktioner for administrator:<br>
+                - man kan lukke projektet.<br>
+                - man kan se alle der har arbejdet på projektet <br>
+                - man kan se det samlede antal timer? <br>
                 <?php echo "<a href='main.php'>luk projekt</a>" ?>
                 
             </p>

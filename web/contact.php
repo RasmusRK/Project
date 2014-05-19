@@ -60,7 +60,7 @@ sec_session_start();
         ?>
         <div>
         <label for="from"><b>Afsender (E-mail)</b></label>
-        <input type="text" name="from" required>
+        <input type="text" name="from" id="from" required>
         </div>
         
         <br><br>
@@ -95,7 +95,7 @@ sec_session_start();
         // message lines should not exceed 70 characters (PHP rule), so wrap it
         $message = wordwrap($message, 70);
         // send mail
-        mail("webmaster@example.dk",$subject,$message,"From: $from\n");
+        mail("soender@live.dk",$subject,$message,"From: $from\n");
         echo "Tak for mailen - vi svarer tilbage hurtigst muligt!";
         }
         }
