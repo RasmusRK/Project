@@ -32,8 +32,8 @@ if (login_check($mysqli) == true) {
         ?> 
         <form class = "boxCont" action="includes/process_login.php" method="post" name="login_form">                      
             <div>
-                <label for="userName">Flyklub id</label>
-                <input id ="userName" type="text" name="email" placeholder="Indtast flyklub id"/>
+                <label for="userid">Flyklub id</label>
+                <input id ="userid" type="text" name="userid" placeholder="Indtast flyklub id"/>
             </div>
             <div>
                <label for="password">Kodeord</label>
