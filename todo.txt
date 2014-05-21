@@ -44,6 +44,6 @@
 
 22. Lav fjern bruger funktionen 
 
-23. tekst area ikke skalerbar (contact.php og new_project.php)
+23. tekst area ikke skalerbar (contact.php og new_project.php)  - DONE
 
 
