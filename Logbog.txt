@@ -35,6 +35,10 @@ Stablet nyt måde på plads, skal ligge mellem d. 6 og 8 juni.
 14/5 Tilføjet kategori til database
 optimering af alle SQL statements - funktionen tilføj projekt lavet
 
+19/5 Opdateret online server til php 5.4, så den kan benytte mysqli
+
+21/5 Lagt koden op på serveren og bug testet. 
+
 
 
 
