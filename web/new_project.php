@@ -17,15 +17,15 @@ sec_session_start();
     <link rel="stylesheet" href="css/side-menu.css"/>
 </head>
 
-    <?php if (login_check($mysqli) == true) : ?>
-    <?php if (check_admin($mysqli) == true) : ?>
+<?php if (login_check($mysqli) == true) : ?>
+<?php if (check_admin($mysqli) == true) : ?>
     
     <div id="layout">
         <a href="#menu" id="menuLink" class="menu-link">
             <span></span>
         </a>
 
-        <?php menu(); ?>
+<?php menu(); ?>
 
         <div id="main">
             <div class="header">
@@ -56,9 +56,10 @@ sec_session_start();
                     <input class="btn right" type="submit" value="Tilføj projekt"> 
                 </fieldset>
 
-            <?php         
+<?php
+                ob_start();         
                 if(isset($_REQUEST['projectname'], $_REQUEST['info'])) {
-                    echo "burde virke";
+                    
                     $projectname = $_REQUEST['projectname'];
                     $category    = $_REQUEST['category'];
                     $date        = date("Y-m-d");
@@ -67,13 +68,15 @@ sec_session_start();
 
                     if ($insert = $mysqli->prepare("INSERT INTO projekt (creator_id, project_name, category, start_date, info) 
                                                          VALUES ($userid, '$projectname', '$category', '$date', '$info')")) {
-                                echo "<br>burde stadigt virke";
+                                
                                 if (!$insert->execute()) {
                                     header('Location: ../error.php?err=Registration failure: INSERT'); 
                             }
-                        header('Location: ./all_projects.php');
+                         echo '<META HTTP-EQUIV="Refresh" Content="0; URL=all_projects.php">';
+                        
                         }
                     } 
+            ob_end_flush();
             ?>
             </form>
         </div>
