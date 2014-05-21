@@ -46,4 +46,6 @@
 
 23. tekst area ikke skalerbar (contact.php og new_project.php)
 
+24. tilføj distinct til sql statement i mine projekter så der ikke er duplicates
+
 
