@@ -48,4 +48,5 @@
 
 24. tilføj distinct til sql statement i mine projekter så der ikke er duplicates
 
+25. fix menu function
 
