@@ -56,7 +56,7 @@ sec_session_start();
                                     header('Location: ../error.php?err=Registration failure: INSERT');
                             }
                         echo '<META HTTP-EQUIV="Refresh" Content="0; URL=new_project.php">';
-                        header('Location: ./new_project.php');
+                        
                         
                         }
                     }
