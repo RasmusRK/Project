@@ -1,7 +1,9 @@
-    <?php
+<?php
+//session_start();
 include_once 'psl-config.php';
- 
+
 function sec_session_start() {
+    ob_start();
     $session_name = 'sec_session_id';   // Set a custom session name
     $secure = SECURE;
     // This stops JavaScript being able to access the session id.
@@ -22,6 +24,7 @@ function sec_session_start() {
     session_name($session_name);
     session_start();            // Start the PHP session 
     session_regenerate_id();    // regenerated the session, delete the old one. 
+    ob_end_flush();
 }
 
 
