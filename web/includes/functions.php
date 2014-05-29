@@ -160,6 +160,22 @@ function check_admin($mysqli) {
         return false;}
 }
 
+function user_name($mysqli) {
+    if(login_check($mysqli) == true) {
+        $user_id = $_SESSION['user_id'];
+        if ($stmt = $mysqli->prepare("SELECT username 
+                                      FROM users 
+                                      WHERE id = $user_id")) {
+            $stmt->execute();
+            $stmt->store_result();
+            $stmt->bind_result($name);
+            $stmt->fetch();
+
+            return $name;
+        }
+    }
+}
+
 
 function esc_url($url) {
  
