@@ -54,7 +54,29 @@ sec_session_start();
                 Du kan ændre hvilken mail adresse der skal sendes 'kontakt' til.<br>
                 Du kan lave en anden administrator til en superdministrator, men dette vil gøre dig selv til en normal administrator.<br>
                 Du kan fjerne inaktive brugere <br>
-                <?php user_table($mysqli); ?>
+                <?php user_table($mysqli); ?> <br><br>
+                Vælg et id på den du ønsker, at lave til super admin.<br>
+                Dette medføre, at du ikke kan tilgå administrator siden mere.<br>
+                (Der kan kun være en super administrator på en gang)<br>
+                <form>
+                <div>
+                    <label for="id"><b>Bruger-id</b></label>
+                    <input id ="id" type="int" name="id" required />
+                </div>
+                    <input class="btn right" type="submit" value="Ny admin"> 
+                    <?php
+                        $oldAdmin = $_SESSION['user_id'];
+                        $newAdmin = $_REQUEST['id'];
+                        if (get_userState($mysqli, $newAdmin) == 1 && get_userState($mysqli, $oldAdmin) == 2) {
+                            mysqli_query($mysqli,"UPDATE users SET admin = 2    
+                                                  WHERE id = $newAdmin");
+                            mysqli_query($mysqli,"UPDATE users SET admin = 1    
+                                                  WHERE id = $oldAdmin");
+
+                            mysqli_close($mysqli);
+                        }
+                    ?>
+                </form>
             </p>
         </div>
     </div>
