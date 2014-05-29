@@ -679,7 +679,7 @@ function user_table($mysqli){
             echo "<td></td>";
         }
         if ($row[2] == 1) {
-            echo "<td><a href = 'demote.php?uid=$row[1]'>Demote/a></td>";
+            echo "<td><a href = 'demote.php?uid=$row[1]'>Demote</a></td>";
         }
         else {
             echo "<td></td>";
@@ -689,4 +689,19 @@ function user_table($mysqli){
         echo "</tr>";
     }
     echo "</table>";
-}    
+}   
+
+function get_userState($mysqli, $uid) {
+    if(login_check($mysqli) == true) {
+        if ($stmt = $mysqli->prepare("SELECT admin
+                                      FROM users 
+                                      WHERE id = $uid")) {
+            $stmt->execute();
+            $stmt->store_result();
+            $stmt->bind_result($id);
+            $stmt->fetch();
+
+            return $id;
+        }
+    }
+}
