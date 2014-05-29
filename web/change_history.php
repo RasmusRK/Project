@@ -32,7 +32,7 @@ sec_session_start();
 
     <div id="main">
         <div class="header">
-            <h1>Tilføj tid til projekt</h1>
+            <h1>Tilføj dine ændringer</h1>
         </div>
 
         <div class="content">
@@ -42,8 +42,7 @@ sec_session_start();
                       <?php
                     echo '<input type="hidden" name="wid" value="' .$wid .'">';
                     ?>
-                <?php upate_history($mysqli,$wid); ?>
-                <ul><li> Indtast ændringer </li></ul>
+                <ul><li> Indtast dine ændringer og tryk godkend.<br> Denne funktion vil ikke være tilgængelig hvis et projekt er lukket. </li></ul>
                 <div>
                     <label for="timer"><b>Timer</b></label>
                     <input id ="timer" type="text" name="timer" required />
@@ -61,28 +60,20 @@ sec_session_start();
                 <br><br>
                 <div>
                     <br><br>
-                    <input class="btn right" type="submit" value="Tilføj timer"/> 
-
+                    <input class="btn right" type="submit" value="Godkend ændringer"/> 
                 </div>
-
                 <?php
-                    if(isset($_REQUEST['timer'], $_REQUEST['date'], $_REQUEST['info'])) {
-                        $timer = $_REQUEST['timer'];
-                        $dato = $_REQUEST['date'];
-                        $info = $_REQUEST['info'];
-                        $userid = $_SESSION['user_id'];
-                       
-                        $SQL = // Update statement with $timer, $dato, $info, $userid and $wid.
+                if(isset($_REQUEST['timer'], $_REQUEST['date'])) {
+                    $timer = $_REQUEST['timer'];
+                    $dato = $_REQUEST['date'];
+                    $info = $_REQUEST['info'];
+                    $wid = $_REQUEST['wid'];
+                    mysqli_query($mysqli,"UPDATE work_on SET date = '$dato', hours = '$timer', info = '$info'
+                                          WHERE work_on_id = $wid");     
 
-                        if ($insert = $mysqli->prepare($SQL)){
-                                if (!$insert->execute()) {
-                                    header('Location: ../error.php?err=Registration failure: INSERT');
-                                
-                            }
-                        header('Location: ./history.php');
-                        
-                        }
-                    }
+                    mysqli_close($mysqli);            
+                    header('Location: ./history.php');
+                }
                 ?>
             </form>
         </div>
