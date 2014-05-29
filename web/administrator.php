@@ -47,13 +47,8 @@ sec_session_start();
 
         <div class="content">
             <p>
-                You are super admin, congrats! :) <br>
-                Du kan lave andre til admins:<br>
-                Du kan finde kodeord frem ved, at skrive id'et på den der mangler sit password<br>
-                (get_password.php)
+                You are super admin, congrats! :) <br><br>
                 Du kan ændre hvilken mail adresse der skal sendes 'kontakt' til.<br>
-                Du kan lave en anden administrator til en superdministrator, men dette vil gøre dig selv til en normal administrator.<br>
-                Du kan fjerne inaktive brugere <br>
                 <?php user_table($mysqli); ?> <br><br>
                 Vælg et id på den du ønsker, at lave til super admin.<br>
                 Dette medføre, at du ikke kan tilgå administrator siden mere.<br>
