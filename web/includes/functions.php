@@ -136,6 +136,16 @@ function login_check($mysqli) {
     }
 }
 
+function check_afsluttet($mysqli, $pid) {
+    if(login_check($mysqli) == true) {
+        if (project_enddate($mysqli, $pid) == "Ikke afsluttet endnu") {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+}
 function check_admin($mysqli) {
 
     if(login_check($mysqli) == true) {
@@ -557,7 +567,11 @@ function projekt_timer_sum($mysqli, $pid) {
         $res = mysqli_query($mysqli,"SELECT sum(hours) FROM work_on WHERE project_id = '$pid'");
         $row = mysqli_fetch_row($res);
         $sum = $row[0];
-        return $sum;
+        if($sum < 1)
+            return 0;
+        else {
+            return $sum;
+        }
     }
 }
 
