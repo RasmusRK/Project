@@ -560,3 +560,18 @@ function projekt_timer_sum($mysqli, $pid) {
         return $sum;
     }
 }
+
+function project_category($mysqli, $pid) {
+    if(login_check($mysqli) == true) {
+        if ($stmt = $mysqli->prepare("SELECT category
+                                      FROM projekt 
+                                      WHERE project_id = $pid")) {
+            $stmt->execute();
+            $stmt->store_result();
+            $stmt->bind_result($category);
+            $stmt->fetch();
+
+            return $category;
+        }
+    }
+}

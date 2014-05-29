@@ -25,7 +25,7 @@ sec_session_start();
     <div id="main">
         <div class="header">
             <h1><?php echo project_name($mysqli, $_REQUEST['pid']); ?></h1>
-            <h2>Detaljer omkring projektet <?php echo project_name($mysqli, $_REQUEST['pid']); ?></h2>
+            <h2>Kategorien: <?php echo project_category($mysqli, $_REQUEST['pid']); ?></h2>
         </div>
 
         <div class="content">
