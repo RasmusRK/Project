@@ -639,4 +639,54 @@ function project_category($mysqli, $pid) {
             return $category;
         }
     }
+}
+
+function user_table($mysqli){
+
+    $result = mysqli_query($mysqli,"SELECT username, id, admin
+                                    FROM users
+                                    WHERE admin < 2");
+
+    echo"<table class='pure-table pure-table-striped'>
+    <thead>
+    <tr>
+    <th>Navn</th>
+    <th>Id</th>
+    <th>Status</th>
+    <th>password</th>
+    <th>Lav til admin</th>
+    <th>Lav til bruger</th>
+    <th>Fjern</th>
+    <th>SidstOnline</th>
+    </tr>
+    </thead>";
+
+    while($row = mysqli_fetch_array($result)) {
+        echo "<tr>";
+        echo "<td>" . $row[0] . "</td>";
+        echo "<td>" . $row[1] . "</td>";
+        if ($row[2] == 1) {
+            echo "<td>Administrator</td>";
+        }
+        else {
+            echo"<td>Bruger</td>";
+        }
+        echo "<td><a href = 'get_password.php?uid=$row[1]'>Gendan</a></td>";
+        if ($row[2] == 0) {
+            echo "<td><a href = 'promote.php?uid=$row[1]'>Promote</a></td>";
+        }
+        else {
+            echo "<td></td>";
+        }
+        if ($row[2] == 1) {
+            echo "<td><a href = 'demote.php?uid=$row[1]'>Demote/a></td>";
+        }
+        else {
+            echo "<td></td>";
+        }
+        echo "<td>Slet</td>";
+        echo "<td>Dato</td>";
+        echo "</tr>";
+    }
+    echo "</table>";
 }    

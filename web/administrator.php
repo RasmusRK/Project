@@ -42,19 +42,19 @@ sec_session_start();
 
     <div id="main">
         <div class="header">
-            <h1>Forside</h1>
-            <h2>Beskrivelse</h2>
+            <h1>Administrator side</h1>
         </div>
 
         <div class="content">
-            <h2 class="content-subhead">Titel</h2>
             <p>
-                Tekst
-                <?php if (check_admin($mysqli) == true) : ?>
-                    <br> You are admin! <br>
-                <?php else : ?>
-                    <br> You are not admin! <br>
-                <?php endif; ?>
+                You are super admin, congrats! :) <br>
+                Du kan lave andre til admins:<br>
+                Du kan finde kodeord frem ved, at skrive id'et på den der mangler sit password<br>
+                (get_password.php)
+                Du kan ændre hvilken mail adresse der skal sendes 'kontakt' til.<br>
+                Du kan lave en anden administrator til en superdministrator, men dette vil gøre dig selv til en normal administrator.<br>
+                Du kan fjerne inaktive brugere <br>
+                <?php user_table($mysqli); ?>
             </p>
         </div>
     </div>
