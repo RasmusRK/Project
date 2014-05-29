@@ -4,7 +4,7 @@
     <type>com.umlet.element.Actor</type>
     <coordinates>
       <x>10</x>
-      <y>70</y>
+      <y>30</y>
       <w>100</w>
       <h>120</h>
     </coordinates>
@@ -37,46 +37,12 @@
     <type>com.umlet.element.Relation</type>
     <coordinates>
       <x>30</x>
-      <y>150</y>
+      <y>110</y>
       <w>50</w>
-      <h>160</h>
+      <h>200</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>30;30;30;140</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.Class</type>
-    <coordinates>
-      <x>50</x>
-      <y>220</y>
-      <w>20</w>
-      <h>20</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes/>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>40</x>
-      <y>200</y>
-      <w>110</w>
-      <h>50</h>
-    </coordinates>
-    <panel_attributes>lt=-
-</panel_attributes>
-    <additional_attributes>30;30;90;30</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.custom.Text</type>
-    <coordinates>
-      <x>70</x>
-      <y>210</y>
-      <w>60</w>
-      <h>20</h>
-    </coordinates>
-    <panel_attributes>Login</panel_attributes>
-    <additional_attributes/>
+    <additional_attributes>30;30;30;180</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
@@ -235,6 +201,40 @@ Kriterier
     </coordinates>
     <panel_attributes>Projekt
 Historik fil</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Text</type>
+    <coordinates>
+      <x>70</x>
+      <y>210</y>
+      <w>60</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>Login</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>40</x>
+      <y>200</y>
+      <w>110</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>30;30;90;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>50</x>
+      <y>220</y>
+      <w>20</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes/>
     <additional_attributes/>
   </element>
 </diagram>
