@@ -176,7 +176,6 @@ function user_name($mysqli) {
     }
 }
 
-
 function esc_url($url) {
  
     if ('' == $url) {
@@ -452,4 +451,77 @@ function menu() {
                 </ul>
             </div>
         </div>";
+}
+
+function project_name($mysqli, $pid) {
+    if(login_check($mysqli) == true) {
+        if ($stmt = $mysqli->prepare("SELECT project_name 
+                                      FROM projekt 
+                                      WHERE project_id = $pid")) {
+            $stmt->execute();
+            $stmt->store_result();
+            $stmt->bind_result($name);
+            $stmt->fetch();
+
+            return $name;
+        }
+    }
+}
+
+function project_info($mysqli, $pid) {
+    if(login_check($mysqli) == true) {
+        if ($stmt = $mysqli->prepare("SELECT info
+                                      FROM projekt 
+                                      WHERE project_id = $pid")) {
+            $stmt->execute();
+            $stmt->store_result();
+            $stmt->bind_result($name);
+            $stmt->fetch();
+
+            return $name;
+        }
+    }
+}
+
+function project_startdate  ($mysqli, $pid) {
+    if(login_check($mysqli) == true) {
+        if ($stmt = $mysqli->prepare("SELECT start_date
+                                      FROM projekt 
+                                      WHERE project_id = $pid")) {
+            $stmt->execute();
+            $stmt->store_result();
+            $stmt->bind_result($date);
+            $stmt->fetch();
+
+            return $date;
+        }
+    }
+}
+
+function project_enddate  ($mysqli, $pid) {
+    if(login_check($mysqli) == true) {
+        if ($stmt = $mysqli->prepare("SELECT end_date
+                                      FROM projekt 
+                                      WHERE project_id = $pid")) {
+            $stmt->execute();
+            $stmt->store_result();
+            $stmt->bind_result($date);
+            $stmt->fetch();
+
+            if($date == NULL) {
+                return "Ikke afsluttet endnu";
+            }
+            return $date;
+        }
+    }
+}
+
+function close_projekt($mysqli, $pid) {
+    if(login_check($mysqli) == true) {
+        $date = date("Y-m-d");
+        mysqli_query($mysqli,"UPDATE projekt SET end_date = $date
+        WHERE project_id = $pid");
+
+        mysqli_close($mysqli);
+    }
 }
