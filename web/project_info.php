@@ -39,11 +39,14 @@ sec_session_start();
                 Afsluttelses date: <?php echo project_enddate($mysqli, $_REQUEST['pid']) ?><br><br>
                 Kort info over projektet:<br><br>
                 <?php echo project_info($mysqli, $_REQUEST['pid']); ?> <br><br>
+                <?php if (check_admin($mysqli) == true) : ?>
                 Afslut projekt: 
                 <?php if($_GET['button1']){close_projekt($mysqli, $_REQUEST['pid']);} ?>
-                <button id="btnfun1" name="btnfun1" onClick='location.href="?button1=1?pid=<?php echo $_REQUEST['pid']; ?>"'>Afslut</button><br>
-                - man kan se alle der har arbejdet på projektet <br>
-                - man kan se det samlede antal timer? <br>                
+                <button id="btnfun1" name="btnfun1" onClick='location.href="?button1=1&pid=<?php echo $_REQUEST['pid']; ?>"' value="Refresh">Afslut</button><br><br>
+                <?php endif ; ?>
+                Liste med alle der har arbejdet på projektet: <br>
+                <?php project_history($mysqli, $_REQUEST['pid']); ?><br>    
+                Det samlede antal timer lagt i projektet: <?php echo projekt_timer_sum($mysqli, $_REQUEST['pid']); ?> <br>                
             </p>
         </div>
     </div>

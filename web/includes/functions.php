@@ -519,9 +519,44 @@ function project_enddate  ($mysqli, $pid) {
 function close_projekt($mysqli, $pid) {
     if(login_check($mysqli) == true) {
         $date = date("Y-m-d");
-        mysqli_query($mysqli,"UPDATE projekt SET end_date = $date
+        mysqli_query($mysqli,"UPDATE projekt SET end_date = '$date'     
         WHERE project_id = $pid");
 
         mysqli_close($mysqli);
+    }
+}
+
+function project_history($mysqli, $pid){
+    $result = mysqli_query($mysqli,"SELECT username, work_on.date, hours, work_on.info
+                                    FROM work_on, users
+                                    WHERE work_on.user_id = users.id AND project_id = $pid");
+
+    echo"<table class='pure-table pure-table-striped'>
+    <thead>
+    <tr>
+    <th>Navn</th>
+    <th>Dato</th>
+    <th>Timer</th>
+    <th>Info</th>
+    </tr>
+    </thead>";
+
+    while($row = mysqli_fetch_array($result)) {
+        echo "<tr>";
+        echo "<td>" . $row[0] . "</td>";
+        echo "<td>" . $row[1] . "</td>";
+        echo "<td>" . ($row[2]) . "</td>";
+        echo "<td>" . ($row[3]) . "</td>";
+        echo "</tr>";
+    }
+    echo "</table>";    
+}
+
+function projekt_timer_sum($mysqli, $pid) {
+    if(login_check($mysqli) == true) {
+        $res = mysqli_query($mysqli,"SELECT sum(hours) FROM work_on WHERE project_id = '$pid'");
+        $row = mysqli_fetch_row($res);
+        $sum = $row[0];
+        return $sum;
     }
 }
