@@ -291,7 +291,12 @@ function show_projects($mysqli){
         echo "<td>" . ($row[3]) . "</td>";
         echo "<td>" . ($row[4]) . "</td>";
         echo "<td>" . $row[5] . "</td>";
-        echo "<td><a href = 'add_time.php?pid=$row[0]'>Tilføj</a> </td>";
+        if (check_afsluttet($mysqli, $row[0]) == true) {
+            echo "<td><a href = 'add_time.php?pid=$row[0]'>Tilføj</a> </td>";
+        }
+        else {
+            echo "<td> Afsluttet </td>";
+        }
         echo "</tr>";
     }
     echo "</table>";
@@ -345,7 +350,12 @@ function show_my_projects($mysqli){
         echo "<td>" . ($row[3]) . "</td>";
         echo "<td>" . ($row[4]) . "</td>";
         echo "<td>" . $row[5] . "</td>";
-        echo "<td><a href = 'add_time.php?pid=$row[0]'>Tilføj</a> </td>";
+        if (check_afsluttet($mysqli, $row[0]) == true) {
+            echo "<td><a href = 'add_time.php?pid=$row[0]'>Tilføj</a> </td>";
+        }
+        else {
+            echo "<td> Afsluttet </td>";
+        }
         echo "</tr>";
     }
     echo "</table>";
@@ -395,7 +405,12 @@ function history($mysqli){
         echo "<td><a href = 'project_info.php?pid=$row[5]'> $row[1]</a> </td>";
         echo "<td>" . ($row[2]) . "</td>";
         echo "<td>" . ($row[3]) . "</td>";
-        echo "<td><a href = 'change_history.php?wid=$row[4]'>Rediger</a> </td>";
+        if (check_afsluttet($mysqli, $row[5]) == true) {
+            echo "<td><a href = 'change_history.php?wid=$row[4]'>Rediger</a> </td>";
+        }
+        else {
+            echo "<td> Afsluttet </td>";
+        }
         echo "</tr>";
     }
     echo "</table>";
@@ -589,3 +604,4 @@ function project_category($mysqli, $pid) {
         }
     }
 }
+    

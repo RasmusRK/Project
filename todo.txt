@@ -28,13 +28,13 @@
 
 14. Få brute force funktionen til, at virke
 
-15. Lav rediger i timer siden
+15. Lav rediger i timer siden - DONE
 
-16. Lav vis projekt side 
+16. Lav vis projekt side - DONE
 
-17. Lav afslut projekt funktion 
+17. Lav afslut projekt funktion - DONE
 
-18. Få kontakt siden til, at virke
+18. Få kontakt siden til, at virke - DONE
 
 19. Lav en "over administrator"
 
@@ -44,7 +44,7 @@
 
 22. Lav fjern bruger funktionen 
 
-23. tekst area ikke skalerbar (contact.php og new_project.php)  - DONE
+23. tekst area ikke skalerbar (contact.php og new_project.php) - DONE
 
 24. tilføj distinct til sql statement i mine projekter så der ikke er duplicates
 
