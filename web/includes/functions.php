@@ -347,7 +347,7 @@ function show_my_projects($mysqli){
         $direction_link = 'ASC';
     } 
     $userid = $_SESSION['user_id'];
-    $SQL = "SELECT projekt.project_id, project_name, category_name, start_date, end_date, username 
+    $SQL = "SELECT DISTINCT projekt.project_id, project_name, category_name, start_date, end_date, username 
             FROM projekt, users, categories, work_on 
             WHERE users.id = projekt.creator_id AND projekt.category = categories.category_name
             AND work_on.user_id = $userid AND work_on.project_id = projekt.project_id
