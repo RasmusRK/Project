@@ -15,6 +15,7 @@ sec_session_start();
 </head>
 
 <?php if (login_check($mysqli) == true) : ?>
+<?php if (check_overadmin($mysqli) == true) : ?>
 <div id="layout">
     <a href="" id="menuLink" class="menu-link">
         <span></span>
@@ -61,6 +62,9 @@ sec_session_start();
 
 <script src="js/ui.js"></script>
 </body>
+    <?php else : ?>
+        <?php header('Location: ./main.php'); ?>
+    <?php endif; ?>
     <?php else : ?>
         <p>
             <span class="error">Du har ikke rettigheder til at komme ind på siden.</span> Gå venligst tilbage til <a href="index.php">login siden</a>.

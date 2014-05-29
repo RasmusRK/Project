@@ -146,6 +146,30 @@ function check_afsluttet($mysqli, $pid) {
         }
     }
 }
+
+function check_overadmin($mysqli) {
+    if(login_check($mysqli) == true) {
+        $user_id = $_SESSION['user_id'];
+        if ($stmt = $mysqli->prepare("SELECT admin 
+                                      FROM users 
+                                      WHERE id = $user_id LIMIT 1")) {
+            $stmt->execute();
+            $stmt->store_result();
+            $stmt->bind_result($admin);
+            $stmt->fetch();
+            if($admin == "2") {
+                return true;    
+            }
+            else {
+                return false;}
+        }
+        else {
+            return false;}
+    }
+    else {
+        return false;}    
+}
+
 function check_admin($mysqli) {
 
     if(login_check($mysqli) == true) {
@@ -157,7 +181,7 @@ function check_admin($mysqli) {
             $stmt->store_result();
             $stmt->bind_result($admin);
             $stmt->fetch();
-            if($admin == "1") {
+            if($admin == "1" || $admin == "2") {
                 return true;    
             }
             else {
@@ -472,6 +496,9 @@ function menu() {
                     <?php if (check_admin($mysqli) == true) : ?>
                     <li> <a href='new_project.php'>Nyt projekt</a></li>
                     <?php endif; ?>
+                    <?php if (check_overadmin($mysqli) == true) : ?>
+                    <li> <a href='administrator.php'>Administrator</a></li>
+                    <?php endif; ?>
                     <li><a class='logout' href='includes/logout.php'>Log ud</a></li>
                 </ul>
             </div>
@@ -523,7 +550,7 @@ function project_startdate  ($mysqli, $pid) {
     }
 }
 
-function project_enddate  ($mysqli, $pid) {
+function project_enddate($mysqli, $pid) {
     if(login_check($mysqli) == true) {
         if ($stmt = $mysqli->prepare("SELECT end_date
                                       FROM projekt 
@@ -545,6 +572,15 @@ function close_projekt($mysqli, $pid) {
     if(login_check($mysqli) == true) {
         $date = date("Y-m-d");
         mysqli_query($mysqli,"UPDATE projekt SET end_date = '$date'     
+        WHERE project_id = $pid");
+
+        mysqli_close($mysqli);
+    }
+}
+
+function open_projekt($mysqli, $pid) {
+    if(login_check($mysqli) == true) {
+        mysqli_query($mysqli,"UPDATE projekt SET end_date = NULL    
         WHERE project_id = $pid");
 
         mysqli_close($mysqli);
@@ -603,5 +639,4 @@ function project_category($mysqli, $pid) {
             return $category;
         }
     }
-}
-    
+}    
