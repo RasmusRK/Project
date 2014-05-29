@@ -1,4 +1,4 @@
-Logbog over foreløbigs projekt arbejde:
+﻿Logbog over foreløbigs projekt arbejde:
 
 
 4/2 Projekt kursus starter
@@ -39,7 +39,12 @@ optimering af alle SQL statements - funktionen tilføj projekt lavet
 
 21/5 Lagt koden op på serveren og bug testet. 
 
+26/5 Kunde skriver at der er problemer med det bookingsystem som ligger på serveren.
 
+27/5 Vi skifter deres php tilbage til 4.3
+
+28/5 Kunde melder tilbage at deres bookingsystem virker igen
+ 
 
 
 
