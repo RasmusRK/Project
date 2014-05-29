@@ -33,8 +33,8 @@ sec_session_start();
                     <?php endif; ?>
                     <?php if (check_overadmin($mysqli) == true) : ?>
                     <li> <a href='administrator.php'>Administrator</a></li>
-                    <?php endif; ?>
                     <li> <a href ='sql_table_to_pdf/generate-pdf.php'> Print </a></li>
+                    <?php endif; ?>
                     <li><a class='logout' href='includes/logout.php'>Log ud</a></li>
                 </ul>
             </div>
