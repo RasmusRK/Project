@@ -38,6 +38,6 @@ $pdf->Table('select project_name, category,start_date, end_date from projekt ord
 //$pdf->Output("C:\Users\John\Desktop/somename.pdf",'F'); 
 
 header('Content-type: projekter/pdf');
-$pdf->Output('D:\projekter'.".pdf", 'D'); 
+$pdf->Output('projekter'.".pdf", 'D'); 
 //header('Location: '.projekter.".pdf");
 ?>
