@@ -48,12 +48,32 @@ sec_session_start();
 
         <div class="content">
             <p>
-                You are super admin, congrats! :) <br><br>
-                Du kan ændre hvilken mail adresse der skal sendes 'kontakt' til.<br>
+
+            Her kan du vælge en ny email adresse, hvor alle emails i kontakt vil blive sendt til.<br>
+            Den nuværende email er: <?php echo get_mail($mysqli); ?><br><br>
+            Indtast den nye email adresse, hvis du ønsker at ændre den:<br>
+                <form>
+                    <div>
+                        <label for="newemail"></label>
+                        <input id ="newemail" type="string" name="newemail"/>
+                        <input class="button" name="email" type="submit" value="godkend"> 
+                    </div>
+                </form>
+
+                <?php
+                    if (isset($_REQUEST['newemail'])) {
+                        update_email($mysqli, $_REQUEST['newemail']);
+                        echo '<META HTTP-EQUIV="Refresh" Content="0; URL=administrator.php">';
+                    }
+                ?>
+                <br><br><br>
+                
                 <?php user_table($mysqli); ?> <br><br>
+                
                 Vælg et id på den du ønsker, at lave til super admin.<br>   
                 Dette medføre, at du ikke kan tilgå administrator siden mere.<br>
                 (Der kan kun være en super administrator på en gang)<br>
+                
                 <form>
                 <div>
                     <label for="id"><b>Bruger-id</b></label>

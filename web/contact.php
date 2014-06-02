@@ -8,22 +8,20 @@ sec_session_start();
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
-    <title>Projects</title>
-<link rel="stylesheet" href="css/pure-web.css">
-<link rel="stylesheet" href="css/pure.css"/>
-<link rel="stylesheet" href="css/pure-form.css"/>
-<link rel="stylesheet" href="css/side-menu.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
+        <title>Projects</title>
+    <link rel="stylesheet" href="css/pure-web.css">
+    <link rel="stylesheet" href="css/pure.css"/>
+    <link rel="stylesheet" href="css/pure-form.css"/>
+    <link rel="stylesheet" href="css/side-menu.css">
 </head>
 
 <body>
  <?php if (login_check($mysqli) == true) : ?>
     <div id="layout">
-    <!-- Menu toggle -->
     <a href="#menu" id="menuLink" class="menu-link">
-        <!-- Hamburger icon -->
         <span></span>
     </a>
 
@@ -49,14 +47,13 @@ sec_session_start();
 
     <?php
         function spamcheck($field) {
-        // Sanitize e-mail address
         $field=filter_var($field, FILTER_SANITIZE_EMAIL);
-        // Validate e-mail address
         if(filter_var($field, FILTER_VALIDATE_EMAIL)) {
-        return TRUE;
-        } else {
+                return TRUE;
+            } 
+            else {
                 return FALSE;
-                }
+            }
         }
     ?>
 
@@ -72,52 +69,48 @@ sec_session_start();
             <form class="pure-form pure-form-stacked" method="POST" action="<?php echo $_SERVER["PHP_SELF"];?>">
 
 
-        <?php
-        // display form if user has not clicked submit
-        if (!isset($_POST["submit"])) {
-        ?>
+        <?php if (!isset($_POST["submit"])) { ?>
         <div>
-        <label for="from"><b>Afsender (E-mail)</b></label>
-        <input type="text" name="from" id="from" required>
+            <label for="from"><b>Afsender (E-mail)</b></label>
+            <input type="text" name="from" id="from" required>
         </div>
         
         <br><br>
         
         <div>
-        <label for="subject"><b>Emne</b></label>
-        <input type="text" name="subject" required>
+            <label for="subject"><b>Emne</b></label>
+            <input type="text" name="subject" required>
         </div>
         
         <br><br>
         
         <div>
-        <label for="message"><b>Besked</b></label>
-        <textarea rows="10" cols="40" name="message" required></textarea>
+            <label for="message"><b>Besked</b></label>
+            <textarea rows="10" cols="40" name="message" required></textarea>
         </div>
         <br><br><br><br><br><br><br><br><br>
-        <input class="btn right" type="submit" name="submit" value="Send mail">
+            <input class="btn right" type="submit" name="submit" value="Send mail">
         </form>
         
         <?php 
-        } else {  // the user has submitted the form
-        // Check if the "from" input field is filled out
-        if (isset($_POST["from"])) {
-        // Check if "from" email address is valid
-        $mailcheck = spamcheck($_POST["from"]);
-        if ($mailcheck==FALSE) {
-        echo "Invalid input";
-        } else {
-        $from = $_POST["from"]; // sender
-        $subject = $_POST["subject"];
-        $message = $_POST["message"];
-        // message lines should not exceed 70 characters (PHP rule), so wrap it
-        $message = wordwrap($message, 70);
-        // send mail
-        mail("soender@live.dk",$subject,$message,"From: $from\n");
-        echo "Tak for mailen - vi svarer tilbage hurtigst muligt!";
-        }
-        }
-        }
+            } 
+            else { 
+                if (isset($_POST["from"])) {
+                    $mailcheck = spamcheck($_POST["from"]);
+                    if ($mailcheck==FALSE) {
+                        echo "Invalid input";
+                    } 
+                    else {
+                        $to = get_mail($mysqli);
+                        $from = $_POST["from"]; 
+                        $subject = $_POST["subject"];
+                        $message = $_POST["message"];
+                        $message = wordwrap($message, 70);
+                        mail($to,$subject,$message,"From: $from\n");
+                        echo "Tak for mailen - vi svarer tilbage hurtigst muligt!";
+                    }
+                }
+            }
         ?>
         </div>
     </div>

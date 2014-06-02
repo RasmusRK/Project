@@ -40,7 +40,7 @@
 
 20. Lav promote administrator funktionen
 
-21. Lav en liste over bruger / kodeord, kun for administratorer
+21. Lav en liste over bruger / kodeord, kun for administratorer - DONE
 
 22. Lav fjern bruger funktionen 
 
@@ -49,4 +49,6 @@
 24. tilføj distinct til sql statement i mine projekter så der ikke er duplicates
 
 25. fix menu function
+
+26. Lav en sql table med email, så kontakt funktionen sender til emailen i sql statementet.
 

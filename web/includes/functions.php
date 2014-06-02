@@ -34,11 +34,10 @@ function login($club_id, $password, $mysqli) {
         FROM users
         WHERE id = ?
         LIMIT 1")) {
-        $stmt->bind_param('s', $club_id);  // Bind "$email" to parameter.
-        $stmt->execute();    // Execute the prepared query.
+        $stmt->bind_param('s', $club_id);  
+        $stmt->execute();   
         $stmt->store_result();
- 
-        // get variables from result.
+
         $stmt->bind_result($user_id, $username, $db_password, $salt);
         $stmt->fetch();
  
@@ -46,23 +45,20 @@ function login($club_id, $password, $mysqli) {
         $password = hash('sha512', $password . $salt);
         if ($stmt->num_rows == 1) {
             // If the user exists we check if the account is locked
-            // from too many login attempts 
  
             if (checkbrute($user_id, $mysqli) == true) {
                 // Account is locked 
-                // Send an email to user saying their account is locked
                 return false;
             } else {
-                // Check if the password in the database matches
-                // the password the user submitted.
+                // Check if the password matches the one in the database 
                 if ($db_password == $password) {
                     // Password is correct!
-                    // Get the user-agent string of the user.
+
                     $user_browser = $_SERVER['HTTP_USER_AGENT'];
-                    // XSS protection as we might print this value
+
                     $user_id = preg_replace("/[^0-9]+/", "", $user_id);
                     $_SESSION['user_id'] = $user_id;
-                    // XSS protection as we might print this value
+
                     $username = preg_replace("/[^a-zA-Z0-9_\-]+/", 
                                                                 "", 
                                                                 $username);
@@ -70,10 +66,16 @@ function login($club_id, $password, $mysqli) {
                     $_SESSION['login_string'] = hash('sha512', 
                               $password . $user_browser);
                     // Login successful.
+
+                    // store login date.
+                    $date = date("Y-m-d");
+                    mysqli_query($mysqli,"UPDATE users SET last_online = '$date'     
+                    WHERE id = $user_id");
+
+                    mysqli_close($mysqli);
                     return true;
                 } else {
                     // Password is not correct
-                    // We record this attempt in the database
                     $now = time();
                     $mysqli->query("INSERT INTO login_attempts(user_id, time)
                                     VALUES ('$user_id', '$now')");
@@ -619,6 +621,21 @@ function project_category($mysqli, $pid) {
     }
 }
 
+function sidst_online($mysqli, $uid) {
+    if(login_check($mysqli) == true) {
+        if ($stmt = $mysqli->prepare("SELECT last_online
+                                      FROM users
+                                      WHERE id = $uid")) {
+            $stmt->execute();
+            $stmt->store_result();
+            $stmt->bind_result($category);
+            $stmt->fetch();
+
+            return $category;
+        }
+    }
+}
+
 function user_table($mysqli){
 
     $result = mysqli_query($mysqli,"SELECT username, id, admin
@@ -663,7 +680,7 @@ function user_table($mysqli){
             echo "<td></td>";
         }
         echo "<td>Slet</td>";
-        echo "<td>Dato</td>";
+        echo "<td>" . sidst_online($mysqli, $row[1]) . "</td>";
         echo "</tr>";
     }
     echo "</table>";
@@ -682,4 +699,25 @@ function get_userState($mysqli, $uid) {
             return $id;
         }
     }
+}
+
+function get_mail($mysqli) {
+    if ($stmt = $mysqli->prepare("SELECT name
+                                  FROM email 
+                                  WHERE id = 1")) {
+        $stmt->execute();
+        $stmt->store_result();
+        $stmt->bind_result($name);
+        $stmt->fetch();
+
+        return $name;
+    }
+}   
+
+function update_email($mysqli, $newEmail) {
+    
+    mysqli_query($mysqli,"UPDATE email SET name = '$newEmail'     
+                          WHERE id = 1");
+
+    mysqli_close($mysqli);
 }
