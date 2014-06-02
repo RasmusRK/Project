@@ -61,7 +61,7 @@ sec_session_start();
                 </div>
                     <input class="btn right" type="submit" value="Ny admin">
                     <?php 
-                        if (isset($_REQUEST['id']) && $_REQUEST['id'] == 1) {
+                        if (isset($_REQUEST['id']) && get_userState($mysqli, $_REQUEST['id']) == 1) {
                             $oldAdmin = $_SESSION['user_id'];
                             $newAdmin = $_REQUEST['id'];
                             echo "<META HTTP-EQUIV='Refresh' Content='0; URL=admin_confirmation.php?nid=$newAdmin&oid=$oldAdmin'?>";
