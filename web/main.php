@@ -48,14 +48,7 @@ sec_session_start();
 
         <div class="content">
             <h2 class="content-subhead">Titel</h2>
-            <p>
-                Tekst
-                <?php if (check_admin($mysqli) == true) : ?>
-                    <br> You are admin! <br>
-                <?php else : ?>
-                    <br> You are not admin! <br>
-                <?php endif; ?>
-            </p>
+            <p>Tekst</p>
         </div>
     </div>
 </div>

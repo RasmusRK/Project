@@ -37,9 +37,9 @@ if (login_check($mysqli) == true) {
                <label for="password">Kodeord</label>
                <input type="password" name="password" id="password" placeholder="Indtast kodeord"/>
            </div>
-
-           <input class="btn left" type="submit" value="Login" onclick="formhash(this.form, this.form.password);" /> 
-           <a href="register.php"><input class="btn right" type="button" value="Opret bruger" /></a>
+           
+           <a href="register.php"><input class="btn left" type="button" value="Opret bruger" /></a>
+           <input class="btn right" type="submit" value="Login" onclick="formhash(this.form, this.form.password);" /> 
     </div>
 
 </body>
