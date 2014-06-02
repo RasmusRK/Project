@@ -1,4 +1,4 @@
-<?php
+    <?php
 include_once 'includes/db_connect.php';
 include_once 'includes/functions.php';
 sec_session_start();
@@ -58,23 +58,34 @@ sec_session_start();
                 Kort info over projektet:<br><br>
                 <?php echo project_info($mysqli, $_REQUEST['pid']); ?> <br><br>
 
+                Liste med alle der har arbejdet på projektet: <br>
+                <?php project_history($mysqli, $_REQUEST['pid']); ?><br>        
+                Det samlede antal timer lagt i projektet: <?php echo projekt_timer_sum($mysqli, $_REQUEST['pid']); ?> <br><br>
+
                 <?php if (check_admin($mysqli) == true) : ?>
                     <?php if (check_afsluttet($mysqli, $pid) == true) : ?>
                         Afslut projekt: 
-                        <?php if($_GET['button1']){close_projekt($mysqli, $_REQUEST['pid']);} ?>
-                        <button id="btnfun1" name="btnfun1" onClick='location.href="?button1=1&pid=<?php echo $_REQUEST['pid']; ?>"' value="Refresh">Afslut</button><br><br>
+                        <form>
+                            <button type="submit" name="Afslut" value="Afslut">Afslut</button><br><br>
+                            <?php close_projekt($mysqli, $_REQUEST['pid']); 
+                                if(!empty($_REQUEST['Afslut'])) {
+                                echo '<META HTTP-EQUIV="Refresh" Content="0; URL=all_projects.php">';
+                                }?>
+                        </form>
                     <?php endif ; ?>
                 <?php endif ; ?>
-
-                Liste med alle der har arbejdet på projektet: <br>
-                <?php project_history($mysqli, $_REQUEST['pid']); ?><br>    
-                Det samlede antal timer lagt i projektet: <?php echo projekt_timer_sum($mysqli, $_REQUEST['pid']); ?> <br><br>
 
                 <?php if (check_admin($mysqli) == true) : ?>
                     <?php if (check_afsluttet($mysqli, $pid) == false) : ?>
                         Åben projektet igen: 
-                        <?php if($_GET['button2']){open_projekt($mysqli, $_REQUEST['pid']);} ?>
-                        <button id="btnfun2" name="btnfun2" onClick='location.href="?button2=1&pid=<?php echo $_REQUEST['pid']; ?>"' value="Refresh">Åben</button><br><br>
+                        <form>
+                            <button type="submit" name="Åben" value="Åben">Åben</button><br><br>
+                            <?php open_projekt($mysqli, $_REQUEST['pid']); 
+                            if(!empty($_REQUEST['Åben   '])) {
+                                echo '<META HTTP-EQUIV="Refresh" Content="0; URL=all_projects.php">';
+                                }?>
+
+                        </form>
                     <?php endif ; ?>
                 <?php endif ; ?>                
             </p>
