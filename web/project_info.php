@@ -81,7 +81,7 @@ sec_session_start();
                         <form>
                             <button type="submit" name="Åben" value="Åben">Åben</button><br><br>
                             <?php open_projekt($mysqli, $_REQUEST['pid']); 
-                            if(!empty($_REQUEST['Åben   '])) {
+                            if(!empty($_REQUEST['Åben'])) {
                                 echo '<META HTTP-EQUIV="Refresh" Content="0; URL=all_projects.php">';
                                 }?>
 
