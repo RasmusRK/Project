@@ -51,43 +51,47 @@ sec_session_start();
             <p>
                 <?php 
                     $pid = $_REQUEST['pid']; 
-                    echo "Projektid: " . $pid . "<br>";
+                    echo "Projekt-id: " . $pid . "<br>";
                 ?>
-                Oprettelses dato: <?php echo project_startdate($mysqli, $_REQUEST['pid']) ?><br>
-                Afsluttelses date: <?php echo project_enddate($mysqli, $_REQUEST['pid']) ?><br><br>
+                Oprettelses dato: <?php echo project_startdate($mysqli, $pid) ?><br>
+                Afsluttelses date: <?php echo project_enddate($mysqli, $pid) ?><br><br>
                 Kort info over projektet:<br><br>
-                <?php echo project_info($mysqli, $_REQUEST['pid']); ?> <br><br>
+                <?php echo project_info($mysqli, $pid); ?> <br><br>
 
                 Liste med alle der har arbejdet på projektet: <br>
-                <?php project_history($mysqli, $_REQUEST['pid']); ?><br>        
-                Det samlede antal timer lagt i projektet: <?php echo projekt_timer_sum($mysqli, $_REQUEST['pid']); ?> <br><br>
+                <?php project_history($mysqli, $pid); ?><br>        
+                Det samlede antal timer lagt i projektet: <?php echo projekt_timer_sum($mysqli, $pid); ?> <br><br>
 
                 <?php if (check_admin($mysqli) == true) : ?>
                     <?php if (check_afsluttet($mysqli, $pid) == true) : ?>
                         Afslut projekt: 
                         <form>
-                            <button type="submit" name="Afslut" value="Afslut">Afslut</button><br><br>
-                            <?php close_projekt($mysqli, $_REQUEST['pid']); 
-                                if(!empty($_REQUEST['Afslut'])) {
-                                echo '<META HTTP-EQUIV="Refresh" Content="0; URL=all_projects.php">';
-                                }?>
+                            <button type="submit" name="Afslut" value="Afslut">Afslut</button>
+                            <input type="hidden" name="pid" value="<?php echo $pid; ?>">
                         </form>
-                    <?php endif ; ?>
-                <?php endif ; ?>
 
-                <?php if (check_admin($mysqli) == true) : ?>
+                    <?php endif ; ?>
+
                     <?php if (check_afsluttet($mysqli, $pid) == false) : ?>
                         Åben projektet igen: 
                         <form>
-                            <button type="submit" name="Åben" value="Åben">Åben</button><br><br>
-                            <?php open_projekt($mysqli, $_REQUEST['pid']); 
-                            if(!empty($_REQUEST['Åben'])) {
-                                echo '<META HTTP-EQUIV="Refresh" Content="0; URL=all_projects.php">';
-                                }?>
-
+                            <button type="submit" name="Åben" value="Åben">Åben</button>
+                            <input type="hidden" name="pid" value="<?php echo $pid; ?>">
                         </form>
+
                     <?php endif ; ?>
-                <?php endif ; ?>                
+                <?php endif ; ?>
+                <?php 
+                    if(!empty($_REQUEST['Afslut'])) {
+                        close_projekt($mysqli, $pid); 
+                        echo '<META HTTP-EQUIV="Refresh" Content="0; URL=all_projects.php">';
+                    }
+                    if(!empty($_REQUEST['Åben'])) {
+                        open_projekt($mysqli, $pid); 
+                        echo '<META HTTP-EQUIV="Refresh" Content="0; URL=all_projects.php">';
+                    }
+                ?>
+
             </p>
         </div>
     </div>
