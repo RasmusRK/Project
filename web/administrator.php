@@ -58,7 +58,7 @@ sec_session_start();
                 <div>
                     <label for="id"><b>Bruger-id</b></label>
                     <input id ="id" type="int" name="id" required />
-                </div>'
+                </div>
                     <input class="btn right" type="submit" value="Ny admin">
                     <?php 
                         if (isset($_REQUEST['id']) && $_REQUEST['id'] == 1) {
