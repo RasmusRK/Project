@@ -38,13 +38,13 @@ sec_session_start();
                     <li><a href='contact.php'>Kontakt</a></li>
                     <?php if (check_admin($mysqli) == true) : ?>
                     <li> <a href='new_project.php'>Nyt projekt</a></li>
+                    <li> <a href ='sql_table_to_pdf/generate-pdf.php'> Print </a></li>
                     <?php endif; ?>
                     <?php if (check_overadmin($mysqli) == true) : ?>
                     <li> <a href='administrator.php'>Administrator</a></li>
-                    <li> <a href ='sql_table_to_pdf/generate-pdf.php'> Print </a></li>
                     <?php endif; ?>
                     <li><a class='logout' href='includes/logout.php'>Log ud</a></li>
-                </ul>
+                </  ul>
             </div>
         </div>
 
@@ -57,9 +57,9 @@ sec_session_start();
             <h2 class="content-subhead"></h2>
             
             <form class="pure-form pure-form-stacked" action="<?php echo esc_url($_SERVER['PHP_SELF']); ?>"   name="registration_form">
-                      <?php
+                <?php
                     echo '<input type="hidden" name="wid" value="' .$wid .'">';
-                    ?>
+                ?>
                 <ul><li> Indtast dine ændringer og tryk godkend.<br> Denne funktion vil ikke være tilgængelig hvis et projekt er lukket. </li></ul>
                 <div>
                     <label for="timer"><b>Timer</b></label>
@@ -81,17 +81,17 @@ sec_session_start();
                     <input class="btn right" type="submit" value="Godkend ændringer"/> 
                 </div>
                 <?php
-                if(isset($_REQUEST['timer'], $_REQUEST['date'])) {
-                    $timer = $_REQUEST['timer'];
-                    $dato = $_REQUEST['date'];
-                    $info = $_REQUEST['info'];
-                    $wid = $_REQUEST['wid'];
-                    mysqli_query($mysqli,"UPDATE work_on SET date = '$dato', hours = '$timer', info = '$info'
-                                          WHERE work_on_id = $wid");     
+                    if(isset($_REQUEST['timer'], $_REQUEST['date'])) {
+                        $timer = $_REQUEST['timer'];
+                        $dato = $_REQUEST['date'];
+                        $info = $_REQUEST['info'];
+                        $wid = $_REQUEST['wid'];
+                        mysqli_query($mysqli,"UPDATE work_on SET date = '$dato', hours = '$timer', info = '$info'
+                                              WHERE work_on_id = $wid");     
 
-                    mysqli_close($mysqli);            
-                    header('Location: ./history.php');
-                }
+                        mysqli_close($mysqli);            
+                        header('Location: ./history.php');
+                    }
                 ?>
             </form>
         </div>
