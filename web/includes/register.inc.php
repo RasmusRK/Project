@@ -35,7 +35,7 @@ if (isset($_POST['username'], $_POST['club_id'], $_POST['p'])) {
         $stmt->store_result();
  
         if ($stmt->num_rows == 1) {
-            // A user with this email address already exists
+            // A user with this id address already exists
             $error_msg .= '<p class="error">En bruger med dette id eksistere allerede.</p>';
         }
     } else {

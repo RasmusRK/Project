@@ -716,3 +716,15 @@ function update_email($mysqli, $newEmail) {
 
     mysqli_close($mysqli);
 }
+
+function get_username($mysqli, $uid) {
+    if ($stmt = $mysqli->prepare("SELECT username 
+                                  FROM users 
+                                  WHERE id = $uid")) {
+        $stmt->execute();
+        $stmt->store_result();
+        $stmt->bind_result($name);
+        $stmt->fetch();
+        return $name;
+    }
+}
