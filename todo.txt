@@ -46,9 +46,11 @@
 
 23. tekst area ikke skalerbar (contact.php og new_project.php) - DONE
 
-24. tilføj distinct til sql statement i mine projekter så der ikke er duplicates
+24. tilføj distinct til sql statement i mine projekter så der ikke er duplicates - DONE
 
 25. fix menu function - DONE
 
 26. Lav en sql table med email, så kontakt funktionen sender til emailen i sql statementet. - DONE
+
+27. Lav gendan password funktion - DONE
 
