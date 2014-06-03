@@ -44,6 +44,11 @@ optimering af alle SQL statements - funktionen tilføj projekt lavet
 27/5 Vi skifter deres php tilbage til 4.3
 
 28/5 Kunde melder tilbage at deres bookingsystem virker igen
+
+2/6 Lavet over administrator funktionen.
+Lavet promote og demote admin funktionerne.
+
+3/6 Fixet brute
  
 
 

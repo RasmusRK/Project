@@ -26,7 +26,7 @@
 
 13. ændre e-mail til brugerid - DONE
 
-14. Få brute force funktionen til, at virke
+14. Få brute force funktionen til, at virke - DONE
 
 15. Lav rediger i timer siden - DONE
 
@@ -38,7 +38,7 @@
 
 19. Lav en "over administrator" - DONE
 
-20. Lav promote administrator funktionen
+20. Lav promote administrator funktionen - DONE
 
 21. Lav en liste over bruger / kodeord, kun for administratorer - DONE
 
@@ -48,7 +48,7 @@
 
 24. tilføj distinct til sql statement i mine projekter så der ikke er duplicates
 
-25. fix menu function
+25. fix menu function - DONE
 
-26. Lav en sql table med email, så kontakt funktionen sender til emailen i sql statementet.
+26. Lav en sql table med email, så kontakt funktionen sender til emailen i sql statementet. - DONE
 
