@@ -40,13 +40,11 @@ function login($club_id, $password, $mysqli) {
 
         $stmt->bind_result($user_id, $username, $db_password, $salt);
         $stmt->fetch();
- 
         // hash the password with the unique salt.
         $password = hash('sha512', $password . $salt);
         if ($stmt->num_rows == 1) {
             // If the user exists we check if the account is locked
- 
-            if (checkbrute($user_id, $mysqli) == true) {
+ 			if (checkbrute($user_id, $mysqli) == true) {
                 // Account is locked 
                 return false;
             } else {
@@ -247,23 +245,20 @@ function checkbrute($user_id, $mysqli) {
 
     $now = time();
     $valid_attempts = $now - 600;
-    echo "Dette er tiden: " . $valid_attempts . "<br>";
-    echo "<br>dette er den anden tid der gerne skulle være +600: " . $now;
- 
     if ($stmt = $mysqli->prepare("SELECT time 
-                                  FROM login_attempts
-                                  WHERE user_id = $user_id 
-                                  AND time > $valid_attempts")) {
-        $stmt->execute();
+                                FROM login_attempts
+                                WHERE user_id = $user_id 
+                                AND time > $valid_attempts
+                                ORDER BY time")) {
+
+    	$stmt->execute();
         $stmt->store_result();
-        $stmt->bind_result($tries);
+        $stmt->bind_result($name);
         $stmt->fetch();
-        echo "<br>Dette er antallet af rows: " . $tries;
-        if ($tries->num_rows > 5) {
-        	echo "<br>true";
+        $count = $name->num_rows;
+        if ($count > 5) {
             return true;
         } else {
-            echo "<br>false";
             return false;
         }
     }   
