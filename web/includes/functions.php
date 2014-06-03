@@ -245,18 +245,14 @@ function checkbrute($user_id, $mysqli) {
 
     $now = time();
     $valid_attempts = $now - 600;
-    if ($stmt = $mysqli->prepare("SELECT time 
-                                FROM login_attempts
-                                WHERE user_id = $user_id 
-                                AND time > $valid_attempts
-                                ORDER BY time")) {
+    if ($result = $mysqli->query("SELECT time 
+                                 FROM login_attempts
+                                 WHERE user_id = $user_id 
+                                 AND time > $valid_attempts
+                                 ORDER BY time")) {
 
-    	$stmt->execute();
-        $stmt->store_result();
-        $stmt->bind_result($name);
-        $stmt->fetch();
-        $count = $name->num_rows;
-        if ($count > 5) {
+    	$row_cnt = $result->num_rows;
+        if ($row_cnt > 5) {
             return true;
         } else {
             return false;

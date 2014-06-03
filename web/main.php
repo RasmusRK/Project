@@ -49,7 +49,6 @@ sec_session_start();
         <div class="content">
             <h2 class="content-subhead">Titel</h2>
             <p>Tekst</p>
-            <?php checkbrute($_SESSION['user_id'], $mysqli); ?>
         </div>
     </div>
 </div>
