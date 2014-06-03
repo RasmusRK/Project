@@ -247,6 +247,8 @@ function checkbrute($user_id, $mysqli) {
 
     $now = time();
     $valid_attempts = $now - 600;
+    echo "Dette er tiden: " . $valid_attempts . "<br>";
+    echo "<br>dette er den anden tid der gerne skulle være +600: " . $now;
  
     if ($stmt = $mysqli->prepare("SELECT time 
                                   FROM login_attempts
@@ -256,10 +258,12 @@ function checkbrute($user_id, $mysqli) {
         $stmt->store_result();
         $stmt->bind_result($tries);
         $stmt->fetch();
-
+        echo "<br>Dette er antallet af rows: " . $tries;
         if ($tries->num_rows > 5) {
+        	echo "<br>true";
             return true;
         } else {
+            echo "<br>false";
             return false;
         }
     }   
