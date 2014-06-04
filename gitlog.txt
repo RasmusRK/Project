@@ -1,0 +1,1724 @@
+[33mcommit 13ff72f6bba10540b10b98e4d657be2724410462[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed Jun 4 04:40:40 2014 +0200
+
+    made some few design changes
+
+[33mcommit f77a416379ed121ce80e7612fa56449cdc90ea3c[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Tue Jun 3 16:09:06 2014 +0200
+
+    added things to todo
+
+[33mcommit 70b14b7df178858470fe2e84c5106c69978c537c[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Tue Jun 3 15:57:59 2014 +0200
+
+    added file
+
+[33mcommit a24cc3b679512d188e001700650c98ce97475d05[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Tue Jun 3 15:56:54 2014 +0200
+
+    mode password!!!
+
+[33mcommit 02190dcacd1162607d1f579e86304b2011606518[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Tue Jun 3 14:18:35 2014 +0200
+
+    added something
+
+[33mcommit ade931916f1ead0b609439fc705c05a0e3e59c66[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Tue Jun 3 14:16:14 2014 +0200
+
+    added file
+
+[33mcommit 5f7e222f6cad53215c82208456ce58feb5593995[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Tue Jun 3 12:58:48 2014 +0200
+
+    lol
+
+[33mcommit ebd14c6f4368e6459f4d24ccbc7e1c8aa7640aa3[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Tue Jun 3 12:53:53 2014 +0200
+
+    fixed brute
+
+[33mcommit 163fe74817e4c6cbca29a1dac1f8a19069d9956a[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Tue Jun 3 12:51:18 2014 +0200
+
+    tried to fix brute..
+
+[33mcommit 31daa1e7d1ea8e100f0c09b07733ce4c0265c899[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Tue Jun 3 12:20:19 2014 +0200
+
+    small changes
+
+[33mcommit 60a961874873a85a72045b603c7f5214f91c288c[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Mon Jun 2 20:48:21 2014 +0200
+
+    added pictures
+
+[33mcommit f44e3f7b10bede4aab9473c2b5b562f67738cb3b[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Mon Jun 2 20:47:16 2014 +0200
+
+    added file
+
+[33mcommit 6389aaad82297d7ac4dc3548ffcd2bfc7f1ec38b[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Mon Jun 2 20:46:30 2014 +0200
+
+    small changes
+
+[33mcommit 2f428d680f7c551673223446af7cbb96f8e9fafa[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Mon Jun 2 14:12:15 2014 +0200
+
+    changed print
+
+[33mcommit b391d0c026da5e8aad71ecb94510768dfc61fef3[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Mon Jun 2 13:56:20 2014 +0200
+
+    changes to admin
+
+[33mcommit e5390dc05e0066926cd383dfa8406e37c2040eb4[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Mon Jun 2 13:45:45 2014 +0200
+
+    fixed show project site
+
+[33mcommit cd14c3e1343b22be647801fc447871fe7dc24573[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Mon Jun 2 13:25:29 2014 +0200
+
+    henrik made everything worse
+
+[33mcommit 3cffa60c1780d42643644c16d32f7c1809d65806[m
+Merge: 00542cc 548126e
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Mon Jun 2 13:20:24 2014 +0200
+
+    Merge branch 'master' of github.com:RasmusRK/Project
+
+[33mcommit 00542ccf8ecd75fda21a79d0097785717bd57be4[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Mon Jun 2 13:20:05 2014 +0200
+
+    changes to project_info (the button)
+
+[33mcommit 548126efba8dd624d76b7ce006fe6a248fce427c[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Mon Jun 2 13:17:45 2014 +0200
+
+    removed an oddly placed comma
+
+[33mcommit db33e04add008cf8645ce1a35ca4036c58899bb5[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Mon Jun 2 12:43:56 2014 +0200
+
+    made menu in a different way
+
+[33mcommit 5c43aff96883d4c9da837f8c4cc2456bb7f39bf0[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Fri May 30 01:20:29 2014 +0200
+
+    træt..
+
+[33mcommit c4d70a0d520d64d2099cf4111d055d74f9670bac[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Thu May 29 23:57:19 2014 +0200
+
+    small changes
+
+[33mcommit 9ff56fff1b4669cd37728c59a24309582e8ed428[m
+Merge: 05fe548 8aec5a2
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Thu May 29 23:48:54 2014 +0200
+
+    Merge branch 'master' of https://github.com/RasmusRK/Project
+
+[33mcommit 05fe5480f07a923f8efd969e37a5296dc21460de[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Thu May 29 23:48:12 2014 +0200
+
+    changed print to be under admin functions
+
+[33mcommit 8aec5a2e655702cde9e6a96b4728e27af6d6e0d8[m
+Merge: 5c43072 bbc4122
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Thu May 29 23:47:59 2014 +0200
+
+    Merge branch 'master' of github.com:RasmusRK/Project
+
+[33mcommit 5c43072d53c795761976945a8f7f405867a7fbbb[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Thu May 29 23:47:49 2014 +0200
+
+    jay
+
+[33mcommit bbc412221e92268d0b62bf5f3ad048209f6cbace[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Thu May 29 23:45:30 2014 +0200
+
+    removed duplicates in my projects
+
+[33mcommit 31f4da3278aceba3c2dd24be99051bf79476e04b[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Thu May 29 23:15:07 2014 +0200
+
+    minor changes to generate
+
+[33mcommit 0633270fa2da4f6f6cb7fbf9e019c6c243b51f57[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Thu May 29 23:12:41 2014 +0200
+
+    added print to main for testing
+
+[33mcommit e0bea9d5bc6f7ff89bcb917cea7d4a438926a7ee[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Thu May 29 23:05:14 2014 +0200
+
+    removed info
+
+[33mcommit 9e32b9057b0b5f4ff2f65676988bb012565a4a97[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Thu May 29 19:12:43 2014 +0200
+
+    changes to admin
+
+[33mcommit 1726db5bd9a118b7762a71b0fc8301cf355485f5[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Thu May 29 18:12:36 2014 +0200
+
+    created admin page
+
+[33mcommit 86b3f1844c886607c5288a67f31206f9bafe0ac7[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Thu May 29 17:49:44 2014 +0200
+
+    added function
+
+[33mcommit c76a2b69e61364528de2889ad64c3541d640a0fc[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Thu May 29 17:19:26 2014 +0200
+
+    Made change_history to work
+
+[33mcommit 2cb6d918979be071211858f35cc39e19918438f9[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Thu May 29 16:51:54 2014 +0200
+
+    more small changes
+
+[33mcommit 64d1d09ed1076c069d0faa6b9d4c7cfe6b54e20a[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Thu May 29 16:42:39 2014 +0200
+
+    added more
+
+[33mcommit 9c31094ec6cb871bb261283ed392143048938f68[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Thu May 29 16:40:03 2014 +0200
+
+    made project_info
+
+[33mcommit 8192798305e395d2c813e377d333b6722422c4c9[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Thu May 29 16:29:54 2014 +0200
+
+    pdf function now saves the pdf to the computer
+
+[33mcommit c91c4a44c3ddbfd04a5bcc78c21b2d8ce92a91d4[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Thu May 29 16:21:36 2014 +0200
+
+    minor chances and some test pdf files
+
+[33mcommit 5e4011d070e5d00b5a09163a46737b1df3e82927[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Thu May 29 16:04:57 2014 +0200
+
+    added functions
+
+[33mcommit 807e5a1591a6b491bf231d8f0a4722deee6eea81[m
+Merge: d77b28a 5254740
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Thu May 29 15:58:35 2014 +0200
+
+    Merge branch 'master' of https://github.com/RasmusRK/Project
+
+[33mcommit d77b28a7e895d462051deb20c9bfd807d4f482ed[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Thu May 29 15:57:15 2014 +0200
+
+    added sql to pdf function. This will allow the user to get an overview of all the projects in a pdf format
+
+[33mcommit 5254740bf2fe5609e4ae8f333d625f06baea0e0a[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Thu May 29 15:28:13 2014 +0200
+
+    added function get username
+
+[33mcommit 64ceea6c39903d4dde8cf44dd0a898592863f8ae[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Thu May 29 14:48:42 2014 +0200
+
+    deleted second design - not finished yet
+
+[33mcommit c8bf7ed301ac58b0d4a6688183814751efd9ec09[m
+Merge: 025bbb2 4204eb1
+Author: martinsoender <wxk220@ku.dk>
+Date:   Thu May 29 14:40:47 2014 +0200
+
+    fixed merge conflict
+    Merge branch 'master' of https://github.com/RasmusRK/Project
+
+[33mcommit 025bbb2c578ac7bfcc54aadf83081e6a7494c297[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Thu May 29 14:38:18 2014 +0200
+
+    added new design
+
+[33mcommit fd66fb00ffcfaccd8580ce7c79f8edc3f34c8617[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Thu May 29 14:28:48 2014 +0200
+
+    adding new test design
+
+[33mcommit 4204eb12da8d9ede4b829d74da3c61af7fb627c9[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Thu May 29 13:46:38 2014 +0200
+
+    stupid git wouldt push mobile.jpg
+
+[33mcommit fb35e7d5154ad41f315b9dbcc999d89cd80bfba0[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Thu May 29 13:44:40 2014 +0200
+
+    updated logbog and edited mobile.jpg to better diffrentiate between the 2 images
+
+[33mcommit e5876b1944b7e7e9446d47b29cb60aee22ab05ed[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed May 21 12:45:32 2014 +0200
+
+    more todo
+
+[33mcommit 1b9127a32aca64fda1ab723284277c4f0b97b3e0[m
+Merge: 89b6f98 6468942
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed May 21 12:44:34 2014 +0200
+
+    Merge branch 'master' of https://github.com/RasmusRK/Project
+
+[33mcommit 89b6f98650bbf9513f9670cc4afebbf92fc1e594[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed May 21 12:43:54 2014 +0200
+
+    added more todo
+
+[33mcommit 6468942276c23bf1457c2f8744c653631ca3e61b[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed May 21 12:39:39 2014 +0200
+
+    todo
+
+[33mcommit 847016f87fc5e899128e13504d230c5b4dad12e2[m
+Merge: de1f398 678e568
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed May 21 12:37:05 2014 +0200
+
+    Merge branch 'master' of github.com:RasmusRK/Project
+
+[33mcommit de1f398793d2b2b556fb3db1c7de55cd17efde8f[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed May 21 12:36:46 2014 +0200
+
+    Changed Logbog
+
+[33mcommit 678e568f3734ce2948ff45bf2aa18da394faa125[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed May 21 12:35:54 2014 +0200
+
+    forgot to delete header function after adding html-equiv
+
+[33mcommit 76bef2f6902a7258223b372b3f988bfb9e4cb32a[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed May 21 12:35:09 2014 +0200
+
+    changed more header functions
+
+[33mcommit 0eb1407fd285e422ac97ecff48d2f25774af4598[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed May 21 12:29:10 2014 +0200
+
+    changed redirecting method from post to meta-equiv. Headers cause problems with headers already being sent.
+
+[33mcommit e754fd0f575802c81a90519a1be8be730e8beb7b[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed May 21 12:08:46 2014 +0200
+
+    changed functions so it works with the client server. Added ob_start() and ob_end_flush and deleted whitespaces in functions.php.
+
+[33mcommit 4d446b5efb856fd4b1d79d36b7a2f3f2bcf332c2[m
+Merge: a1bed70 e605617
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed May 21 11:20:14 2014 +0200
+
+    Merge branch 'master' of github.com:RasmusRK/Project
+
+[33mcommit a1bed7000545f26392475f56fce8d0a71e3d542b[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed May 21 11:19:52 2014 +0200
+
+    changed email to id
+
+[33mcommit e6056171c03738eb7c6b0992af0d061b58585ef8[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Tue May 20 12:44:36 2014 +0200
+
+    no changes
+
+[33mcommit dcbc0f9011082c9d83903972a9222da3002c16cd[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Mon May 19 15:02:56 2014 +0200
+
+    changes
+
+[33mcommit 6a791d6ea54d8098045995ea86fa95cce0e47a4c[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed May 14 18:15:55 2014 +0200
+
+    yo
+
+[33mcommit 034df9c74a29d3ff41078d11438e42070fba7d80[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed May 14 18:14:21 2014 +0200
+
+    made the logo center in the top of the menu
+
+[33mcommit 97d688c1fb763b6b38eda00190e7bfd7e222fca2[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed May 14 18:03:27 2014 +0200
+
+    made a with pointer cursor
+
+[33mcommit 4f7145a809ed9b76affbb648ed20fe19e5ed232b[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed May 14 18:00:48 2014 +0200
+
+    made tables 100% scale
+
+[33mcommit 58d8579f543600b9be9c2822bcca6c3440d86db9[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed May 14 17:48:20 2014 +0200
+
+    yoyo
+
+[33mcommit f0ca2c65c7c176a263f7b66d8e2ef6fe03b3edcf[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed May 14 17:11:42 2014 +0200
+
+    kogr
+
+[33mcommit 4c3a45e5d26e4944cc4336319669acf4211d7b52[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed May 14 17:10:35 2014 +0200
+
+    change in css
+
+[33mcommit 85330b10a2b27a836beda4b4807f2647d05844f4[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed May 14 16:57:23 2014 +0200
+
+    made so textarea boks cant scale
+
+[33mcommit 1e737dbacfd765475550f102978bb0846a2dc27a[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed May 14 16:45:00 2014 +0200
+
+    made project_info
+
+[33mcommit 59f39fb6925c29f7f271e675779c2f5f40f824f0[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed May 14 16:38:27 2014 +0200
+
+    made a go back button in register
+
+[33mcommit 6be77e4a2531bef5cfb33c0883d92d407c81d442[m
+Merge: ebe8ee1 2b15146
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed May 14 16:34:44 2014 +0200
+
+    Merge branch 'master' of github.com:RasmusRK/Project
+
+[33mcommit ebe8ee15116ca2aac30256fb9b8e1117ae931ec7[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed May 14 16:34:29 2014 +0200
+
+    added more todo
+
+[33mcommit 2b1514669d84818a990780a314934241caf02ca6[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed May 14 16:33:34 2014 +0200
+
+    yupyup
+
+[33mcommit 07bd2aa4b1d50098f84ff2844afa73eace1bfeae[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed May 14 16:24:23 2014 +0200
+
+    added more todo
+
+[33mcommit 3356a1d7d66c8386417aabfb28a040fe0d4ef276[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed May 14 16:23:15 2014 +0200
+
+    added phpmenu() to alle sites
+
+[33mcommit 66b666740b7aa7ecf5c1e33ded7be6dd16c9aa8b[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed May 14 16:19:57 2014 +0200
+
+    lol
+
+[33mcommit d8a479fb5c9a9a90acc4d65e4224b872394e55d1[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed May 14 16:18:06 2014 +0200
+
+    made a function to autogenerate menu on every site
+
+[33mcommit bf5115a2801ec6c289b8b2f87195f94c9a47e461[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed May 14 16:11:14 2014 +0200
+
+    added row to tables
+
+[33mcommit 9375bca7ade8cf3f5411445bc8e6513504b9c8b6[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed May 14 15:55:38 2014 +0200
+
+    yo
+
+[33mcommit f197341c1b345d69ad2becf025de9a5dcea6fb82[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed May 14 15:46:18 2014 +0200
+
+    changed loggin with email to id
+
+[33mcommit aa815fe6e8707f951561c67abdc1df37f7c168e6[m
+Merge: 237f5e7 d00a938
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed May 14 15:45:22 2014 +0200
+
+    Merge branch 'master' of https://github.com/RasmusRK/Project
+
+[33mcommit d00a938f76bedf7cb79ad4f6256cf91b924c0801[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed May 14 15:41:45 2014 +0200
+
+    added time
+
+[33mcommit f8b5c43f37f910425e273e262047fc62d5fe37e6[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed May 14 15:16:32 2014 +0200
+
+    fixed logout effect not covering menu width
+
+[33mcommit 237f5e75771519b738bb280de83367ac2cc042d1[m
+Merge: 4baa8cb 01f8fbb
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed May 14 15:07:06 2014 +0200
+
+    Merge branch 'master' of https://github.com/RasmusRK/Project
+
+[33mcommit 4baa8cba996acaea80fdb62c38af7e147a6217e9[m
+Merge: 6d37a41 d4670e5
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed May 14 15:06:53 2014 +0200
+
+    Merge branch 'master' of https://github.com/RasmusRK/Project
+    
+    Conflicts:
+    	web/new_project.php
+
+[33mcommit 01f8fbb398abe82bbb3355567861f97bba83807e[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed May 14 15:06:12 2014 +0200
+
+    more todo points
+
+[33mcommit 6d37a41cc92e5a3f5cec9a1e857a31f399b656b9[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed May 14 15:05:15 2014 +0200
+
+    dwfewfewfewhufew:x
+
+[33mcommit d4670e58cd8d907218afb85d1a527da09b5c0e27[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed May 14 14:59:46 2014 +0200
+
+    adding projects now adds time to the database aswell
+
+[33mcommit a99d8081244e47c503d120747d00b886d6b70248[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed May 14 14:32:28 2014 +0200
+
+    making changes like a bo$$
+
+[33mcommit 3609871b93f29fa69ea2e11b22bc57befd35d845[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed May 14 14:21:30 2014 +0200
+
+    added whole menu to new_category
+
+[33mcommit 20e92d43022cbb76252b84f256c7545def4f4234[m
+Merge: 28c14df 7840d44
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed May 14 14:15:34 2014 +0200
+
+    Merge branch 'master' of https://github.com/RasmusRK/Project
+
+[33mcommit 28c14dfb5e99835c8a31bc6c43d35615535d10cb[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed May 14 14:15:12 2014 +0200
+
+    moved files
+
+[33mcommit 1006c4ea517013a6f316d2e1fc95cef7570ebe1d[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed May 14 14:12:47 2014 +0200
+
+    removed some css files
+
+[33mcommit 7840d44fdf33e86af8304a5939213c1dd6b4656b[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed May 14 14:03:11 2014 +0200
+
+    projekt works!
+
+[33mcommit d4217e95c0a32f87e2fcd68bda75d86a3327d722[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed May 14 13:48:41 2014 +0200
+
+    dropdown works
+
+[33mcommit 9bc89609d8f91033d6a0cd8e2e16ac4fa7bb0baa[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed May 14 13:27:37 2014 +0200
+
+    changes
+
+[33mcommit 7ed01ad14fe9eab487ce71cf5549131b5d1f2db7[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed May 14 13:23:45 2014 +0200
+
+    added assignment 3
+
+[33mcommit 912bc0d6aa8d8890d9ab47230a93039f75a71777[m
+Merge: cd5ae2b 7d744fe
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed May 14 13:15:23 2014 +0200
+
+    Merge branch 'master' of https://github.com/RasmusRK/Project
+
+[33mcommit cd5ae2b78e8ae54b3f450a5672c11e72f6774a84[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed May 14 13:14:34 2014 +0200
+
+    now  with more ordering
+
+[33mcommit 7d744fefc0ae2a174c195a2d9c197dee9371b6c1[m
+Merge: 91b8291 a0d2d6a
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed May 14 13:14:34 2014 +0200
+
+    Merge branch 'master' of github.com:RasmusRK/Project
+
+[33mcommit 91b829128ceda10b5635fe516f08d947851f2323[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed May 14 13:14:13 2014 +0200
+
+    changes in logbog
+
+[33mcommit a0d2d6adccefa282501938cac2cf4dee04863077[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed May 14 13:01:51 2014 +0200
+
+    added more order functions
+
+[33mcommit b1e885f127f38e619bfcfed27e7a59c801c73e83[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed May 14 12:49:37 2014 +0200
+
+    added ordering to table in history
+
+[33mcommit 3d14bd4a440e2ff56233ff607ba327761bcae63a[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed May 14 11:56:57 2014 +0200
+
+    changes were made
+
+[33mcommit d3120babe557e46a83d7d704772960740c379879[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed May 14 10:03:20 2014 +0200
+
+    Lot of changes
+
+[33mcommit b0891b84c00d406f227e8ec31353efce179b52a5[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Tue May 13 12:59:07 2014 +0200
+
+    Added things to Logbog
+
+[33mcommit 84f61f462c9d2ac054b32957fc58515c9e16d971[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Sun May 11 17:47:43 2014 +0200
+
+    .....
+
+[33mcommit 996feaf734ea9269f7b6cf126585aaa5b3493d2e[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Sun May 11 17:25:37 2014 +0200
+
+    moved log out button to the buttom of the page
+
+[33mcommit df0669c25d0ad64e88ecb0e584e10a23707020ee[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Sun May 11 14:42:38 2014 +0200
+
+    add'et all menu links to add_time and new_project
+
+[33mcommit 64006888f1aef57287c3d8ed97f0bcad4988e745[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Sun May 11 14:22:45 2014 +0200
+
+    made changes in new_project
+
+[33mcommit 3fe9e13699cde3b12f9142150211d2ad283cdb63[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Thu May 8 16:44:54 2014 +0200
+
+    fixed add_time and added insane amounts of wub to it
+
+[33mcommit 1af3cb7d79c186940d55c5d9a281e9a3f681b9c5[m
+Merge: 54e2689 ae5d78e
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Thu May 8 15:59:11 2014 +0200
+
+    Merge branch 'master' of https://github.com/RasmusRK/Project
+
+[33mcommit 54e2689ef2be0ccad3acee5e8661f1bb885f0915[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Thu May 8 15:52:35 2014 +0200
+
+    changed minor error in user.sql
+
+[33mcommit ae5d78e4fa027ee421439933c7d5bfb7622ad2fe[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Thu May 8 15:34:32 2014 +0200
+
+    removed lognew
+
+[33mcommit 73d3349190093606a9b018fba1795fec9b37894c[m
+Merge: 8d869bb 96c25c5
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Thu May 8 15:33:05 2014 +0200
+
+    Pas
+    Merge branch 'master' of github.com:RasmusRK/Project
+
+[33mcommit 8d869bbc256429d3f3ac1e11bf2772abb903e02a[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Thu May 8 15:32:29 2014 +0200
+
+    added todo
+
+[33mcommit 96c25c5a6d1e528c68928c4eed2f3d1a1832db6b[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Thu May 8 15:18:44 2014 +0200
+
+    made backup of files on server
+
+[33mcommit 1686bbc763f30cfa9da38819e8af5baf92a0116c[m
+Merge: d599f06 77eee86
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Thu May 8 14:26:45 2014 +0200
+
+    Merge branch 'master' of https://github.com/RasmusRK/Project
+
+[33mcommit d599f06f3929b6d6853a05420efb540db31caecc[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Thu May 8 14:25:49 2014 +0200
+
+    git went rogue
+
+[33mcommit 77eee8610ffac2ce7b951ba7dccc2cde90b6d832[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Thu May 8 13:48:28 2014 +0200
+
+    add'et folder with current version
+
+[33mcommit 037184ac4a311fbb13f628a53c295898fa2f9752[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Thu May 8 12:43:26 2014 +0200
+
+    deleted xy
+
+[33mcommit 756a7ca39e6e14ddca98b0e3f9dee0692c21b328[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Thu May 8 12:43:02 2014 +0200
+
+    deleted fail
+
+[33mcommit 165bcc5744453f187ed8f5be7b58f30fef70f9e0[m
+Merge: 62ebd93 f49615b
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Thu May 8 12:33:20 2014 +0200
+
+    Merge branch 'master' of https://github.com/RasmusRK/Project
+
+[33mcommit 62ebd938054ecfdd40be53a95627386bf9c355a1[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Thu May 8 12:32:39 2014 +0200
+
+    made new log
+
+[33mcommit f49615bfd36a9d813e5525d20834e8856c863694[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Thu May 8 11:03:41 2014 +0200
+
+    small changes
+
+[33mcommit 8872dea5e10c5fd27aaa3bfed6c55a666200c119[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed May 7 22:28:05 2014 +0200
+
+    made changes in new_project
+
+[33mcommit 78335df79f9d9b1c4aa93bfc0cb2ff2e70a888ce[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed May 7 22:24:06 2014 +0200
+
+    made <li> around history link
+
+[33mcommit 6d984c5f59c46fd2669b040ff3d0295b4f0406a3[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed May 7 00:43:08 2014 +0200
+
+    trying to fix brute
+
+[33mcommit d9c5be22963b649073e48167735fc0b13bb6685a[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Tue May 6 20:30:02 2014 +0200
+
+    add time pid problems
+
+[33mcommit 3cf33ba734d3d0d6e46ef0cbb8a5d6e0d3ad94cd[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Tue May 6 19:22:31 2014 +0200
+
+    modified add_time
+
+[33mcommit f23078d321e4fddd3acc45995671bc29aedae011[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Tue May 6 13:10:33 2014 +0200
+
+    forgot to add new project to contact page
+
+[33mcommit c4f546c8945c8d19b92fbee960d622ff7ffc8b41[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Tue May 6 13:09:25 2014 +0200
+
+    add new project to all main pages
+
+[33mcommit 0b5a06b53745499803b7dbaaa1db94546bd7abf2[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Tue May 6 12:55:28 2014 +0200
+
+    made changes in the db
+
+[33mcommit 9a57a9ffa1897ccf77da7e503f281a020af97374[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Tue May 6 11:03:07 2014 +0200
+
+    changes were made
+
+[33mcommit 9f47a851b4e300dd4f8fc719a24923242741e441[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Mon May 5 21:22:20 2014 +0200
+
+    ...
+
+[33mcommit 7e9dff5a8aa66009dff7f6075fc5492a08eb2a2f[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Mon May 5 20:52:16 2014 +0200
+
+    changed text from english to danish
+
+[33mcommit 1b9e795e76e6ef2014d575bd3bc991b0948f90f3[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Mon May 5 20:46:44 2014 +0200
+
+    worked on new_project
+
+[33mcommit 4bf19df31a1c9f161da3ad8ef1abfed5c3748151[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Mon May 5 20:15:16 2014 +0200
+
+    made img folder
+
+[33mcommit 01308f3f4ce55959a5aa7dbbbba219da7fb2a1d8[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Mon May 5 20:01:19 2014 +0200
+
+    move buttons to the right
+
+[33mcommit 4a91d1b7aa54a02e197c282d89411c7902b09e1f[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Mon May 5 14:39:58 2014 +0200
+
+    removed test contact file
+
+[33mcommit fe4e4420eab943d5bafaed1a26b75f4ee528f1db[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Mon May 5 14:37:22 2014 +0200
+
+    Got contact function to work
+
+[33mcommit 23b23c69937a972b8b4fbb66564301669fe5b4eb[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Mon May 5 13:36:14 2014 +0200
+
+    few changes
+
+[33mcommit 7761234e2032ceb7f40adb1d0dcda9afd5c4a305[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Mon May 5 13:19:15 2014 +0200
+
+    blabla
+
+[33mcommit f23911e7dee143078a964372f9d599231c46e57b[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Mon May 5 13:13:16 2014 +0200
+
+    Changed register_succes print msg out in danish
+
+[33mcommit 5f8889127924c498a3fdda5c9b548b84697bdfcd[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed Apr 30 18:30:48 2014 +0200
+
+    changed the mail function
+
+[33mcommit 475b8dc7eeefa94491dfe5c05ebe891be60cd9a1[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed Apr 30 18:11:57 2014 +0200
+
+    added contactform to contact + php functions
+
+[33mcommit 464a97bdadad3b9207d8f40391c5a6c1165a1398[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed Apr 30 17:45:06 2014 +0200
+
+    ....
+
+[33mcommit 2cca5bafc5b28e8e21f292336f73a84f9a206fe0[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed Apr 30 17:41:53 2014 +0200
+
+    set up add_time.php with css
+
+[33mcommit 680a7a9577a436e2604a735f2e81d2158557cf5a[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed Apr 30 17:28:30 2014 +0200
+
+    seperated css into two files
+
+[33mcommit 3242d303ed8a8168f3616ea09bee8704f9496c36[m
+Merge: 4bf2f8b e0b323f
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed Apr 30 17:27:02 2014 +0200
+
+    Merge branch 'master' of https://github.com/RasmusRK/Project
+
+[33mcommit 4bf2f8b83b7edbc66fdc33238366e2bbc10ea81d[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed Apr 30 17:26:31 2014 +0200
+
+    merge conflict
+
+[33mcommit e0b323f6cd5ce92b61cfdc2234c8b3dfe9680f20[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed Apr 30 16:51:44 2014 +0200
+
+    wub wub wub
+
+[33mcommit 1e942f2df62c79ccd34890bd349b630390eb8e0d[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed Apr 30 16:50:23 2014 +0200
+
+    nothing new
+
+[33mcommit b5ac78e494927bf84617e50946610971f0664636[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed Apr 30 16:46:53 2014 +0200
+
+    Changed in css files and set up page for new project
+
+[33mcommit da4572ee167ffebdab069d67d62fe7e5905fd162[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed Apr 30 16:32:32 2014 +0200
+
+    add_time
+
+[33mcommit 6c7e0a474ab588cd8d8866b68f6bb54c332aa5c3[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed Apr 30 16:09:09 2014 +0200
+
+    user.sql changes
+
+[33mcommit 07f0bf9071d8558a3095084564921b8f4f2ad434[m
+Merge: 32d1010 04439a2
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed Apr 30 15:56:55 2014 +0200
+
+    Merge branch 'master' of https://github.com/RasmusRK/Project
+
+[33mcommit 32d10102c69c0e82355b6778947046b48fef2375[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed Apr 30 15:56:47 2014 +0200
+
+    ...
+
+[33mcommit 04439a2d563cf0b6f97887a8997ef36c1ea99469[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed Apr 30 15:49:00 2014 +0200
+
+    deleted stuff that didnt work
+
+[33mcommit 7c9efc050460b0b3385345da53dc7a2d8ff8593f[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed Apr 30 14:55:25 2014 +0200
+
+    add_time changes
+
+[33mcommit 5217bd69645258874ea9bbd70c62818bf735d7f7[m
+Merge: c3a4b20 4e0ad8c
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed Apr 30 14:53:59 2014 +0200
+
+    Merge branch 'master' of https://github.com/RasmusRK/Project
+
+[33mcommit c3a4b202cfe73e66f1b318d362f8c7444256200f[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed Apr 30 14:52:59 2014 +0200
+
+    added linking from all projects to add_time.php with header pid
+
+[33mcommit 4e0ad8c02269b74e80f23696c5f926575902daba[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed Apr 30 14:52:31 2014 +0200
+
+    changes to add_time
+
+[33mcommit a267c333ddd466620be78abf87919e305e51bd79[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed Apr 30 14:47:15 2014 +0200
+
+    created add_time.php
+
+[33mcommit 7bedec8d30a8fb124badf868a1004d58f5fb643b[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed Apr 30 14:43:43 2014 +0200
+
+    more minor changes
+
+[33mcommit 7e6a04a5edbfcb281f011a1d0c480a6cc1057761[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed Apr 30 14:33:23 2014 +0200
+
+    minor changes
+
+[33mcommit c0a80021de93bfcc16c9a27e03ea886bd793f166[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed Apr 30 14:21:32 2014 +0200
+
+    created show_projects function
+
+[33mcommit e9d830566974d5886bb144248f467403de03f237[m
+Merge: b7f0a88 12f66aa
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed Apr 30 13:13:20 2014 +0200
+
+    Merge branch 'master' of github.com:RasmusRK/Project
+    1
+
+[33mcommit b7f0a880f74f6277af90a66278ee72afed2f44e1[m
+Merge: 7005d6e ced82eb
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed Apr 30 13:13:01 2014 +0200
+
+    fisk
+    Merge branch 'master' of github.com:RasmusRK/Project
+
+[33mcommit 12f66aab5aaab8e9ab30ba3d0a0367fdbfaa0f3c[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed Apr 30 13:12:46 2014 +0200
+
+    added dateconverter to functions
+
+[33mcommit ced82eb841741186e7b116c5e10dcd9de9c1b6e2[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed Apr 30 13:11:48 2014 +0200
+
+    added more todo and security to various pages
+
+[33mcommit 7005d6ed98142e4e88de6b21379422c859800542[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed Apr 30 13:10:58 2014 +0200
+
+    alt muligt
+
+[33mcommit 650c7e6bc20ca2fccf49622a88b529bae6770f6e[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed Apr 30 12:49:34 2014 +0200
+
+    expanded projekt table and added login security to my_projects.php
+
+[33mcommit 065fcb87c87f35c5242f70cc636a782e6812b17d[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed Apr 30 12:40:12 2014 +0200
+
+    might have changed something
+
+[33mcommit f5a6eb4308ee20ce4f56b3da44911617c7580a66[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed Apr 30 12:36:17 2014 +0200
+
+    optimised test projekts
+
+[33mcommit 644097d9bd91bf3293669d3369018474fb68ea1c[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed Apr 30 12:34:50 2014 +0200
+
+    Put customers logo in menu and made redirection link
+
+[33mcommit f04849fc538cf2b8a6087efe29a525939ce1cb0c[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed Apr 30 12:32:56 2014 +0200
+
+    brute..
+
+[33mcommit 9f0dafe91e68354d023d9207d7666de660743948[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed Apr 30 12:26:43 2014 +0200
+
+    forgot something
+
+[33mcommit dc3881313db9eeda729c0502308b77a8fb873596[m
+Merge: a227c21 2aed4ac
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed Apr 30 12:26:37 2014 +0200
+
+    Merge branch 'master' of https://github.com/RasmusRK/Project
+
+[33mcommit a227c21293386f9ff636a554fc52796eecbb51e5[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed Apr 30 12:25:34 2014 +0200
+
+    changed start_date end_date to mysql DATE type
+
+[33mcommit 2aed4ac5eaf45a4418d4afb3a01f38f6cb559c70[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed Apr 30 12:12:09 2014 +0200
+
+    fixed contact not showing anything
+
+[33mcommit c32eccdad389c8ba7b6e11ef93ddc608d113bf00[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed Apr 30 12:10:58 2014 +0200
+
+    changes in sql
+
+[33mcommit 38227cc449114fc00a87f5dbf982aa968e9d2573[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed Apr 30 12:04:47 2014 +0200
+
+    todo
+
+[33mcommit c7f674916e063a62fc94167120a006433284a63d[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed Apr 30 12:02:30 2014 +0200
+
+    added files
+
+[33mcommit 8492deffbd10055abf739daaec68d32876d32ab5[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed Apr 30 12:00:23 2014 +0200
+
+    added test projekts to sql file
+
+[33mcommit 9323d8e318b105b0301ed33ba88bb87179d625bd[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed Apr 30 11:57:29 2014 +0200
+
+    Change menu links in contact
+
+[33mcommit 18f06eacf832b2415dab104fa3701b8ef0d12053[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed Apr 30 11:54:52 2014 +0200
+
+    Changed filenames .php and change links in menu + made a new_project page
+
+[33mcommit 8c5d296fc4b2d38626501e75417f2602be31f61f[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed Apr 30 11:46:36 2014 +0200
+
+    Changes in main
+
+[33mcommit fea126fb3cf18e6a7ad4c8fe0931cf603f08e5ca[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed Apr 30 11:40:25 2014 +0200
+
+    added die(); to index to avoid this : http://thedailywtf.com/Articles/WellIntentioned-Destruction.aspx
+
+[33mcommit b8bcd03120960dcfc73e960b3b4af1f8db446b28[m
+Merge: 337263a cde2430
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed Apr 30 11:40:05 2014 +0200
+
+    Merge branch 'master' of https://github.com/RasmusRK/Project
+
+[33mcommit 337263ace1dcd33d098c9ce107cabf81692679dc[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed Apr 30 11:39:07 2014 +0200
+
+    made automatic redirect to main.php if already logged in
+
+[33mcommit cde24305975daea5704ad804fa7fda5e18a3dc7a[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed Apr 30 11:36:41 2014 +0200
+
+    added admin site
+
+[33mcommit 55e4e4f92b6e4c0a03dbd27c25f369166fb8ffc1[m
+Merge: d4e086d 82ccdc7
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed Apr 30 11:29:06 2014 +0200
+
+    Merge branch 'master' of github.com:RasmusRK/Project
+
+[33mcommit d4e086d56427c43658269d483d7d4e4a0cdcd640[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed Apr 30 11:28:43 2014 +0200
+
+    making anti brute function
+
+[33mcommit 82ccdc72b3fa76f804b9707476a2776ef77566f6[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed Apr 30 11:26:37 2014 +0200
+
+    Pressing enter now triggers the login button
+
+[33mcommit ad26c4a24442284567957cec1c770f078cc45125[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed Apr 30 11:21:52 2014 +0200
+
+    more todo
+
+[33mcommit 9c0438f5050784c79a31e44bb3ef4e81ff925add[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed Apr 30 11:20:32 2014 +0200
+
+    fixed sql statements to work with mysql
+
+[33mcommit c04ecf8c36e7f8663342046074066cecb547ca7e[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed Apr 30 11:11:42 2014 +0200
+
+    changed info var(255) to varchar(2000) to support longer info text
+
+[33mcommit 31f24f9097e8493ce00c228c7f86e16c61a480df[m
+Merge: 5c10da6 e27d131
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed Apr 30 11:10:42 2014 +0200
+
+    Merge branch 'master' of https://github.com/RasmusRK/Project
+
+[33mcommit 5c10da63dece6381e8519ce58dcff95074fb6627[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed Apr 30 11:09:30 2014 +0200
+
+    Corrected spelling error in code
+
+[33mcommit e27d131d3d43040f66c21e353166facac528cc2b[m
+Merge: dd8e159 4f4dd66
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed Apr 30 11:07:38 2014 +0200
+
+    Merge branch 'master' of https://github.com/RasmusRK/Project
+
+[33mcommit 4f4dd6682eb3ad93e202bf4155c71c5327d646b8[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed Apr 30 11:06:46 2014 +0200
+
+    user.sql
+
+[33mcommit dd8e159fe9a257af0053ff956b7c0d8f2e0aa797[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed Apr 30 11:05:18 2014 +0200
+
+    added more todo
+
+[33mcommit 60c8b23cc89c626e01b23a8daa5ae290523ef3fa[m
+Merge: 6b0d303 6995a93
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed Apr 30 11:02:43 2014 +0200
+
+    Merge branch 'master' of https://github.com/RasmusRK/Project
+
+[33mcommit 6b0d303cb1baed40851d9f3c8f0400b3f33c3384[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Wed Apr 30 11:02:21 2014 +0200
+
+    merge conflict
+
+[33mcommit 6995a932f07549bb7957da24b1a493bae787eadd[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed Apr 30 10:06:18 2014 +0200
+
+    Small changes
+
+[33mcommit 65d2d36fef221a8ecd47afa0145d93ca6ab44200[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed Apr 30 09:32:09 2014 +0200
+
+    changes foreign key in user.sql
+
+[33mcommit 9407657da96df1f118e3b6fe2f0e28bde776bccc[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed Apr 30 09:27:21 2014 +0200
+
+    Started the projekt table in user.sql
+
+[33mcommit 71512989d83b6d1017b811acb5d21f868fbef548[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed Apr 30 08:48:33 2014 +0200
+
+    Added user id and name to main
+
+[33mcommit 7e86966181854e81f57f4057b132c33f67ca469e[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed Apr 30 08:43:56 2014 +0200
+
+    Fixed admin
+
+[33mcommit e1c46cabd9d8cdf3973257229d09dab34a1f8b76[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Tue Apr 29 12:52:43 2014 +0200
+
+    working on admin functions
+
+[33mcommit 0a7b68d22e30816845b4efb7a1327817ae86268b[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Tue Apr 29 12:31:47 2014 +0200
+
+    changed register.php
+
+[33mcommit 7f59760b45a536d1c55e52a23b7aea7293b5b7a0[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Tue Apr 29 12:15:14 2014 +0200
+
+    added new points to todo
+
+[33mcommit a9689510e376cbd3ebb3279b2e92303bc50b6a95[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Tue Apr 29 12:10:42 2014 +0200
+
+    admin check funktion added
+
+[33mcommit bed5c63359f67060555e5af644aca55e6bc3fb74[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Tue Apr 29 11:37:41 2014 +0200
+
+    Set up register site with css
+
+[33mcommit 79fd6cf6cd015a10f5865ea0c432ce34403a6502[m
+Merge: 261b464 6e61828
+Author: martinsoender <wxk220@ku.dk>
+Date:   Tue Apr 29 11:32:56 2014 +0200
+
+    Merge branch 'master' of https://github.com/RasmusRK/Project
+
+[33mcommit 261b4648afa429f923af64639a00cf6b8b990d6d[m
+Merge: ccfe007 45221bd
+Author: martinsoender <wxk220@ku.dk>
+Date:   Tue Apr 29 11:32:42 2014 +0200
+
+    Merge branch 'master' of https://github.com/RasmusRK/Project
+    
+    Conflicts:
+    	web/user.sql
+
+[33mcommit 6e6182886a728f8eab115387f724807a1705b983[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Tue Apr 29 11:31:16 2014 +0200
+
+    changed contact
+
+[33mcommit ccfe00769f48af2c0da268563b494a3c02afe952[m
+Merge: f67bd85 48cd9e8
+Author: martinsoender <wxk220@ku.dk>
+Date:   Tue Apr 29 11:28:31 2014 +0200
+
+    Merge branch 'master' of https://github.com/RasmusRK/Project
+    
+    Conflicts:
+    	web/user.sql
+
+[33mcommit 45221bd7f135065faafebc42ba7f59c4240a02ae[m
+Merge: 63b8559 48cd9e8
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Tue Apr 29 11:22:21 2014 +0200
+
+    Merge branch 'master' of https://github.com/RasmusRK/Project
+
+[33mcommit 63b85595f4c417754f36fea00115ddc233b4aa65[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Tue Apr 29 11:18:53 2014 +0200
+
+    Trying once again
+
+[33mcommit f7e9ae37e7a44c527a772f723cc1d3c111671292[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Tue Apr 29 11:10:14 2014 +0200
+
+    old commit failed
+
+[33mcommit ffe7137e4cca05e0b100165c49f8e99dad71f461[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Tue Apr 29 11:07:13 2014 +0200
+
+    Added login check and created Main.php as welcome site after loggin in.
+
+[33mcommit a30e03a134f603c12b502ae27c624dba5e2bea11[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Tue Apr 29 10:52:28 2014 +0200
+
+    deleted index.html
+
+[33mcommit 8e07e54245597636c8b18799ef01383ab9eabd12[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Tue Apr 29 10:51:10 2014 +0200
+
+    added admin to sql users
+
+[33mcommit f67bd8574387025893a69025fce17180eca11c2d[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Tue Apr 29 10:14:04 2014 +0200
+
+    yo
+
+[33mcommit 48cd9e81b224f95d4248056e3ea402dd489933e3[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Mon Apr 28 22:17:03 2014 +0200
+
+    user.sql updated
+
+[33mcommit 1de4ecaca3baafb85fcfa58953e509785520c39e[m
+Merge: cdb8df0 0f7a288
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Mon Apr 28 22:04:19 2014 +0200
+
+    Merge conflict
+    Merge branch 'master' of github.com:RasmusRK/Project
+
+[33mcommit 36b123971a84abc01ac67e8adeeea848a77c45d9[m
+Author: martinsoender <wxk220@ku.dk>
+Date:   Fri Apr 25 11:27:44 2014 +0200
+
+    Sat index filen pænt op og rettet lidt.
+
+[33mcommit 0f7a2881f80d12e63751c04b7762df6b8059f7c3[m
+Merge: 5dd7560 e5dd002
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Thu Apr 24 14:53:32 2014 +0200
+
+    Merge branch 'master' of https://github.com/RasmusRK/Project
+
+[33mcommit 5dd7560bc22c1f2253b39e329af5b03e9c9a9c08[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Thu Apr 24 14:51:40 2014 +0200
+
+    forgot to add some stuff to previous commit
+
+[33mcommit 7d6dfe4133479405714505e26d36183ccd684f82[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Thu Apr 24 14:50:15 2014 +0200
+
+    Got login page to work.
+    All security works
+    Register now works aswell.
+    Database connection works aswell.
+
+[33mcommit e5dd002b7e69b92cfcfd1d706120a5525468d9b9[m
+Merge: a1a3793 9e0937e
+Author: martinsoender <wxk220@kku.dk>
+Date:   Thu Apr 24 13:51:01 2014 +0200
+
+    Merge branch 'master' of https://github.com/RasmusRK/Project
+
+[33mcommit a1a37930063ecdbb21206087f37e1d1d9b2379cb[m
+Author: martinsoender <wxk220@kku.dk>
+Date:   Thu Apr 24 13:50:35 2014 +0200
+
+    merge conflict
+
+[33mcommit 9e0937e7b727bc0506264d8529d154e72328acef[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Thu Apr 24 13:46:07 2014 +0200
+
+    added more security
+
+[33mcommit 26462132774a7a9c15a255e030a6d6017f261af6[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Thu Apr 24 11:32:35 2014 +0200
+
+    added log
+
+[33mcommit 23b8ceb472f7c63c32c4b8f772ac3bff92125057[m
+Author: martinsoender <wxk220@kku.dk>
+Date:   Wed Apr 23 15:10:15 2014 +0200
+
+    Made a new menu in main file. Made more html sites so its possible to go around on the site. At last I've made the login screen compatibel with smartphones.
+
+[33mcommit cdb8df0d1f08ae23d60a26c48851c7d2ddf7a6b7[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed Apr 23 15:09:19 2014 +0200
+
+    added file
+
+[33mcommit 26d036de468eeb0df6c819e6e0b66c994e821b13[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed Apr 23 15:01:22 2014 +0200
+
+    deleted hello
+
+[33mcommit 544ff3288b813cc9d2d1f78689a980b0aa230c2f[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed Apr 23 14:54:24 2014 +0200
+
+    sekvens-diagrammer added
+
+[33mcommit 01b5fabe31d6f79aa28b658b2d33309e3e45bba9[m
+Author: martinsoender <wxk220@kku.dk>
+Date:   Wed Apr 23 14:13:26 2014 +0200
+
+    lavet css for main side + oprettet main side
+
+[33mcommit f533da86a3602e257e98254fbe2d8a2eff174b03[m
+Merge: 5dabfce 00ab5f9
+Author: martinsoender <wxk220@kku.dk>
+Date:   Wed Apr 23 14:11:57 2014 +0200
+
+    Merge branch 'master' of https://github.com/RasmusRK/Project
+
+[33mcommit 5dabfcec9458e808b8258d7e7ad47720f5cb7ea7[m
+Author: martinsoender <wxk220@kku.dk>
+Date:   Wed Apr 23 14:07:46 2014 +0200
+
+    ændringer i css og oprettelser af main side
+
+[33mcommit 00ab5f95e49f0e906868f0d41dba2f947f1a2d58[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed Apr 23 13:53:49 2014 +0200
+
+    trololo
+
+[33mcommit a8fdddc6571e5b6742fc11660b45b465950f1010[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed Apr 23 13:52:27 2014 +0200
+
+    tralala
+
+[33mcommit d034e97df51eff0046ae1f9d492678b9f42e7561[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Wed Apr 23 13:47:55 2014 +0200
+
+    removed test
+
+[33mcommit 58cda42eba035fd7b7621e8cf25713a721310fa3[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Wed Apr 23 13:43:36 2014 +0200
+
+    hentik lavede ænrding!
+
+[33mcommit b7e2934e2556458a5f9163da8488d577aa709199[m
+Author: Martin Søndergaard <Soender@live.dk>
+Date:   Wed Apr 23 13:33:56 2014 +0200
+
+    Update pure.css
+
+[33mcommit f0bf1a2097ad735a37a78e08c02582ed34c52676[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Tue Apr 15 18:14:28 2014 +0200
+
+    changes css
+
+[33mcommit 2c52db6d6455a4f1074ad9b9d45819350f389ec0[m
+Merge: daa0d5a bc68e06
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Tue Apr 15 16:46:47 2014 +0200
+
+    Merge branch 'master' of github.com:RasmusRK/Project
+
+[33mcommit bc68e066829747d6a1058ebca7ca87dad51f69f4[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Tue Apr 15 16:45:51 2014 +0200
+
+    added login process
+
+[33mcommit daa0d5a9e7d6f9b49d71148c10970d2e1ebf7aa8[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Tue Apr 15 16:44:37 2014 +0200
+
+    opdatering af todo
+
+[33mcommit 895d4a6a1786aba7753c5bd34b13ce85dac9889f[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Tue Apr 15 16:43:34 2014 +0200
+
+    added more functions to functions.php
+
+[33mcommit c8134bc09bf9a9aa7082f9d38c040d6b7c5d719a[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Tue Apr 15 16:36:33 2014 +0200
+
+    todo list added
+
+[33mcommit ccb039dbc4c2f65a270a4fb889a3e1a2b310af09[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Tue Apr 15 16:35:34 2014 +0200
+
+    test
+
+[33mcommit 38ff63899a0d013da2de6bf96a4ffffd081b6180[m
+Merge: 103a31e 85ab575
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Tue Apr 15 16:34:52 2014 +0200
+
+    Test
+    Merge branch 'master' of github.com:RasmusRK/Project
+
+[33mcommit 85ab5750ce2676b7a9d8300b268427656c1026a3[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Tue Apr 15 16:28:44 2014 +0200
+
+    added stuff to functions
+
+[33mcommit 103a31e7520c551445504a7e943f98e6a4f1c6e4[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Tue Apr 15 16:26:27 2014 +0200
+
+    todo list
+
+[33mcommit 13734622ca1e512ffc7434d7f4729aa4f09acc5e[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Tue Apr 15 16:21:48 2014 +0200
+
+    added more security to login and created myslsql database
+
+[33mcommit 585293b911b89d91e56d8fd8b52469f7b8aa42a3[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Tue Apr 15 15:10:17 2014 +0200
+
+    Deleted stuff
+
+[33mcommit d56d371b43f43b9a95bd84a19a5ddeda3df63a63[m
+Merge: b371798 9edea49
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Tue Apr 15 15:02:38 2014 +0200
+
+    dunnno
+
+[33mcommit b371798c6f5102f1b83b852bd4b340c1bf78310e[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Tue Apr 15 14:59:24 2014 +0200
+
+    Added css
+    
+    added styling and login screen
+
+[33mcommit 9edea490c842eda0fb694787ae20effd54b9c3c7[m
+Author: TheNiceOne <henrik-thomsen@live.dk>
+Date:   Tue Apr 15 13:08:51 2014 +0200
+
+    Henrik lavede en ændring
+
+[33mcommit 35f597b11e5ef278c56de3c06aa6d31c93b29ce7[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Tue Apr 15 12:56:15 2014 +0200
+
+    Deleted stuff
+
+[33mcommit 0848d90ad90b1fecfc267d40a7a6b012a55e6fce[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Tue Apr 15 12:53:31 2014 +0200
+
+    index
+    
+    Created an index file
+
+[33mcommit edb503d7cd2eae696f9014e133f393342300afed[m
+Author: TheNiceOne <whm897@ku.dk>
+Date:   Thu Feb 20 17:49:13 2014 +0100
+
+    Henrik tester igen!
+
+[33mcommit 27cc8e3a308d6ab62a134053f2e3e0a018b3906d[m
+Author: TheNiceOne <whm897@ku.dk>
+Date:   Thu Feb 20 17:42:31 2014 +0100
+
+    Henrik tester
+
+[33mcommit 781e970e4050991a4d117f22bffdb4e4025e1786[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Thu Feb 20 14:45:58 2014 +0100
+
+    Changed Folders
+
+[33mcommit 1370260b2e61beb67d416a11827ef53783eddab0[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Thu Feb 20 14:19:09 2014 +0100
+
+    This time there is more wub
+    
+    hue
+
+[33mcommit fc0b5377e8680597c24fec2a82febaa1bbadbb59[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Thu Feb 20 14:12:02 2014 +0100
+
+    added more wub
+    
+    yes
+
+[33mcommit 2607fc532594a0d640a062ea3a4ffbb60b3af588[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Thu Feb 20 13:58:16 2014 +0100
+
+    new change
+
+[33mcommit 34e3b96beca18a8dedcb92524cc34c9bddb0be6e[m
+Author: RasmusRK <rasmus.klitgaard.rk@gmail.com>
+Date:   Thu Feb 20 13:47:01 2014 +0100
+
+    Wub
+    
+    huehue
