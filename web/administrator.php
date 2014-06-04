@@ -11,6 +11,8 @@ sec_session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="stylesheet" href="css/pure-web.css">
+    <link rel="stylesheet" href="css/pure.css"/>
+    <link rel="stylesheet" href="css/pure-form.css"/>
     <link rel="stylesheet" href="css/side-menu.css">
 </head>
 
@@ -52,11 +54,11 @@ sec_session_start();
             Her kan du vælge en ny email adresse, hvor alle emails i kontakt vil blive sendt til.<br>
             Den nuværende email er: <?php echo get_mail($mysqli); ?><br><br>
             Indtast den nye email adresse, hvis du ønsker at ændre den:<br>
-                <form>
+                <form class="pure-form pure-form-stacked" method="POST" action="<?php echo $_SERVER["PHP_SELF"];?>">
                     <div>
                         <label for="newemail"></label>
-                        <input id ="newemail" type="string" name="newemail"/>
-                        <input class="button" name="email" type="submit" value="godkend"> 
+                        <input id ="newemail" type="string" name="newemail"/><br>
+                        <input class="btn left" name="email" type="submit" value="Godkend"> 
                     </div>
                 </form>
 
@@ -79,7 +81,7 @@ sec_session_start();
                     <label for="id"><b>Bruger-id</b></label>
                     <input id ="id" type="int" name="id" required />
                 </div>
-                    <input class="btn right" type="submit" value="Ny admin">
+                    <input class="btn left" type="submit" value="Ny admin">
                     <?php 
                         if (isset($_REQUEST['id']) && get_userState($mysqli, $_REQUEST['id']) == 1) {
                             $oldAdmin = $_SESSION['user_id'];

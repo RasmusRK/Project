@@ -646,7 +646,6 @@ function user_table($mysqli){
     <th>password</th>
     <th>Lav til admin</th>
     <th>Lav til bruger</th>
-    <th>Fjern</th>
     <th>SidstOnline</th>
     </tr>
     </thead>";
@@ -674,7 +673,6 @@ function user_table($mysqli){
         else {
             echo "<td></td>";
         }
-        echo "<td>Slet</td>";
         echo "<td>" . sidst_online($mysqli, $row[1]) . "</td>";
         echo "</tr>";
     }
